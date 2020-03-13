@@ -1,0 +1,57 @@
+package All4Cod;
+
+{$R *.res}
+{$R 'DosCommand.dcr'}
+{$R 'HTTPGet.dcr'}
+{$R 'Ruler.dcr'}
+{$R 'SynHighlighterAny.dcr'}
+{$R 'SynHighlighterNSIS.dcr'}
+{$R 'SynSpellCheck.dcr'}
+{$R 'SHDocVw_TLB.dcr'}
+{$R 'PiconeBarreTache.dcr'}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  SynEdit_R2005,
+  vclx;
+
+contains
+  DosCommand in 'DosCommand.pas',
+  HTTPGet in 'HTTPGet.pas',
+  MathExpression in 'MathExpression.pas',
+  Ruler in 'Ruler.pas',
+  SynHighlighterAny in 'SynHighlighterAny.pas',
+  SynHighlighterMPerl in 'SynHighlighterMPerl.pas',
+  SynHighlighterNSIS in 'SynHighlighterNSIS.pas',
+  SynHighlighterR in 'SynHighlighterR.pas',
+  SynHighlighterScilab in 'SynHighlighterScilab.pas',
+  SynSpellCheck in 'SynSpellCheck.pas',
+  SynSpellCheckMetaphone in 'SynSpellCheckMetaphone.pas',
+  SHDocVw_TLB in 'SHDocVw_TLB.pas',
+  PiconeBarreTache in 'PiconeBarreTache.pas',
+  ListViewEx in '..\..\..\RadioBlog Downloader\ListViewEx.pas';
+
+end.

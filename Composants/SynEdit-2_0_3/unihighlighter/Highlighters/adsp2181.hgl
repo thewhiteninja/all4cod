@@ -1,0 +1,376 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>ADSP  2181</Name>
+   <FileTypeName>DSP</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37651.5655125</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>.const fs = 0;</S>
+   <S>.include &lt;c:\adi_dsp\macros\init.dsp&gt;;</S>
+   <S>userInit:</S>
+   <S>.const a = 0x4000;</S>
+   <S>.const D = 3000;</S>
+   <S>.var/dm/circ queue[D+1];</S>
+   <S>    i0 = ^queue;  L0 = %queue;        {buffer pointer and length}</S>
+   <S>    clearQueue(i0, m0, L0);           {clear queue}</S>
+   <S>rts;</S>
+   <S>idleLoop:</S>
+   <S>    kbhit(ar);</S>
+   <S>    none = pass ar;</S>
+   <S>    if ne jump idleLoop;</S>
+   <S>    rts;                              {else return to monitor}</S>
+   <S>    inL(ax1);                         {left input sample}</S>
+   <S>    inR(mx1);                         {right input sample}</S>
+   <S>    my1 = a;</S>
+   <S>    tapQueue(i0, m0, D, mx1);</S>
+   <S>    mr = mr + mx1 * my1 (rnd);</S>
+   <S>interrupt: ena sec_reg;</S>
+   <S>    toggle fl1;</S>
+   <S>    rti;</S>
+   <S>.endmod;</S>
+   <S></S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars> !&qt;%&amp;'()*+,-/:;&lt;=&gt;?@[\]^{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>and</W>
+  <W>ashift</W>
+  <W>by</W>
+  <W>call</W>
+  <W>clrbit</W>
+  <W>dis</W>
+  <W>do</W>
+  <W>ena</W>
+  <W>exp</W>
+  <W>expadj</W>
+  <W>if</W>
+  <W>jump</W>
+  <W>lo</W>
+  <W>lshift</W>
+  <W>modify</W>
+  <W>none</W>
+  <W>nop</W>
+  <W>norm</W>
+  <W>of</W>
+  <W>or</W>
+  <W>pass</W>
+  <W>pop</W>
+  <W>push</W>
+  <W>reset</W>
+  <W>rnd</W>
+  <W>rti</W>
+  <W>rts</W>
+  <W>sat</W>
+  <W>sec_regset</W>
+  <W>setbit</W>
+  <W>ss</W>
+  <W>su</W>
+  <W>tglbit</W>
+  <W>toggle</W>
+  <W>toppcstack</W>
+  <W>tstbit</W>
+  <W>until</W>
+  <W>us</W>
+  <W>uu</W>
+  <W>xor</W>
+ </KW>
+ <KW Name="Control">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>.adsp2181</W>
+  <W>.const</W>
+  <W>.endmod</W>
+  <W>.endsys</W>
+  <W>.entry</W>
+  <W>.external</W>
+  <W>.global</W>
+  <W>.include</W>
+  <W>.init</W>
+  <W>.mmap0</W>
+  <W>.module</W>
+  <W>.seg</W>
+  <W>.system</W>
+  <W>.var</W>
+  <W>abs</W>
+  <W>circ</W>
+  <W>code</W>
+  <W>data</W>
+ </KW>
+ <KW Name="Register">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>af</W>
+  <W>ar</W>
+  <W>astat</W>
+  <W>ax0</W>
+  <W>ax1</W>
+  <W>ay0</W>
+  <W>ay1</W>
+  <W>cntr</W>
+  <W>divq</W>
+  <W>divs</W>
+  <W>i0</W>
+  <W>i1</W>
+  <W>i2</W>
+  <W>i3</W>
+  <W>i4</W>
+  <W>i5</W>
+  <W>i6</W>
+  <W>i7</W>
+  <W>icntl</W>
+  <W>ifc</W>
+  <W>imask</W>
+  <W>l0</W>
+  <W>l1</W>
+  <W>l2</W>
+  <W>l3</W>
+  <W>l4</W>
+  <W>l5</W>
+  <W>l6</W>
+  <W>l7</W>
+  <W>loop</W>
+  <W>m0</W>
+  <W>m1</W>
+  <W>m2</W>
+  <W>m3</W>
+  <W>m4</W>
+  <W>m5</W>
+  <W>m6</W>
+  <W>m7</W>
+  <W>mf</W>
+  <W>mf</W>
+  <W>mr</W>
+  <W>mr0</W>
+  <W>mr1</W>
+  <W>mr2</W>
+  <W>mstat</W>
+  <W>mx0</W>
+  <W>mx1</W>
+  <W>my0</W>
+  <W>my1</W>
+  <W>pc</W>
+  <W>sb</W>
+  <W>sesi</W>
+  <W>sr</W>
+  <W>sr0</W>
+  <W>sr1</W>
+  <W>sts</W>
+  <W>su</W>
+ </KW>
+ <KW Name="Memory">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>bm</W>
+  <W>dm</W>
+  <W>im</W>
+  <W>io</W>
+  <W>pm</W>
+  <W>ram</W>
+  <W>rom</W>
+ </KW>
+ <KW Name="Condition">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744448</Fore>
+   <Style></Style>
+  </Attri>
+  <W>ac</W>
+  <W>av</W>
+  <W>eq</W>
+  <W>ge</W>
+  <W>gt</W>
+  <W>le</W>
+  <W>lt</W>
+  <W>mv</W>
+  <W>ne</W>
+  <W>neg</W>
+  <W>not</W>
+  <W>pos</W>
+  <W>/C6&qt;Bits&qt;</W>
+  <W>c</W>
+  <W>ce</W>
+  <W>fl0</W>
+  <W>fl1</W>
+  <W>fl2</W>
+  <W>flag_in</W>
+  <W>flag_out</W>
+  <W>m_mode</W>
+ </KW>
+  <Range Name="Strings '..'">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>'</OpenSymbol>
+  <CloseSymbol>'</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Strings &qt;..&qt;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Remarks {..}">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>{</OpenSymbol>
+  <CloseSymbol>}</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="^">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>^</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>True</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="%">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>16512</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>16512</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>%</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>True</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="&lt;..&gt;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>16744448</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>16744448</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&lt;</OpenSymbol>
+  <CloseSymbol>&gt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>
+Eol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

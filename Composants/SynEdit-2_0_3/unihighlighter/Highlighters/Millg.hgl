@@ -1,0 +1,144 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Millg</Name>
+   <FileTypeName></FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:millg.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5527132639</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>536870911</Back>
+  <Fore>536870911</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>536870911</Back>
+  <Fore>536870911</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	!&qt;%&amp;'()*+,-./:;&lt;=&gt;?@[\]^{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key Words 1">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>G40</W>
+  <W>G41</W>
+  <W>G42</W>
+  <W>G68</W>
+  <W>G69</W>
+  <W>G70</W>
+  <W>G71</W>
+  <W>G90</W>
+  <W>G91</W>
+  <W>G92</W>
+  <W>G93</W>
+  <W>G94</W>
+  <W>G99</W>
+ </KW>
+ <KW Name="Key Words 2">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>G00</W>
+  <W>G04</W>
+ </KW>
+ <KW Name="Key Words 3">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>G01</W>
+ </KW>
+ <KW Name="Key Words 4">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>G02</W>
+  <W>G03</W>
+ </KW>
+ <KW Name="Key Words 5">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Attri>
+  <W>G17</W>
+  <W>G18</W>
+  <W>G19</W>
+ </KW>
+ <KW Name="Key Words 6">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32896</Fore>
+   <Style></Style>
+  </Attri>
+  <W>M00</W>
+  <W>M01</W>
+  <W>M02</W>
+  <W>M03</W>
+  <W>M04</W>
+  <W>M05</W>
+  <W>M06</W>
+  <W>M07</W>
+  <W>M08</W>
+  <W>M09</W>
+  <W>M13</W>
+  <W>M14</W>
+  <W>M19</W>
+  <W>M26</W>
+  <W>M60</W>
+ </KW>
+ <KW Name="Key Words 7">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744448</Fore>
+   <Style></Style>
+  </Attri>
+  <W>G80</W>
+  <W>G81</W>
+  <W>G82</W>
+  <W>G83</W>
+  <W>G84</W>
+ </KW>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

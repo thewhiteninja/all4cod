@@ -1,0 +1,147 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>LDIF for Netscape Directory Server</Name>
+   <FileTypeName>LDIF LDF</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:ldif.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5477767245</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>&qt;,.:;={}</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key Words 1">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>aci</W>
+  <W>audio</W>
+  <W>binary</W>
+  <W>businesscategory</W>
+  <W>carlicense</W>
+  <W>changetype</W>
+  <W>cn</W>
+  <W>commonname</W>
+  <W>departmentNumber</W>
+  <W>description</W>
+  <W>dn</W>
+  <W>employeenumber</W>
+  <W>employeeType</W>
+  <W>facsimileTelephoneNumber</W>
+  <W>givenname</W>
+  <W>homePhone</W>
+  <W>homePostalAddress</W>
+  <W>initials</W>
+  <W>internationalIsdnNumber</W>
+  <W>jpegPhoto</W>
+  <W>l</W>
+  <W>labeledURI</W>
+  <W>locality</W>
+  <W>mail</W>
+  <W>mailalternateaddress</W>
+  <W>maildeliveryoption</W>
+  <W>mailhost</W>
+  <W>manager</W>
+  <W>mobile</W>
+  <W>objectclass</W>
+  <W>pager</W>
+  <W>photo</W>
+  <W>postOfficeBox</W>
+  <W>preferredDeliveryMethod</W>
+  <W>preferredLanguage</W>
+  <W>physicaldeliveryofficename</W>
+  <W>postaladdress</W>
+  <W>postalcode</W>
+  <W>registeredAddress</W>
+  <W>roleOccupant</W>
+  <W>roomnumber</W>
+  <W>secretary</W>
+  <W>seeAlso</W>
+  <W>sn</W>
+  <W>st</W>
+  <W>street</W>
+  <W>surname</W>
+  <W>telephonenumber</W>
+  <W>title</W>
+  <W>uid</W>
+  <W>userpassword</W>
+  <W>userCertificate</W>
+  <W>userCertificate</W>
+  <W>userSMIMECertificate</W>
+  <W>x500UniqueIdentifier</W>
+ </KW>
+ <KW Name="Key Words 2">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>add</W>
+  <W>c</W>
+  <W>dc</W>
+  <W>delete</W>
+  <W>modify</W>
+  <W>o</W>
+  <W>ou</W>
+ </KW>
+ <KW Name="Key Words 3">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>crypt</W>
+  <W>inetOrgPerson</W>
+  <W>mailRecipient</W>
+  <W>nsLicenseUser</W>
+  <W>organizationalPerson</W>
+  <W>organizationalRole</W>
+  <W>residentialPerson</W>
+  <W>person</W>
+  <W>SHA</W>
+  <W>top</W>
+ </KW>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

@@ -1,0 +1,204 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Delphi/CBuilder Form</Name>
+   <FileTypeName>dfm</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.536246956</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>object AFMain: TAFMain</S>
+   <S>  HelpContext = 1</S>
+   <S>  BorderIcons = [biSystemMenu]</S>
+   <S>  BorderStyle = bsDialog</S>
+   <S>  Font.Name = 'System'</S>
+   <S>  Font.Style = []</S>
+   <S>  OldCreateOrder = True</S>
+   <S>  Position = poScreenCenter</S>
+   <S>  OnActivate = FormActivate</S>
+   <S>  OnCloseQuery = FormCloseQuery</S>
+   <S>  OnCreate = FormCreate</S>
+   <S>  OnDestroy = FormDestroy</S>
+   <S>  PixelsPerInch = 96</S>
+   <S>  TextHeight = 16</S>
+   <S>  object MainPanel: TPanel</S>
+   <S>    Left = 0</S>
+   <S>    Top = 0</S>
+   <S>    Width = 333</S>
+   <S>    Height = 45</S>
+   <S>    Align = alTop</S>
+   <S>    BevelOuter = bvLowered</S>
+   <S>    TabOrder = 0</S>
+   <S>    Glyph.Data = {</S>
+   <S>        36060000424D3606000000000000360400002800000010000000200000000100</S>
+   <S>        0800000000000002000000000000000000000001000000000000000000000000</S>
+   <S>        BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000C0DCC000F0C8</S>
+   <S>        0303030303030303030303030303030303030303030303030303}</S>
+   <S>    ParentShowHint = False</S>
+   <S>    ShowHint = True</S>
+   <S>    OnClick = AutoBtnClick</S>
+   <S>  end</S>
+   <S>  object Gauge: TStatusGauge</S>
+   <S>    Left = 0</S>
+   <S>    Top = 218</S>
+   <S>    Width = 333</S>
+   <S>    Height = 19</S>
+   <S>    Panels = &lt;</S>
+   <S>      item</S>
+   <S>        Width = 0</S>
+   <S>      end</S>
+   <S>      item</S>
+   <S>        Width = -2</S>
+   <S>      end&gt;</S>
+   <S>    SimplePanel = False</S>
+   <S>    SizeGrip = False</S>
+   <S>    separator = 150</S>
+   <S>    gaugecolor = clNavy</S>
+   <S>  end</S>
+   <S>  object q: TADOQuery</S>
+   <S>    CursorType = ctStatic</S>
+   <S>    Parameters = &lt;&gt;</S>
+   <S>    SQL.Strings = (</S>
+   <S>      'Select * from mytable where work=''Mine''')</S>
+   <S>    Left = 220</S>
+   <S>    Top = 138</S>
+   <S>  end</S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Statements">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>object</W>
+  <W>end</W>
+ </KW>
+ <KW Name="Logical">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>6974005</Fore>
+   <Style></Style>
+  </Attri>
+  <W>True</W>
+  <W>False</W>
+ </KW>
+  <Range Name="Enumerate">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388672</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388672</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>[</OpenSymbol>
+  <CloseSymbol>]</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="Strings">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>'</OpenSymbol>
+  <CloseSymbol>'</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="Binary">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>{</OpenSymbol>
+  <CloseSymbol>}</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="List">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&lt;</OpenSymbol>
+  <CloseSymbol>&gt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

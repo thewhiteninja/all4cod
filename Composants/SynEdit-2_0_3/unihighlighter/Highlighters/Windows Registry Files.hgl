@@ -1,0 +1,162 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Windows Registry Files</Name>
+   <FileTypeName>reg</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>0</Version>
+   <Revision>9</Revision>
+   <Date>37612.5590462847</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>REGEDIT4</S>
+   <S></S>
+   <S>[HKEY_CLASSES_ROOT]</S>
+   <S></S>
+   <S>[HKEY_CLASSES_ROOT\CLSID]</S>
+   <S>@=&qt;&qt;</S>
+   <S></S>
+   <S>[HKEY_CLASSES_ROOT\CLSID\{B323F8E0-2E68-11D0-90EA-00AA0060F86C}]</S>
+   <S>@=&qt;StillImage&qt;</S>
+   <S></S>
+   <S>[HKEY_CLASSES_ROOT\CLSID\{B323F8E0-2E68-11D0-90EA-00AA0060F86C}\InProcServer32]</S>
+   <S>@=&qt;C:\\WINDOWS\\SYSTEM\\sti.dll&qt;</S>
+   <S>&qt;ThreadingModel&qt;=&qt;Both&qt;</S>
+   <S></S>
+   <S></S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Header">
+  <Attri>
+   <Back>10485760</Back>
+   <Fore>8454143</Fore>
+   <Style></Style>
+  </Attri>
+  <W>REGEDIT4</W>
+ </KW>
+  <Range Name="Key path">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>[</OpenSymbol>
+  <CloseSymbol>]</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  <KW Name="Roots">
+   <Attri>
+    <Back>16777215</Back>
+    <Fore>16711935</Fore>
+    <Style></Style>
+   </Attri>
+   <W>HKEY_CLASSES_ROOT</W>
+   <W>HKEY_USERS</W>
+  </KW>
+   <Range Name="CLSID">
+   <Def>
+    <Back>16777215</Back>
+    <Fore>10485760</Fore>
+    <Style></Style>
+   </Def>
+   <Num>
+    <Back>16777215</Back>
+    <Fore>10485760</Fore>
+    <Style></Style>
+   </Num>
+   <OpenSymbol>{</OpenSymbol>
+   <CloseSymbol>}</CloseSymbol>
+   <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+   <AnyTerm>True</AnyTerm>
+   <CloseOnTerm>False</CloseOnTerm>
+   <CloseOnEol>False</CloseOnEol>
+   <CaseSensitive>True</CaseSensitive>
+   </Range>
+  </Range>
+  <Range Name="Hex">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>=hex</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="dword">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>128</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>dword:</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

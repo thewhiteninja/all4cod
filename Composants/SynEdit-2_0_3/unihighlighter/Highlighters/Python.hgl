@@ -1,0 +1,408 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Python</Name>
+   <FileTypeName></FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5585425463</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>#!/usr/local/bin/python</S>
+   <S>import string, sys</S>
+   <S># If no arguments were given, print a helpful message</S>
+   <S></S>
+   <S>if len(sys.argv)==1:</S>
+   <S>    print 'Usage: celsius temp1 temp2 ...'</S>
+   <S>    sys.exit(0)</S>
+   <S></S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>and</W>
+  <W>array</W>
+  <W>fnmatch</W>
+  <W>struct </W>
+  <W>self</W>
+  <W>assert</W>
+  <W>break</W>
+  <W>class</W>
+  <W>continue</W>
+  <W>def</W>
+  <W>del</W>
+  <W>elif</W>
+  <W>else</W>
+  <W>except</W>
+  <W>exec</W>
+  <W>finally</W>
+  <W>for</W>
+  <W>from</W>
+  <W>global</W>
+  <W>if</W>
+  <W>import</W>
+  <W>in</W>
+  <W>is</W>
+  <W>lambda</W>
+  <W>map</W>
+  <W>not</W>
+  <W>None</W>
+  <W>or</W>
+  <W>pass print</W>
+  <W>raise range return</W>
+  <W>try</W>
+  <W>while</W>
+ </KW>
+ <KW Name="Functions">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>abs</W>
+  <W>apply</W>
+  <W>callable</W>
+  <W>chr</W>
+  <W>cmp</W>
+  <W>coerce</W>
+  <W>compile</W>
+  <W>complex</W>
+  <W>delattr</W>
+  <W>dir</W>
+  <W>divmod</W>
+  <W>eval</W>
+  <W>execfile</W>
+  <W>filter</W>
+  <W>float</W>
+  <W>getattr</W>
+  <W>globals</W>
+  <W>group</W>
+  <W>hasattr</W>
+  <W>hash</W>
+  <W>hex</W>
+  <W>id </W>
+  <W>input </W>
+  <W>int </W>
+  <W>intern </W>
+  <W>isinstance </W>
+  <W>issubclass</W>
+  <W>joinfields</W>
+  <W>len </W>
+  <W>list </W>
+  <W>local </W>
+  <W>long</W>
+  <W>max </W>
+  <W>min </W>
+  <W>match</W>
+  <W>oct </W>
+  <W>open </W>
+  <W>ord</W>
+  <W>pow</W>
+  <W>raw_input </W>
+  <W>reduce </W>
+  <W>reload </W>
+  <W>repr </W>
+  <W>round</W>
+  <W>search </W>
+  <W>setattr </W>
+  <W>slice </W>
+  <W>str </W>
+  <W>splitfields</W>
+  <W>tuple </W>
+  <W>type</W>
+  <W>vars</W>
+  <W>xrange</W>
+  <W>__import__</W>
+ </KW>
+ <KW Name="Exceptions">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711935</Fore>
+   <Style></Style>
+  </Attri>
+  <W>ArithmeticError</W>
+  <W>AssertionError</W>
+  <W>AttributeError</W>
+  <W>EOFError</W>
+  <W>Exception</W>
+  <W>FloatingPointError</W>
+  <W>IOError</W>
+  <W>ImportError</W>
+  <W>IndexError</W>
+  <W>KeyError</W>
+  <W>KeyboardInterrupt</W>
+  <W>LookupError</W>
+  <W>MemoryError</W>
+  <W>NameError</W>
+  <W>OverflowError</W>
+  <W>RuntimeError</W>
+  <W>StandardError</W>
+  <W>SyntaxError</W>
+  <W>SystemError</W>
+  <W>SystemExit</W>
+  <W>TypeError</W>
+  <W>ValueError</W>
+  <W>ZeroDivisionError</W>
+ </KW>
+ <KW Name="Libraries">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Attri>
+  <W>AST</W>
+  <W>BaseHTTPServer </W>
+  <W>Bastion</W>
+  <W>cmd </W>
+  <W>commands </W>
+  <W>compileall </W>
+  <W>copy</W>
+  <W>CGIHTTPServer </W>
+  <W>Complex</W>
+  <W>dbhash </W>
+  <W>dircmp </W>
+  <W>dis </W>
+  <W>dospath </W>
+  <W>dumbdbm</W>
+  <W>emacs</W>
+  <W>find </W>
+  <W>fmt </W>
+  <W>fnmatch </W>
+  <W>ftplib</W>
+  <W>getopt </W>
+  <W>glob </W>
+  <W>gopherlib </W>
+  <W>grep</W>
+  <W>htmllib </W>
+  <W>httplib</W>
+  <W>ihooks </W>
+  <W>imghdr</W>
+  <W>linecache </W>
+  <W>lockfile</W>
+  <W>macpath </W>
+  <W>macurl2path </W>
+  <W>mailbox </W>
+  <W>mailcap</W>
+  <W>mimetools </W>
+  <W>mimify </W>
+  <W>mutex </W>
+  <W>math</W>
+  <W>Mimewriter</W>
+  <W>newdir </W>
+  <W>ni </W>
+  <W>nntplib </W>
+  <W>ntpath </W>
+  <W>nturl2path</W>
+  <W>os </W>
+  <W>ospath</W>
+  <W>pdb </W>
+  <W>pickle </W>
+  <W>pipes </W>
+  <W>poly </W>
+  <W>popen2 </W>
+  <W>posixfile </W>
+  <W>posixpath </W>
+  <W>profile </W>
+  <W>pstats </W>
+  <W>pyclbr</W>
+  <W>Para</W>
+  <W>quopri</W>
+  <W>Queue</W>
+  <W>rand </W>
+  <W>random </W>
+  <W>regex </W>
+  <W>regsub </W>
+  <W>rfc822</W>
+  <W>sched </W>
+  <W>sgmllib </W>
+  <W>shelve </W>
+  <W>site </W>
+  <W>sndhdr </W>
+  <W>string </W>
+  <W>sys </W>
+  <W>snmp</W>
+  <W>SimpleHTTPServer </W>
+  <W>StringIO </W>
+  <W>SocketServer</W>
+  <W>tb </W>
+  <W>tempfile </W>
+  <W>toaiff </W>
+  <W>token </W>
+  <W>tokenize </W>
+  <W>traceback </W>
+  <W>tty </W>
+  <W>types </W>
+  <W>tzparse</W>
+  <W>Tkinter</W>
+  <W>urllib </W>
+  <W>urlparse </W>
+  <W>util </W>
+  <W>uu</W>
+  <W>UserDict </W>
+  <W>UserList</W>
+  <W>wave </W>
+  <W>whatsound </W>
+  <W>whichdb </W>
+  <W>whrandom</W>
+  <W>xdrlib</W>
+  <W>zmod</W>
+ </KW>
+ <KW Name="Operators">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>64</Fore>
+   <Style></Style>
+  </Attri>
+  <W>+=</W>
+  <W>-=</W>
+  <W>%=</W>
+  <W>/=</W>
+  <W>**=</W>
+  <W>&amp;=</W>
+  <W>|=</W>
+  <W>^=</W>
+  <W>&gt;&gt;=</W>
+  <W>&lt;&lt;=</W>
+  <W>==</W>
+ </KW>
+  <Range Name="Strings '..'">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>'</OpenSymbol>
+  <CloseSymbol>'</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="Comments">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>#</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="Integer">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>4194432</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>4194432</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>$</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>True</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="Strings &qt;..&qt;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="Methods and Attributes">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>__</OpenSymbol>
+  <CloseSymbol>__</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

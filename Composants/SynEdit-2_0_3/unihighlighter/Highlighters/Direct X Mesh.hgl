@@ -1,0 +1,205 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Direct X mesh</Name>
+   <FileTypeName>X</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:directxmesh.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5365848264</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	&qt;',-/;&lt;&gt;[\]{}</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Keywords">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>array</W>
+  <W>template</W>
+  <W>xof</W>
+ </KW>
+ <KW Name="Data Types">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>BYTE</W>
+  <W>CHAR</W>
+  <W>CSTRING</W>
+  <W>DOUBLE</W>
+  <W>DWORD</W>
+  <W>FLOAT</W>
+  <W>STRING</W>
+  <W>UCHAR</W>
+  <W>UNICODE</W>
+  <W>WORD</W>
+ </KW>
+ <KW Name="Templates">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>Animation</W>
+  <W>AnimationKey</W>
+  <W>AnimationOptions</W>
+  <W>AnimationSet</W>
+  <W>Boolean</W>
+  <W>Boolean2d</W>
+  <W>ColorRGB</W>
+  <W>ColorRGBA</W>
+  <W>Coords2d</W>
+  <W>FloatKeys</W>
+  <W>Frame</W>
+  <W>FrameTransformMatrix</W>
+  <W>FVFData</W>
+  <W>Header</W>
+  <W>IndexedColor</W>
+  <W>Material</W>
+  <W>Matrix4x4</W>
+  <W>Mesh</W>
+  <W>MeshFace</W>
+  <W>MeshFaceWraps</W>
+  <W>MeshTextureCoords</W>
+  <W>MeshMaterialList</W>
+  <W>MeshNormals</W>
+  <W>MeshVertexColors</W>
+  <W>Patch</W>
+  <W>PatchMesh</W>
+  <W>Quaternion</W>
+  <W>SkinWeights</W>
+  <W>TextureFilename</W>
+  <W>TimedFloatKeys</W>
+  <W>Vector</W>
+  <W>VertexDuplicationIndices</W>
+  <W>XSkinMeshHeader</W>
+ </KW>
+ <KW Name="Operators">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>-</W>
+ </KW>
+  <Range Name="Remarks //">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>//</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Remarks #">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>#</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Remarks //..">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>//</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Strings &qt;..&qt;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

@@ -1,0 +1,127 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Config Files</Name>
+   <FileTypeName>CFG INI</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:config.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.532982037</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	&qt;'()*+,-./:;&lt;=&gt;?[]</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Keywords">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>AGENCY</W>
+  <W>API_USERS</W>
+  <W>ABSFONT</W>
+  <W>ALERT</W>
+  <W>BUSINESS</W>
+  <W>CLIENT_USERS</W>
+  <W>CODEPAGE</W>
+  <W>DEBUG</W>
+  <W>DISABLE_TOOLBAR</W>
+  <W>EXECUTE</W>
+  <W>EIS</W>
+  <W>FILE</W>
+  <W>FILECODEPAGE</W>
+  <W>HOST</W>
+  <W>JOB</W>
+  <W>LOG_FILE</W>
+  <W>LP</W>
+  <W>LPPATH</W>
+  <W>LOCAL</W>
+  <W>LOADPAGEMSG</W>
+  <W>MEMORY</W>
+  <W></W>
+  <W>NT95INTERFACE</W>
+  <W>ROUTE_FILE</W>
+  <W>SERVER</W>
+  <W>STORE</W>
+  <W>SQL</W>
+  <W>SPX</W>
+  <W>SQLCODEPAGE</W>
+  <W>SCENARIO_SIZE</W>
+  <W>SPLASH</W>
+  <W>TIMEOUT</W>
+  <W>THREADS</W>
+  <W>TCP</W>
+  <W>TCPX</W>
+  <W>WORKERS</W>
+  <W>WEBSERVER</W>
+  <W>WEBPORT</W>
+  <W>WEBTIMEOUT</W>
+  <W>WEBCGI</W>
+  <W>WEBCLASSES</W>
+  <W>WEBICONS</W>
+  <W>WEB_USERS</W>
+  <W>WEBCODEPAGE</W>
+  <W>WEBSSL</W>
+  <W>sqlentry</W>
+  <W>sqlodbc</W>
+ </KW>
+  <Range Name="Remarks #">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>#</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

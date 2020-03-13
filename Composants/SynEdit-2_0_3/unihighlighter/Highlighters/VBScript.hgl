@@ -1,0 +1,609 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>VB Script</Name>
+   <FileTypeName>VBS</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5703139931</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>' Dim, Private, Public, ReDim, or Static statements.</S>
+   <S>Option Explicit</S>
+   <S>Public objCurrentLayer As AcadLayer</S>
+   <S>Select Case CommandName</S>
+   <S>Case &qt;TEXT&qt;, &qt;MTEXT&qt;, &qt;DTEXT&qt; ' then do the following..</S>
+   <S>If Not ThisDrawing.ActiveLayer.Name = &qt;TEXT&qt; Then</S>
+   <S>Set objCurrentLayer = ThisDrawing.Layers.Add(&qt;TEXT&qt;)</S>
+   <S>objCurrentLayer.LayerOn = True</S>
+   <S>End If</S>
+   <S>If Not ThisDrawing.ActiveLayer.Name = &qt;DIM&qt; Then</S>
+   <S>End Sub</S>
+   <S>WScript.Echo vbCrLf &amp; lngDec &amp; &qt; = 0x&qt; &amp; strHex</S>
+   <S>Sub Link4_onMouseMove()</S>
+   <S>  Label1.Caption = DescribeLink(3)</S>
+   <S>  Status = DescribeLink(3)</S>
+   <S>  tID = setTimeout(&qt;ClearDesc()&qt;,4000)</S>
+   <S>End Sub</S>
+   <S></S>
+   <S>Sub window_onLoad()</S>
+   <S> strFabric(1,1) = &qt;Green&qt;</S>
+   <S>end sub</S>
+   <S></S>
+   <S>Dim lastX, lastY</S>
+   <S>browserver = navigator.Appversion</S>
+   <S>if Left(browserver, 3) = 4.0 then</S>
+   <S>   ie4 = True</S>
+   <S>else</S>
+   <S>   ie4 = False</S>
+   <S>end if</S>
+   <S></S>
+   <S>Function OverIcon(x, y, rx1, ry1, rx2, ry2)</S>
+   <S>	OverIcon =  x&gt;=rx1 AND x&lt;=rx2 AND y&gt;=ry1 AND y&lt;=ry2</S>
+   <S>End Function</S>
+   <S></S>
+   <S>Sub Window_OnLoad</S>
+   <S>Set dicTestDict = CreateObject(&qt;Scripting.Dictionary&qt;)	</S>
+   <S>Set frm = Document.frmForm1</S>
+   <S>End Sub</S>
+   <S></S>
+   <S>Sub cmdAddNew_OnClick</S>
+   <S>If dicTestDict.Exists(frm.txtNewKey.Value) Then</S>
+   <S>    Alert &qt;This key already exists&qt;</S>
+   <S>Else</S>
+   <S>    dicTestDict.Add frm.txtNewKey.Value, frm.txtNewItem.Value</S>
+   <S>    Alert &qt;Key and item added successfully&qt;</S>
+   <S>End If</S>
+   <S>Alert VarType(frm)</S>
+   <S>End Sub</S>
+   <S>' Check command line parameters</S>
+   <S>Select Case WScript.Arguments.Count</S>
+   <S>	Case 1</S>
+   <S>		' Check if parameter is a valid number</S>
+   <S>		On Error Resume Next</S>
+   <S>		lngDec = CLng( WScript.Arguments(0) )</S>
+   <S>		If Err Then Syntax</S>
+   <S>		On Error GoTo 0</S>
+   <S>		' Check if number is within range</S>
+   <S>		If lngDec &gt; 2147483647 Then Syntax</S>
+   <S>	Case Else</S>
+   <S>		Syntax</S>
+   <S>End Select</S>
+   <S></S>
+   <S>' Convert number to string representing hexadecimal value</S>
+   <S>strHex = CStr( Hex( lngDec ) )</S>
+   <S>' Add leading zeros if necessary</S>
+   <S>intLen = Len( strHex )</S>
+   <S>if intLen &lt; 8 Then</S>
+   <S>	Do Until intLen = 8</S>
+   <S>		strHex = &qt;0&qt; &amp; strHex</S>
+   <S>		intLen = Len( strHex )</S>
+   <S>	Loop</S>
+   <S>End If</S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>And</W>
+  <W>As</W>
+  <W>Call</W>
+  <W>Case</W>
+  <W>Class</W>
+  <W>Const</W>
+  <W>Dim</W>
+  <W>Do</W>
+  <W>Each</W>
+  <W>Else</W>
+  <W>ElseIf</W>
+  <W>Empty</W>
+  <W>End</W>
+  <W>Eqv</W>
+  <W>Erase</W>
+  <W>Error</W>
+  <W>Execute</W>
+  <W>Exit</W>
+  <W>Explicit</W>
+  <W>For</W>
+  <W>Function</W>
+  <W>Get</W>
+  <W>Goto</W>
+  <W>If</W>
+  <W>Imp</W>
+  <W>Is</W>
+  <W>Let</W>
+  <W>Loop</W>
+  <W>Mod</W>
+  <W>Next</W>
+  <W>New</W>
+  <W>Not</W>
+  <W>Nothing</W>
+  <W>Null</W>
+  <W>On</W>
+  <W>Option</W>
+  <W>Or</W>
+  <W>Private</W>
+  <W>Property</W>
+  <W>Public</W>
+  <W>Randomize</W>
+  <W>ReDim</W>
+  <W>Rem</W>
+  <W>Resume</W>
+  <W>Select</W>
+  <W>Set</W>
+  <W>Stop</W>
+  <W>Sub</W>
+  <W>Then</W>
+  <W>To</W>
+  <W>Until</W>
+  <W>Wend</W>
+  <W>While</W>
+  <W>With</W>
+ </KW>
+ <KW Name="Functions">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>Abs</W>
+  <W>Array</W>
+  <W>Asc</W>
+  <W>Atn</W>
+  <W>CBool</W>
+  <W>CByte</W>
+  <W>CCur</W>
+  <W>CDate</W>
+  <W>CDbl</W>
+  <W>Chr</W>
+  <W>CInt</W>
+  <W>CLng</W>
+  <W>Cos</W>
+  <W>CSng</W>
+  <W>CStr</W>
+  <W>Date</W>
+  <W>DateAddFunction</W>
+  <W>DateDiff</W>
+  <W>DatePart</W>
+  <W>DateSerial</W>
+  <W>DateValue</W>
+  <W>Day</W>
+  <W>Eval</W>
+  <W>Exp</W>
+  <W>Filter</W>
+  <W>Fix</W>
+  <W>FormatCurrency</W>
+  <W>FormatDateTime</W>
+  <W>FormatNumber</W>
+  <W>FormatPercent</W>
+  <W>GetObject</W>
+  <W>GetRef</W>
+  <W>Hex</W>
+  <W>Hour</W>
+  <W>InputBox</W>
+  <W>InStr</W>
+  <W>InStrRev</W>
+  <W>Int</W>
+  <W>IsArray</W>
+  <W>IsDate</W>
+  <W>IsEmpty</W>
+  <W>IsNull</W>
+  <W>IsNumeric</W>
+  <W>IsObject</W>
+  <W>Join</W>
+  <W>LBound</W>
+  <W>LCase</W>
+  <W>Left</W>
+  <W>Len</W>
+  <W>LoadPicture</W>
+  <W>Log</W>
+  <W>LTrim</W>
+  <W>Mid</W>
+  <W>Minute</W>
+  <W>Month</W>
+  <W>MonthName</W>
+  <W>MsgBox</W>
+  <W>Now</W>
+  <W>Oct</W>
+  <W>Replace</W>
+  <W>RGB</W>
+  <W>Right</W>
+  <W>Rnd</W>
+  <W>Round</W>
+  <W>RTrim</W>
+  <W>ScriptEngine</W>
+  <W>ScriptEngineBuildVersion</W>
+  <W>ScriptEngineMajorVersion</W>
+  <W>ScriptEngineMinorVersion</W>
+  <W>Second</W>
+  <W>Sgn</W>
+  <W>Sin</W>
+  <W>Space</W>
+  <W>Split</W>
+  <W>Sqr</W>
+  <W>StrComp</W>
+  <W>String</W>
+  <W>StrReverse</W>
+  <W>Tan</W>
+  <W>Time</W>
+  <W>Timer</W>
+  <W>TimeSerial</W>
+  <W>TimeValue</W>
+  <W>Trim</W>
+  <W>TypeName</W>
+  <W>UBound</W>
+  <W>UCase</W>
+  <W>VarType</W>
+  <W>Weekday</W>
+  <W>WeekdayName</W>
+  <W>Year</W>
+ </KW>
+ <KW Name="Properties">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>AccountDisabled</W>
+  <W>AccountExpirationDate</W>
+  <W>Application</W>
+  <W>Arguments</W>
+  <W>AtEndOfLine</W>
+  <W>AtEndOfStream</W>
+  <W>Attributes</W>
+  <W>AutoUnlockInterval</W>
+  <W>AvailableSpace</W>
+  <W>BadPasswordAttempts</W>
+  <W>Column</W>
+  <W>CompareMode</W>
+  <W>ComputerName</W>
+  <W>Count</W>
+  <W>DateCreated</W>
+  <W>DateLastAccessed</W>
+  <W>DateLastModified</W>
+  <W>Description</W>
+  <W>Drive</W>
+  <W>DriveLetter</W>
+  <W>DriveType</W>
+  <W>Drives</W>
+  <W>Environment</W>
+  <W>FileSystem</W>
+  <W>Files</W>
+  <W>FirstIndex</W>
+  <W>FreeSpace</W>
+  <W>FullName</W>
+  <W>Global</W>
+  <W>HelpContext</W>
+  <W>HelpFile</W>
+  <W>HomeDirDrive</W>
+  <W>HomeDirectory</W>
+  <W>HotKey</W>
+  <W>IconLocation</W>
+  <W>IgnoreCase</W>
+  <W>Interactive</W>
+  <W>IsAccountLocked</W>
+  <W>IsReady</W>
+  <W>IsRootFolder</W>
+  <W>Item</W>
+  <W>Key</W>
+  <W>LastLogin</W>
+  <W>LastLogoff</W>
+  <W>Length</W>
+  <W>Line</W>
+  <W>LockoutObservationInterval</W>
+  <W>LoginHours</W>
+  <W>LoginScript</W>
+  <W>LoginWorkstations</W>
+  <W>MaxBadPasswordsAllowed</W>
+  <W>MaxLogins</W>
+  <W>MaxPasswordAge</W>
+  <W>MaxStorage</W>
+  <W>MinPasswordAge</W>
+  <W>MinPasswordLength</W>
+  <W>Name</W>
+  <W>Number</W>
+  <W>ObjectSid</W>
+  <W>Parameters</W>
+  <W>ParentFolder</W>
+  <W>PasswordAge</W>
+  <W>PasswordExpirationDate</W>
+  <W>PasswordExpired</W>
+  <W>PasswordHistoryLength</W>
+  <W>Path</W>
+  <W>Pattern</W>
+  <W>PrimaryGroupID</W>
+  <W>Profile</W>
+  <W>Remove</W>
+  <W>RootFolder</W>
+  <W>ScriptFullName</W>
+  <W>ScriptName</W>
+  <W>SerialNumber</W>
+  <W>ShareName</W>
+  <W>ShortName</W>
+  <W>ShortPath</W>
+  <W>Size</W>
+  <W>Source</W>
+  <W>SpecialFolders</W>
+  <W>Subfolders</W>
+  <W>TargetPath</W>
+  <W>TotalSize</W>
+  <W>Type</W>
+  <W>UserDomain</W>
+  <W>UserFlags</W>
+  <W>UserName</W>
+  <W>Value</W>
+  <W>Version</W>
+  <W>VolumeName</W>
+  <W>WindowStyle</W>
+  <W>WorkingDirectory</W>
+ </KW>
+ <KW Name="Methods">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Attri>
+  <W>Add</W>
+  <W>AddPrinterConnection</W>
+  <W>AddWindowsPrinterConnection</W>
+  <W>AppActivate</W>
+  <W>BuildPath</W>
+  <W>Clear</W>
+  <W>Close</W>
+  <W>ConnectObject</W>
+  <W>Copy</W>
+  <W>CopyFile</W>
+  <W>CopyFolder</W>
+  <W>CreateFolder</W>
+  <W>CreateObject</W>
+  <W>CreateShortcut</W>
+  <W>CreateTextFile</W>
+  <W>Delete</W>
+  <W>DeleteFile</W>
+  <W>DeleteFolder</W>
+  <W>DisconnectObject</W>
+  <W>DriveExists</W>
+  <W>Echo</W>
+  <W>EnumNetworkDrives</W>
+  <W>EnumPrinterConnections</W>
+  <W>Exists</W>
+  <W>ExpandEnvironmentStrings</W>
+  <W>FileExists</W>
+  <W>FolderExists</W>
+  <W>GetAbsolutePathName</W>
+  <W>GetBaseName</W>
+  <W>GetDrive</W>
+  <W>GetDriveName</W>
+  <W>GetExtensionName</W>
+  <W>GetFile</W>
+  <W>GetFileName</W>
+  <W>GetFolder</W>
+  <W>GetParentFolderName</W>
+  <W>GetResource</W>
+  <W>GetSpecialFolder</W>
+  <W>GetTempName</W>
+  <W>Items</W>
+  <W>Keys</W>
+  <W>LogEvent</W>
+  <W>MapNetworkDrive</W>
+  <W>Move</W>
+  <W>MoveFile</W>
+  <W>MoveFolder</W>
+  <W>OpenAsTextStream</W>
+  <W>OpenTextFile</W>
+  <W>Popup</W>
+  <W>Put</W>
+  <W>Quit</W>
+  <W>Raise</W>
+  <W>Read</W>
+  <W>ReadAll</W>
+  <W>ReadLine</W>
+  <W>RegDelete</W>
+  <W>RegRead</W>
+  <W>RegWrite</W>
+  <W>RemoveAll</W>
+  <W>RemoveNetworkDrive</W>
+  <W>RemovePrinterConnection</W>
+  <W>Replace</W>
+  <W>Run</W>
+  <W>Save</W>
+  <W>SendKeys</W>
+  <W>SetDefaultPrinter</W>
+  <W>Skip</W>
+  <W>SkipLine</W>
+  <W>Sleep</W>
+  <W>SetInfo</W>
+  <W>Test</W>
+  <W>Write</W>
+  <W>WriteBlankLines</W>
+  <W>WriteLine</W>
+ </KW>
+ <KW Name="Objects">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>Dictionary</W>
+  <W>Err</W>
+  <W>File</W>
+  <W>FileSystemObject</W>
+  <W>Folder</W>
+  <W>Match</W>
+  <W>RegExp</W>
+  <W>TextStream</W>
+  <W>Wscript</W>
+  <W>WshNetwork</W>
+  <W>WshShell</W>
+ </KW>
+ <KW Name="Constants">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32896</Fore>
+   <Style></Style>
+  </Attri>
+  <W>False</W>
+  <W>FALSE</W>
+  <W>True</W>
+  <W>TRUE</W>
+  <W>vbAbort</W>
+  <W>vbAbortRetryIgnore</W>
+  <W>vbApplicationModal</W>
+  <W>vbArray</W>
+  <W>vbBinaryCompare</W>
+  <W>vbBlack</W>
+  <W>vbBlue</W>
+  <W>vbBoolean</W>
+  <W>vbByte</W>
+  <W>vbCancel</W>
+  <W>vbCr</W>
+  <W>vbCritical</W>
+  <W>vbCrLf</W>
+  <W>vbCurrency</W>
+  <W>vbCyan</W>
+  <W>vbDataObject</W>
+  <W>vbDate</W>
+  <W>vbDecimal</W>
+  <W>vbDefaultButton1</W>
+  <W>vbDefaultButton2</W>
+  <W>vbDefaultButton3</W>
+  <W>vbDefaultButton4</W>
+  <W>vbDouble</W>
+  <W>vbEmpty</W>
+  <W>vbError</W>
+  <W>vbExclamation</W>
+  <W>vbFirstFourDays</W>
+  <W>vbFirstFullWeek</W>
+  <W>vbFirstJan1</W>
+  <W>vbFormFeed</W>
+  <W>vbFriday</W>
+  <W>vbGeneralDate</W>
+  <W>vbGreen</W>
+  <W>vbIgnore</W>
+  <W>vbInformation</W>
+  <W>vbInteger</W>
+  <W>vbLf</W>
+  <W>vbLong</W>
+  <W>vbLongDate</W>
+  <W>vbLongTime</W>
+  <W>vbMagenta</W>
+  <W>vbMonday</W>
+  <W>vbNewLine</W>
+  <W>vbNo</W>
+  <W>vbNull</W>
+  <W>vbNullChar</W>
+  <W>vbNullString</W>
+  <W>vbObject</W>
+  <W>vbObjectError</W>
+  <W>vbOK</W>
+  <W>vbOKCancel</W>
+  <W>vbOKOnly</W>
+  <W>vbQuestion</W>
+  <W>vbRed</W>
+  <W>vbRetry</W>
+  <W>vbRetryCancel</W>
+  <W>vbSaturday</W>
+  <W>vbShortDate</W>
+  <W>vbShortTime</W>
+  <W>vbSingle</W>
+  <W>vbString</W>
+  <W>vbSunday</W>
+  <W>vbSystemModal</W>
+  <W>vbTab</W>
+  <W>vbTextCompare</W>
+  <W>vbThursday</W>
+  <W>vbTuesday</W>
+  <W>vbUseSystem</W>
+  <W>vbUseSystemDayOfWeek</W>
+  <W>vbVariant</W>
+  <W>vbVerticalTab</W>
+  <W>vbWednesday</W>
+  <W>vbWhite</W>
+  <W>vbYellow</W>
+  <W>vbYes</W>
+  <W>vbYesNo</W>
+  <W>vbYesNoCancel</W>
+ </KW>
+  <Range Name="Remarks">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>'</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Strings">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

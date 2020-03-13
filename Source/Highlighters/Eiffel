@@ -1,0 +1,49 @@
+[Basic Types]
+Background=536870911
+Foreground=16711680
+Style=1
+
+[Comment]
+Background=536870911
+Foreground=8421376
+Style=2
+
+[Identifier]
+Background=536870911
+Foreground=128
+Style=0
+
+[Lace]
+Background=536870911
+Foreground=8388608
+Style=1
+
+[Operator And Symbols]
+Background=536870911
+Foreground=32896
+Style=1
+
+[Predefined]
+Background=536870911
+Foreground=255
+Style=1
+
+[Reserved Word]
+Background=536870911
+Foreground=8388608
+Style=1
+
+[Result Value]
+Background=536870911
+Foreground=8388736
+Style=1
+
+[Space]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[String]
+Background=536870911
+Foreground=8421504
+Style=2

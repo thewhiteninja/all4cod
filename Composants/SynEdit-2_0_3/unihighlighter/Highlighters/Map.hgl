@@ -1,0 +1,177 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>MAP File</Name>
+   <FileTypeName>MAP</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:map.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5498677199</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	,.:</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Section/symbol typ">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>BIT</W>
+  <W>BTW</W>
+  <W>BYT</W>
+  <W>CODE</W>
+  <W>D16</W>
+  <W>DATA</W>
+  <W>DT3</W>
+  <W>DT4</W>
+  <W>DT8</W>
+  <W>FAR</W>
+  <W>HDAT</W>
+  <W>INT</W>
+  <W>LDAT</W>
+  <W>NEA</W>
+  <W>PDAT</W>
+  <W>REG</W>
+  <W>TSK</W>
+  <W>WOR</W>
+ </KW>
+ <KW Name="Align type">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>BITA</W>
+  <W>BYTE</W>
+  <W>DWORD</W>
+  <W>IRAM</W>
+  <W>PAGE</W>
+  <W>PECA</W>
+  <W>SEGM</W>
+  <W>WORD</W>
+ </KW>
+ <KW Name="COMBINE TYPE">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>AT</W>
+  <W>COMM</W>
+  <W>GLOB</W>
+  <W>GUSK</W>
+  <W>PRIV</W>
+  <W>PUBL</W>
+  <W>SSTK</W>
+  <W>USTK</W>
+ </KW>
+ <KW Name="ABS/RAM">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>ABS</W>
+  <W>RAM</W>
+ </KW>
+ <KW Name="Reserved/ROM">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Attri>
+  <W>ROM</W>
+  <W>Reserved</W>
+ </KW>
+ <KW Name="Symbol location">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32896</Fore>
+   <Style></Style>
+  </Attri>
+  <W>?FI</W>
+  <W>?LI</W>
+  <W>?SY</W>
+  <W>EXT</W>
+  <W>GLB</W>
+  <W>LOC</W>
+  <W>PUB</W>
+ </KW>
+ <KW Name="C-classes">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744448</Fore>
+   <Style></Style>
+  </Attri>
+  <W>CBITS</W>
+  <W>CBITWORDS</W>
+  <W>CFAR</W>
+  <W>CFARROM</W>
+  <W>CHUGE</W>
+  <W>CHUGEROM</W>
+  <W>CINITIRAM</W>
+  <W>CINITROM</W>
+  <W>CIRAM</W>
+  <W>CNEAR</W>
+  <W>CNEAR2</W>
+  <W>CPROGRAM</W>
+  <W>CROM</W>
+  <W>CSHUGE</W>
+  <W>CSHUGEROM</W>
+  <W>CSYSTEM</W>
+  <W>CUSTACK</W>
+  <W>C_INIT</W>
+ </KW>
+ <KW Name="Library-classes">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744576</Fore>
+   <Style></Style>
+  </Attri>
+  <W>CLIBRARY</W>
+  <W>RTLIBRARY</W>
+  <W>SHAREDCLIB</W>
+  <W>SHAREDRTLIB</W>
+ </KW>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

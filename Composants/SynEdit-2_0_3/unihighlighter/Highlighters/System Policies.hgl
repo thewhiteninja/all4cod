@@ -1,0 +1,153 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Systempolicies</Name>
+   <FileTypeName>ADM</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:systempolicies.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37650.2975663426</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	!&qt;$%&amp;'()*+,./:;&lt;=&gt;?\^{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key Words 1">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>MACHINE</W>
+  <W>USER</W>
+ </KW>
+ <KW Name="Key Words 2">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>[STRINGS]</W>
+  <W>CATEGORY</W>
+  <W>CLASS</W>
+  <W>END</W>
+  <W>PART</W>
+  <W>POLICY</W>
+ </KW>
+ <KW Name="Key Words 3">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>ACTIONLISTOFF</W>
+  <W>ACTIONLISTON</W>
+  <W>CHECKBOX</W>
+  <W>COMBOBOX</W>
+  <W>DELETE</W>
+  <W>DISABLED</W>
+  <W>DROPDOWNLIST</W>
+  <W>EDITTEXT</W>
+  <W>ENABLED</W>
+  <W>KEYNAME</W>
+  <W>LISTBOX</W>
+  <W>NAME</W>
+  <W>NUMERIC</W>
+  <W>TEXT</W>
+  <W>VALUE</W>
+  <W>VALUENAME</W>
+  <W>VALUEOFF</W>
+  <W>VALUEON</W>
+ </KW>
+ <KW Name="Key Words 4">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>ACTIONLIST</W>
+  <W>ADDITIVE</W>
+  <W>DEFAULT</W>
+  <W>DEFCHECKED</W>
+  <W>EXPANDABLETEXT</W>
+  <W>EXPLICITVALUE</W>
+  <W>ITEMLIST</W>
+  <W>MAX</W>
+  <W>MAXLEN</W>
+  <W>MIN</W>
+  <W>REQUIRED</W>
+  <W>SPIN</W>
+  <W>SUGGESTIONS</W>
+  <W>TXTCONVERT</W>
+  <W>VALUEPREFIX</W>
+ </KW>
+ <KW Name="Key Words 5">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Attri>
+  <W>#ENDIF</W>
+  <W>#IF</W>
+  <W>NOSORT</W>
+  <W>VERSION</W>
+ </KW>
+  <Range Name="Remarks ;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>;</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

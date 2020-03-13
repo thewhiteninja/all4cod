@@ -1,0 +1,94 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Galaxy</Name>
+   <FileTypeName></FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.544509375</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>#END</W>
+  <W>#GALAXY</W>
+  <W>ANONYMOUS</W>
+  <W>AUTOUNLOAD</W>
+  <W>BATTLEPROTOCOL</W>
+  <W>CAP</W>
+  <W>CARGO</W>
+  <W>COL</W>
+  <W>COMPRESS</W>
+  <W>DRIVE</W>
+  <W>EMP</W>
+  <W>FLEET</W>
+  <W>FLEETTABLES</W>
+  <W>GALAXYTV</W>
+  <W>GPLUS</W>
+  <W>GROUPFORECAST</W>
+  <W>MACHINEREPORT</W>
+  <W>MAT</W>
+  <W>NAMECASE</W>
+  <W>NO</W>
+  <W>OPTIONS</W>
+  <W>PLANETFORECAST</W>
+  <W>PRODTABLE</W>
+  <W>PRODUCE</W>
+  <W>ROUTESFORECAST</W>
+  <W>SEND</W>
+  <W>SHIELDS</W>
+  <W>SHIPTYPEFORECAST</W>
+  <W>SORTGROUPS</W>
+  <W>TWOCOL</W>
+  <W>UNDERSCORES</W>
+  <W>WAR</W>
+  <W>WEAPONS</W>
+ </KW>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

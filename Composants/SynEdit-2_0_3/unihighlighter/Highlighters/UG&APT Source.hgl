@@ -1,0 +1,196 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>UG/APT Source</Name>
+   <FileTypeName>CLS GRS</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:ugapt.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5684409375</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	!&qt;%&amp;'()*+,./:;&lt;=&gt;?@[\]^{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="UI">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>CALL</W>
+  <W>CHOOSE</W>
+  <W>GPOS</W>
+  <W>IDENT</W>
+  <W>LOAD</W>
+  <W>MACRO</W>
+  <W>PARAM</W>
+  <W>TERMAC</W>
+  <W>TEXT</W>
+ </KW>
+ <KW Name="CRITICAL">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>RAPID</W>
+ </KW>
+ <KW Name="LOGIC_elec">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>AUXFUN</W>
+  <W>INSERT</W>
+  <W>IF</W>
+  <W>JUMP</W>
+  <W>MODE</W>
+  <W>PLABEL</W>
+  <W>POSTN</W>
+  <W>PREFUN</W>
+ </KW>
+ <KW Name="Keywords">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Attri>
+  <W>COPY</W>
+  <W>INDEX</W>
+  <W>OPSKIP</W>
+  <W>TRACUT</W>
+  <W>TRANS</W>
+ </KW>
+ <KW Name="FILE OPS">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32896</Fore>
+   <Style></Style>
+  </Attri>
+  <W>APPEND</W>
+  <W>CREATE</W>
+  <W>DELIM</W>
+  <W>FILE</W>
+  <W>FETCH</W>
+  <W>FPRINT</W>
+  <W>FTERM</W>
+  <W>READ</W>
+  <W>RESET</W>
+  <W>WRITE</W>
+ </KW>
+ <KW Name="keywords 2">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744448</Fore>
+   <Style></Style>
+  </Attri>
+  <W>LOADTL</W>
+ </KW>
+ <KW Name="key words 3">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744576</Fore>
+   <Style></Style>
+  </Attri>
+  <W>COOLNT</W>
+  <W>SPINDL</W>
+ </KW>
+  <Range Name="Remarks PPR">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>PPR</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Remarks MSY">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>MSY</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Remarks $..">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>$</OpenSymbol>
+  <CloseSymbol>$</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

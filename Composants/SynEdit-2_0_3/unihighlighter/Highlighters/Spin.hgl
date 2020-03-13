@@ -1,0 +1,203 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Spin</Name>
+   <FileTypeName>SPIN SPN</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:spin.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5612597685</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	&qt;%&amp;'()*,./;@[\]^{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Types">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>bit</W>
+  <W>bool</W>
+  <W>byte</W>
+  <W>chan</W>
+  <W>int</W>
+  <W>local</W>
+  <W>mtype</W>
+  <W>short</W>
+  <W>typedef</W>
+  <W>unsigned</W>
+ </KW>
+ <KW Name="Declarative keywords">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>assert</W>
+  <W>init</W>
+  <W>priority</W>
+  <W>proctype</W>
+  <W>provided</W>
+ </KW>
+ <KW Name="Command keywords">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>active</W>
+  <W>break</W>
+  <W>do</W>
+  <W>else</W>
+  <W>empty</W>
+  <W>enabled</W>
+  <W>eval</W>
+  <W>fi</W>
+  <W>full</W>
+  <W>goto</W>
+  <W>if</W>
+  <W>inline</W>
+  <W>len</W>
+  <W>nempty</W>
+  <W>nfull</W>
+  <W>od</W>
+  <W>of</W>
+  <W>printf</W>
+  <W>run</W>
+  <W>skip</W>
+  <W>timeout</W>
+  <W>xr</W>
+  <W>xs</W>
+ </KW>
+ <KW Name="Channel operators">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>?</W>
+  <W>??</W>
+  <W>!</W>
+  <W>!!</W>
+  <W>@</W>
+ </KW>
+ <KW Name="Operators">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Attri>
+  <W>!=</W>
+  <W>+</W>
+  <W>-</W>
+  <W>-&gt;</W>
+  <W>::</W>
+  <W>&lt;</W>
+  <W>&lt;=</W>
+  <W>==</W>
+  <W>&gt;</W>
+  <W>&gt;=</W>
+  <W>unless</W>
+ </KW>
+ <KW Name="Predefines">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32896</Fore>
+   <Style></Style>
+  </Attri>
+  <W>_</W>
+  <W>_last</W>
+  <W>_pid</W>
+  <W>cond_expr</W>
+  <W>false</W>
+  <W>np_</W>
+  <W>pc_value</W>
+  <W>STDIN</W>
+  <W>true</W>
+ </KW>
+ <KW Name="Label headers">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744448</Fore>
+   <Style></Style>
+  </Attri>
+  <W>accept</W>
+  <W>end</W>
+  <W>progress</W>
+ </KW>
+ <KW Name="Simulation keywords">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744576</Fore>
+   <Style></Style>
+  </Attri>
+  <W>atomic</W>
+  <W>d_step</W>
+  <W>hidden</W>
+  <W>ltl</W>
+  <W>never</W>
+  <W>notrace</W>
+  <W>trace</W>
+  <W>show</W>
+ </KW>
+  <Range Name="Remarks /*..*/">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>/*</OpenSymbol>
+  <CloseSymbol>*/</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

@@ -1,0 +1,12 @@
+wrap-asp:no
+wrap-attributes:no
+wrap-jste:no
+wrap-php:no
+wrap-script-literals:no
+wrap-sections:no
+vertical-space:no
+wrap:0
+hide-comments:yes
+hide-endtags:yes
+bare:yes
+write-back:yes:no

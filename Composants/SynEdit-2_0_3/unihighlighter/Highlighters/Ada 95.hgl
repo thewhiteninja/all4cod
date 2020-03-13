@@ -1,0 +1,219 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Ada 95</Name>
+   <FileTypeName>ADA ADB ADS A</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>38773,4559597338</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S> -- make output stream unbuffered</S>
+   <S>Write (Spout, &qt;Connected&qt; &amp; Onions.OS.New_Line);</S>
+   <S>procedure Connect is</S>
+   <S>   Shutdown     : Boolean := False;</S>
+   <S>   Default_Port : constant Interfaces.C.unsigned_short := 80;</S>
+   <S>   Sperr := Open (new File_Output_Stream, Stderr);</S>
+   <S>with Ada.Command_Line;</S>
+   <S>   if Ada.Command_Line.Argument_Count = 2 then</S>
+   <S>      Host_Port := Interfaces.C.unsigned_short</S>
+   <S>                      (Integer'Value (Ada.Command_Line.Argument (2)));</S>
+   <S>   else</S>
+   <S>      Host_Port := Default_Port;</S>
+   <S>   end if;</S>
+   <S>   Set_Timeout (Spin, 300);</S>
+   <S> while not Shutdown loop</S>
+   <S>    begin</S>
+   <S>       Read (Incoming, Blist);</S>
+   <S>       Write (Spout, Blist);</S>
+   <S>    exception</S>
+   <S>       when Onions.Instreams.End_Error =&gt;</S>
+   <S>          Flush (Spout);</S>
+   <S>          Write (Sperr, &qt;Disconnected by host&qt; &amp; Onions.OS.New_Line);</S>
+   <S>          Shutdown := True;</S>
+   <S>       when Onions.Instreams.Timeout_Exceeded =&gt;</S>
+   <S>          null;</S>
+   <S>       when others =&gt;</S>
+   <S>          Shutdown := True;</S>
+   <S>          raise;</S>
+   <S>    end;</S>
+   <S> end loop;</S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>abort</W>
+  <W>abs</W>
+  <W>abstract</W>
+  <W>accept</W>
+  <W>access</W>
+  <W>aliased</W>
+  <W>all</W>
+  <W>and</W>
+  <W>array</W>
+  <W>at</W>
+  <W>begin</W>
+  <W>body</W>
+  <W>case</W>
+  <W>constant</W>
+  <W>declare</W>
+  <W>delay</W>
+  <W>delta</W>
+  <W>digits</W>
+  <W>do</W>
+  <W>else</W>
+  <W>elsif</W>
+  <W>end</W>
+  <W>entry</W>
+  <W>exception</W>
+  <W>exit</W>
+  <W>for</W>
+  <W>function</W>
+  <W>goto</W>
+  <W>generic</W>
+  <W>if</W>
+  <W>in</W>
+  <W>is</W>
+  <W>limited</W>
+  <W>loop</W>
+  <W>mod</W>
+  <W>new</W>
+  <W>not</W>
+  <W>null</W>
+  <W>of</W>
+  <W>or</W>
+  <W>others</W>
+  <W></W>
+  <W>out</W>
+  <W>package</W>
+  <W>pragma</W>
+  <W>private</W>
+  <W>procedure</W>
+  <W>protected</W>
+  <W>raise</W>
+  <W>range</W>
+  <W>record</W>
+  <W>rem</W>
+  <W>renames</W>
+  <W>requeue</W>
+  <W>return</W>
+  <W>reverse</W>
+  <W>select</W>
+  <W>separate</W>
+  <W>subtype</W>
+  <W>tagged</W>
+  <W>task</W>
+  <W>terminate</W>
+  <W>then</W>
+  <W>type</W>
+  <W>until</W>
+  <W>use</W>
+  <W>when</W>
+  <W>while</W>
+  <W>with</W>
+  <W>xor</W>
+ </KW>
+ <KW Name="Types">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>boolean</W>
+  <W>integer</W>
+  <W>false</W>
+  <W>float</W>
+  <W>natural</W>
+  <W>positive</W>
+  <W>real</W>
+  <W>true</W>
+  <W>vector</W>
+ </KW>
+  <Range Name="Strings &amp;amp;qt;..&amp;amp;qt;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>3459930</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Remarks --">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>--</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>
+Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

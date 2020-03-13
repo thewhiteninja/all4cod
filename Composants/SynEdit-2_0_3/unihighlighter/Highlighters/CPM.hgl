@@ -1,0 +1,285 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>CPM</Name>
+   <FileTypeName></FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5331772338</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>{ COAS Product Manager report (RDF) }</S>
+   <S>PARAM</S>
+   <S>  LANGUAGE;</S>
+   <S>  CONTINUE;</S>
+   <S>END; { Param }</S>
+   <S></S>
+   <S>GLOBALS</S>
+   <S>  LANGUAGE = LOCAL;</S>
+   <S>END; { Globals }</S>
+   <S></S>
+   <S>DEFINITION BLOCK &qt;MAIN&qt;</S>
+   <S>VARIABLES</S>
+   <S>  S_Query = &qt;&qt;;</S>
+   <S>  V_OraErr = -1;</S>
+   <S>  V_Count;</S>
+   <S>BEGIN</S>
+   <S>  ASSIGN(S_Query, &qt;SELECT * FROM DUAL&qt;);</S>
+   <S>  SQL_CREATE(V_OraErr, S_Query);</S>
+   <S>  ASSIGN(V_Count, V_NoneReal);</S>
+   <S>END;</S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>IF</W>
+  <W>OF</W>
+  <W>END</W>
+  <W>CASE</W>
+  <W>CHR</W>
+  <W>FOLD</W>
+  <W>BEGIN</W>
+  <W>ELSE</W>
+  <W>BLOCK</W>
+  <W>THEN</W>
+  <W>MERGE</W>
+  <W>PARAM</W>
+  <W>MEMBER</W>
+  <W>FLOW</W>
+  <W>WHILE</W>
+  <W>LOOP</W>
+  <W>CLIENT</W>
+  <W>REPEAT</W>
+  <W>GLOBALS</W>
+  <W>INCLUDE</W>
+  <W>LANGUAGE</W>
+  <W>PARENT</W>
+  <W>MATCHING</W>
+  <W>USEDBY</W>
+  <W>EXECUTE</W>
+  <W>PARSEINC</W>
+  <W>VARIABLES</W>
+  <W>PDRIVER</W>
+  <W>CATEGORY</W>
+  <W>METAFLOW</W>
+  <W>PRINTER</W>
+  <W>CONTINUE</W>
+  <W>DEFINITION</W>
+  <W>OPTIONS</W>
+  <W>SORTUP</W>
+  <W>PRINTFILE</W>
+  <W>OUTPUT</W>
+  <W>SORTKEY</W>
+  <W>GROUPUP</W>
+  <W>SUPPLIER</W>
+  <W>COUNTRY</W>
+  <W>GROUPHEADER</W>
+  <W>GROUPKEY</W>
+  <W>ENTITYCODE</W>
+  <W>CONSTANTS</W>
+  <W>ALLENTITIES</W>
+  <W>SORTDOWN</W>
+  <W>GROUPDOWN</W>
+  <W>EMPTYSHEET</W>
+  <W>GLOBALVARIABLES</W>
+  <W>ALLPRODUCTS</W>
+  <W>ORGANISATION</W>
+  <W>REPORTLEVEL</W>
+  <W>VAROPTIONS</W>
+  <W>SKIPEMTPTY</W>
+  <W>GROUPFOOTER</W>
+  <W>ALLSUPPLIERS</W>
+  <W>STROPTIONS</W>
+  <W>ALLPROPERTIES</W>
+  <W>GLOBALCONSTANTS</W>
+  <W>LOWERLEVELSTOO</W>
+  <W>PROPERTYGROUP</W>
+  <W>DISTINCT_EXECUTE</W>
+  <W>SUPPLIESOFMEMBERS</W>
+  <W>ALLQUALITYPROPERTIES</W>
+ </KW>
+ <KW Name="System">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>DECR</W>
+  <W>LOCAL</W>
+  <W>INCR</W>
+  <W>SUM</W>
+  <W>DIVIDE</W>
+  <W>RAVAL</W>
+  <W>SQR</W>
+  <W>FILEEND</W>
+  <W>FILEDATE</W>
+  <W>LENGTH</W>
+  <W>ROOT</W>
+  <W>ASSIGN</W>
+  <W>ROUND</W>
+  <W>FOREIGN</W>
+  <W>TRUNC</W>
+  <W>RASTR</W>
+  <W>FILETIME</W>
+  <W>FILEDELETE</W>
+  <W>MIDSTR</W>
+  <W>FILEREADLN</W>
+  <W>FILECLOSE</W>
+  <W>FILEAPPEND</W>
+  <W>LTRUNC</W>
+  <W>FILESIZE</W>
+  <W>COPYFILE</W>
+  <W>FILECOPY</W>
+  <W>MESSAGEDLG</W>
+  <W>FILERESET</W>
+  <W>LLENSTR</W>
+  <W>LEFTSTR</W>
+  <W>FILEASSIGN</W>
+  <W>SUBTRACT</W>
+  <W>FILESORT</W>
+  <W>RLENSTR</W>
+  <W>STRPOS</W>
+  <W>LOCASESTR</W>
+  <W>READINSTANCE</W>
+  <W>EQUALVALUE</W>
+  <W>RIGHTSTR</W>
+  <W>CENTERSTR</W>
+  <W>UPCASESTR</W>
+  <W>FILTERSTR</W>
+  <W>FILEEXISTS</W>
+  <W>MULTIPLY</W>
+  <W>FILEWRITELN</W>
+  <W>SHOWMESSAGE</W>
+  <W>CHARRLENSTR</W>
+  <W>LASTINSTANCE</W>
+  <W>REPEATCOUNT</W>
+  <W>STRIPSTR</W>
+  <W>EQUALSTRING</W>
+  <W>PREVINSTANCE</W>
+  <W>CHARREPLACESTR</W>
+  <W>NEXTINSTANCE</W>
+  <W>CHARRLLENSTR</W>
+  <W>FIRSTINSTANCE</W>
+  <W>ZERORLENSTR</W>
+  <W>READREPEATINSTANCE</W>
+  <W>PREVREPEATINSTANCE</W>
+  <W>NEXTREPEATINSTANCE</W>
+  <W>FILEREWRITE</W>
+ </KW>
+ <KW Name="SQL Keys">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>SQL_ADD</W>
+  <W>SQL_EOF</W>
+  <W>SQL_MLADD</W>
+  <W>SQL_FREE</W>
+  <W>SQL_CREATE</W>
+  <W>SQL_DUMP</W>
+  <W>SQL_NEXT</W>
+  <W>SQL_ASFLOAT</W>
+  <W>SQL_EXECUTE</W>
+  <W>SQL_SETVAR</W>
+  <W>SQL_ASSTRING</W>
+  <W>SQL_MLMULTIADD</W>
+ </KW>
+ <KW Name="Special Variables">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>V_FALSE</W>
+  <W>V_TIME</W>
+  <W>V_TRUE</W>
+  <W>V_NONEREAL</W>
+  <W>V_PAR_LANGUAGE</W>
+  <W>V_PAR_LANGUAGE_FIELDS</W>
+  <W>V_PAR_LANGUAGE_COUNT</W>
+ </KW>
+  <Range Name="Strings">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Remarks">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>{</OpenSymbol>
+  <CloseSymbol>}</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

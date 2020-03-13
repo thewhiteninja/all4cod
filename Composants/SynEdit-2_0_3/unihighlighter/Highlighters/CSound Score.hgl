@@ -1,0 +1,127 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>CSound score</Name>
+   <FileTypeName>sco</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:csoundscore.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5343232176</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>&qt;&amp;'()*+,-./:&lt;=&gt;?[]^{}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Operators">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>-</W>
+  <W>!</W>
+  <W>%</W>
+  <W>&amp;</W>
+  <W>(</W>
+  <W>)</W>
+  <W>*</W>
+  <W>,</W>
+  <W>.</W>
+  <W>/</W>
+  <W>//</W>
+  <W>?</W>
+  <W>^</W>
+  <W>|</W>
+  <W>+</W>
+  <W>&lt;</W>
+  <W>=</W>
+  <W>&gt;</W>
+  <W>abs</W>
+  <W>add</W>
+  <W>cos</W>
+  <W>cosh</W>
+  <W>cosinv</W>
+  <W>di</W>
+  <W>divz</W>
+  <W>e</W>
+  <W>exp</W>
+  <W>log</W>
+  <W>log10</W>
+  <W>logbtwo</W>
+  <W>mac</W>
+  <W>maca</W>
+  <W>mod</W>
+  <W>mul</W>
+  <W>pow</W>
+  <W>powoftwo</W>
+  <W>product</W>
+  <W>sin</W>
+  <W>sinh</W>
+  <W>sininv</W>
+  <W>sqrt</W>
+  <W>sub</W>
+  <W>sum</W>
+  <W>tan</W>
+  <W>tanh</W>
+  <W>taninv</W>
+  <W>taninv2</W>
+ </KW>
+  <Range Name="Remarks ;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>;</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

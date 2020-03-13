@@ -1,0 +1,171 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Visual Studio Solution</Name>
+   <FileTypeName></FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5706766667</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>Microsoft Visual Studio Solution File, Format Version 7.00</S>
+   <S>Project(&qt;{F184B08F-C81C-45F6-A57F-5ABD9991F28F}&qt;) = &qt;VehicleSampleBO&qt;, &qt;VehicleBO\VehicleSampleBO.vbproj&qt;, &qt;{79FD7157-F603-4570-8C03-64A887F4728B}&qt;</S>
+   <S>EndProject</S>
+   <S>Project(&qt;{F184B08F-C81C-45F6-A57F-5ABD9991F28F}&qt;) = &qt;VehicleSampleBaseClient&qt;, &qt;VehicleSampleBaseClient\VehicleSampleBaseClient.vbproj&qt;, &qt;{7D9714BC-31AB-4265-81D0-37421E2021D5}&qt;</S>
+   <S>EndProject</S>
+   <S>Global</S>
+   <S>        GlobalSection(SolutionConfiguration) = preSolution</S>
+   <S>		ConfigName.0 = Debug</S>
+   <S>		ConfigName.1 = Release</S>
+   <S>	EndGlobalSection</S>
+   <S>	GlobalSection(ProjectDependencies) = postSolution</S>
+   <S>	EndGlobalSection</S>
+   <S>	GlobalSection(ProjectConfiguration) = postSolution</S>
+   <S>		{79FD7157-F603-4570-8C03-64A887F4728B}.Debug.ActiveCfg = Debug|.NET</S>
+   <S>		{79FD7157-F603-4570-8C03-64A887F4728B}.Debug.Build.0 = Debug|.NET</S>
+   <S>		{79FD7157-F603-4570-8C03-64A887F4728B}.Release.ActiveCfg = Release|.NET</S>
+   <S>		{79FD7157-F603-4570-8C03-64A887F4728B}.Release.Build.0 = Release|.NET</S>
+   <S>		{7D9714BC-31AB-4265-81D0-37421E2021D5}.Debug.ActiveCfg = Debug|.NET</S>
+   <S>		{7D9714BC-31AB-4265-81D0-37421E2021D5}.Debug.Build.0 = Debug|.NET</S>
+   <S>		{7D9714BC-31AB-4265-81D0-37421E2021D5}.Release.ActiveCfg = Release|.NET</S>
+   <S>		{7D9714BC-31AB-4265-81D0-37421E2021D5}.Release.Build.0 = Release|.NET</S>
+   <S>	EndGlobalSection</S>
+   <S>	GlobalSection(ExtensibilityGlobals) = postSolution</S>
+   <S>	EndGlobalSection</S>
+   <S>	GlobalSection(ExtensibilityAddIns) = postSolution</S>
+   <S>	EndGlobalSection</S>
+   <S>EndGlobal</S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Title">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388863</Fore>
+   <Style></Style>
+  </Attri>
+  <W>Microsoft Visual Studio Solution File, Format Version 7.00</W>
+ </KW>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>Project</W>
+  <W>EndProject</W>
+  <W>Global</W>
+  <W>GlobalSection</W>
+  <W>EndGlobalSection</W>
+  <W>EndGlobal</W>
+ </KW>
+ <KW Name="Versions">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>Debug</W>
+  <W>.NET</W>
+  <W>Release</W>
+  <W>postSolution</W>
+  <W>preSolution</W>
+ </KW>
+  <Range Name="Strings">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+   <Range Name="CLSID">
+   <Def>
+    <Back>16777215</Back>
+    <Fore>16711808</Fore>
+    <Style></Style>
+   </Def>
+   <Num>
+    <Back>16777215</Back>
+    <Fore>16711808</Fore>
+    <Style></Style>
+   </Num>
+   <OpenSymbol>{</OpenSymbol>
+   <CloseSymbol>}</CloseSymbol>
+   <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+   <AnyTerm>True</AnyTerm>
+   <CloseOnTerm>False</CloseOnTerm>
+   <CloseOnEol>False</CloseOnEol>
+   <CaseSensitive>True</CaseSensitive>
+   </Range>
+  </Range>
+  <Range Name="CLSID">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>{</OpenSymbol>
+  <CloseSymbol>}</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

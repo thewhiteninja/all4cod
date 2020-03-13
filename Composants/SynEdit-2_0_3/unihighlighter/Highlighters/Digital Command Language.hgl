@@ -1,0 +1,213 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Digital Command Language</Name>
+   <FileTypeName>COM com</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:dcl.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5354473032</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;%&amp;()+,/:;&lt;=&gt;?[\]^{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Lexicals">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>F$CONTEXT</W>
+  <W>F$CSID</W>
+  <W>F$CVSI</W>
+  <W>F$CVTIME</W>
+  <W>F$CVUI</W>
+  <W>F$DEVICE</W>
+  <W>F$DIRECTORY</W>
+  <W>F$EDIT</W>
+  <W>F$ELEMENT</W>
+  <W>F$ENVIRONMENT</W>
+  <W>F$EXTRACT</W>
+  <W>F$FAO</W>
+  <W>F$FILE_ATTRIBUTES</W>
+  <W>F$GETDVI</W>
+  <W>F$GETENV</W>
+  <W>F$GETJPI</W>
+  <W>F$GETQUI</W>
+  <W>F$GETSYI</W>
+  <W>F$IDENTIFIER</W>
+  <W>F$INTEGER</W>
+  <W>F$LENGTH</W>
+  <W>F$LOCATE</W>
+  <W>F$MESSAGE</W>
+  <W>F$MODE</W>
+  <W>F$PARSE</W>
+  <W>F$PID</W>
+  <W>F$PRIVILEGE</W>
+  <W>F$PROCESS</W>
+  <W>F$SEARCH</W>
+  <W>F$SETPRV</W>
+  <W>F$STRING</W>
+  <W>F$TIME</W>
+  <W>F$TRNLNM</W>
+  <W>F$TYPE</W>
+  <W>F$USER</W>
+  <W>F$VERIFY</W>
+ </KW>
+ <KW Name="Redirection">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>Exit</W>
+  <W>Gosub</W>
+  <W>Goto</W>
+  <W>Return</W>
+ </KW>
+ <KW Name="Logic">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>.And.</W>
+  <W>.Not.</W>
+  <W>.Or.</W>
+  <W>Else</W>
+  <W>EndIf</W>
+  <W>If</W>
+  <W>Then</W>
+  <W>=</W>
+ </KW>
+ <KW Name="Integer Operators">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>+</W>
+  <W>-</W>
+  <W>*</W>
+  <W>//</W>
+  <W>/</W>
+  <W>.EQ.</W>
+  <W>.GE.</W>
+  <W>.GT.</W>
+  <W>.LE.</W>
+  <W>.LT.</W>
+  <W>.NE.</W>
+ </KW>
+ <KW Name="String Operators">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Attri>
+  <W>.EQS.</W>
+  <W>.GES.</W>
+  <W>.GTS.</W>
+  <W>.LES.</W>
+  <W>.LTS.</W>
+  <W>.NES.</W>
+ </KW>
+ <KW Name="Keywords">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32896</Fore>
+   <Style></Style>
+  </Attri>
+  <W>ASSIGN</W>
+  <W>CLOSE</W>
+  <W>DEFAULT</W>
+  <W>DEFINE</W>
+  <W>INQUIRE</W>
+  <W>OPEN</W>
+  <W>PROMPT</W>
+  <W>SET</W>
+  <W>SUBMIT</W>
+  <W>WRITE</W>
+ </KW>
+ <KW Name="Miscellaneous">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744448</Fore>
+   <Style></Style>
+  </Attri>
+  <W>LOG</W>
+  <W>NOLOG</W>
+  <W>NOPUNC</W>
+  <W>PUNC</W>
+  <W>SYS$INPUT</W>
+  <W>SYS$LOGIN</W>
+  <W>SYS$OUTPUT</W>
+  <W>SYS$SYSTEM</W>
+ </KW>
+ <KW Name="Dollar Sign">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16744576</Fore>
+   <Style></Style>
+  </Attri>
+  <W>$</W>
+ </KW>
+  <Range Name="Remarks !">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>!</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

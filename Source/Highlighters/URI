@@ -1,0 +1,9 @@
+[URI]
+Background=536870911
+Foreground=16711680
+Style=6
+
+[Visited URI]
+Background=536870911
+Foreground=8388736
+Style=4

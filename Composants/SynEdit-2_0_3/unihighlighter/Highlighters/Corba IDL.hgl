@@ -1,0 +1,236 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Corba IDL</Name>
+   <FileTypeName></FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5463469907</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>/* CORBA IDL sample source */</S>
+   <S>#include &lt;sample.idl&gt;</S>
+   <S>const string TestString = &qt;Hello World&qt;;</S>
+   <S>const long TestLong = 10;</S>
+   <S>module TestModule {</S>
+   <S>  interface DemoInterface {</S>
+   <S>    boolean HelloWorld(in string Message);</S>
+   <S>  }</S>
+   <S>}</S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	!&qt;%'()*+,-./:;&lt;=&gt;?@[\]^{}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>in</W>
+  <W>case</W>
+  <W>FALSE</W>
+  <W>local</W>
+  <W>enum</W>
+  <W>out</W>
+  <W>Object</W>
+  <W>TRUE</W>
+  <W>public</W>
+  <W>default</W>
+  <W>const</W>
+  <W>module</W>
+  <W>raises</W>
+  <W>native</W>
+  <W>union</W>
+  <W>inout</W>
+  <W>switch</W>
+  <W>typedef</W>
+  <W>oneway</W>
+  <W>interface</W>
+  <W>abstract</W>
+  <W>factory</W>
+  <W>ValueBase</W>
+  <W>custom</W>
+  <W>sequence</W>
+  <W>private</W>
+  <W>unsigned</W>
+  <W>readonly</W>
+  <W>struct</W>
+  <W>context</W>
+  <W>exception</W>
+  <W>attribute</W>
+  <W>truncatable</W>
+  <W>valuetype</W>
+  <W>supports</W>
+  <W>coclass</W>
+  <W>dispinterface</W>
+  <W>library</W>
+  <W>pipe</W>
+ </KW>
+ <KW Name="Types">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>char</W>
+  <W>any</W>
+  <W>long</W>
+  <W>fixed</W>
+  <W>void</W>
+  <W>wchar</W>
+  <W>float</W>
+  <W>double</W>
+  <W>octet</W>
+  <W>boolean</W>
+  <W>short</W>
+  <W>string</W>
+  <W>wstring</W>
+ </KW>
+ <KW Name="Preprocessor">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>cpp_quote</W>
+  <W>import</W>
+  <W>importlib</W>
+  <W>midl_pragma</W>
+  <W>warning</W>
+ </KW>
+  <Range Name="Comments /*..*/">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>/*</OpenSymbol>
+  <CloseSymbol>*/</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="Preprocessor">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>#</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>True</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Strings">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+  <Range Name="Params">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&lt;</OpenSymbol>
+  <CloseSymbol>&gt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Comments //">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>//</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

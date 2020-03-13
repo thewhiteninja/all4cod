@@ -1,0 +1,64 @@
+[Area A Identifier]
+Background=536870911
+Foreground=8421376
+Style=1
+
+[Boolean value]
+Background=536870911
+Foreground=32768
+Style=0
+
+[Comment]
+Background=536870911
+Foreground=8421504
+Style=2
+
+[Debugging Lines]
+Background=536870911
+Foreground=8421504
+Style=0
+
+[Identifier]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Indicator Area]
+Background=536870911
+Foreground=255
+Style=0
+
+[Number]
+Background=536870911
+Foreground=32768
+Style=0
+
+[Preprocessor]
+Background=536870911
+Foreground=128
+Style=0
+
+[Reserved Word]
+Background=536870911
+Foreground=536870911
+Style=1
+
+[Sequence Number Area]
+Background=536870911
+Foreground=8421504
+Style=0
+
+[Space]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[String]
+Background=536870911
+Foreground=16711680
+Style=0
+
+[Tag Area]
+Background=536870911
+Foreground=128
+Style=0

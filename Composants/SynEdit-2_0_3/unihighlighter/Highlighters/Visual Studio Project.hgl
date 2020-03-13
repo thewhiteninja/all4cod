@@ -1,0 +1,223 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Visual Studio Project</Name>
+   <FileTypeName>vbproj</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5706460648</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S> &lt;VisualStudioProject&gt;</S>
+   <S>    &lt;VisualBasic</S>
+   <S>        ProjectType = &qt;Local&qt;</S>
+   <S>        ProductVersion = &qt;7.0.9254&qt;</S>
+   <S>        SchemaVersion = &qt;1.0&qt;</S>
+   <S>    &gt;</S>
+   <S>        &lt;Build&gt;</S>
+   <S>            &lt;Settings</S>
+   <S>                ApplicationIcon = &qt;&qt;</S>
+   <S>                AssemblyKeyContainerName = &qt;&qt;</S>
+   <S>                AssemblyName = &qt;VehicleDemoBaseClient&qt;</S>
+   <S>                AssemblyOriginatorKeyFile = &qt;&qt;</S>
+   <S>                AssemblyOriginatorKeyMode = &qt;None&qt;</S>
+   <S>                DefaultClientScript = &qt;JScript&qt;</S>
+   <S>                DefaultHTMLPageLayout = &qt;Flow&qt;</S>
+   <S>                DefaultTargetSchema = &qt;IE32Nav30&qt;</S>
+   <S>                DelaySign = &qt;false&qt;</S>
+   <S>                OutputType = &qt;WinExe&qt;</S>
+   <S>                OptionCompare = &qt;Binary&qt;</S>
+   <S>                OptionExplicit = &qt;On&qt;</S>
+   <S>                OptionStrict = &qt;Off&qt;</S>
+   <S>                RootNamespace = &qt;VehicleDemoBaseClient&qt;</S>
+   <S>                StartupObject = &qt;VehicleDemoBaseClient.Form1&qt;</S>
+   <S>            &gt;</S>
+   <S>                &lt;Config</S>
+   <S>                    Name = &qt;Debug&qt;</S>
+   <S>                    BaseAddress = &qt;0&qt;</S>
+   <S>                    ConfigurationOverrideFile = &qt;&qt;</S>
+   <S>                    DefineConstants = &qt;&qt;</S>
+   <S>                    DefineDebug = &qt;true&qt;</S>
+   <S>                    DefineTrace = &qt;true&qt;</S>
+   <S>                    DebugSymbols = &qt;true&qt;</S>
+   <S>                    IncrementalBuild = &qt;true&qt;</S>
+   <S>                    Optimize = &qt;false&qt;</S>
+   <S>                    OutputPath = &qt;bin\&qt;</S>
+   <S>                    RegisterForComInterop = &qt;false&qt;</S>
+   <S>                    RemoveIntegerChecks = &qt;false&qt;</S>
+   <S>                    TreatWarningsAsErrors = &qt;false&qt;</S>
+   <S>                    WarningLevel = &qt;1&qt;</S>
+   <S>                /&gt;</S>
+   <S>                &lt;Config</S>
+   <S>                    Name = &qt;Release&qt;</S>
+   <S>                    BaseAddress = &qt;0&qt;</S>
+   <S>                    ConfigurationOverrideFile = &qt;&qt;</S>
+   <S>                    DefineConstants = &qt;&qt;</S>
+   <S>                    DefineDebug = &qt;false&qt;</S>
+   <S>                    DefineTrace = &qt;true&qt;</S>
+   <S>                    DebugSymbols = &qt;false&qt;</S>
+   <S>                    IncrementalBuild = &qt;true&qt;</S>
+   <S>                    Optimize = &qt;false&qt;</S>
+   <S>                    OutputPath = &qt;bin\&qt;</S>
+   <S>                    RegisterForComInterop = &qt;false&qt;</S>
+   <S>                    RemoveIntegerChecks = &qt;false&qt;</S>
+   <S>                    TreatWarningsAsErrors = &qt;false&qt;</S>
+   <S>                    WarningLevel = &qt;1&qt;</S>
+   <S>                /&gt;</S>
+   <S>            &lt;/Settings&gt;</S>
+   <S>            &lt;References&gt;</S>
+   <S>                &lt;Reference</S>
+   <S>                    Name = &qt;System&qt;</S>
+   <S>                    AssemblyName = &qt;System&qt;</S>
+   <S>                /&gt;</S>
+   <S>                &lt;Reference</S>
+   <S>                    Name = &qt;System.Drawing&qt;</S>
+   <S>                    AssemblyName = &qt;System.Drawing&qt;</S>
+   <S>                /&gt;</S>
+   <S>                &lt;Reference</S>
+   <S>                    Name = &qt;System.Data&qt;</S>
+   <S>                    AssemblyName = &qt;System.Data&qt;</S>
+   <S>                /&gt;</S>
+   <S>                &lt;Reference</S>
+   <S>                    Name = &qt;VehicleDemoBO&qt;</S>
+   <S>                    Project = &qt;{79FD7157-F603-4570-8C03-64A887F4728B}&qt;</S>
+   <S>                    Package = &qt;{F184B08F-C81C-45F6-A57F-5ABD9991F28F}&qt;</S>
+   <S>                /&gt;</S>
+   <S>                &lt;Reference</S>
+   <S>                    Name = &qt;SYSTEM.WINDOWS.FORMS&qt;</S>
+   <S>                    AssemblyName = &qt;System.Windows.Forms&qt;</S>
+   <S>                /&gt;</S>
+   <S>                &lt;Reference</S>
+   <S>                    Name = &qt;System.XML&qt;</S>
+   <S>                    AssemblyName = &qt;System.Xml&qt;</S>
+   <S>                /&gt;</S>
+   <S>            &lt;/References&gt;</S>
+   <S>            &lt;Imports&gt;</S>
+   <S>                &lt;Import Namespace = &qt;Microsoft.VisualBasic&qt; /&gt;</S>
+   <S>                &lt;Import Namespace = &qt;System&qt; /&gt;</S>
+   <S>                &lt;Import Namespace = &qt;System.Data&qt; /&gt;</S>
+   <S>                &lt;Import Namespace = &qt;System.Collections&qt; /&gt;</S>
+   <S>                &lt;Import Namespace = &qt;System.Configuration&qt; /&gt;</S>
+   <S>                &lt;Import Namespace = &qt;System.Diagnostics&qt; /&gt;</S>
+   <S>            &lt;/Imports&gt;</S>
+   <S>        &lt;/Build&gt;</S>
+   <S>        &lt;Files&gt;</S>
+   <S>            &lt;Include&gt;</S>
+   <S>                &lt;File</S>
+   <S>                    RelPath = &qt;frmMain.vb&qt;</S>
+   <S>                    SubType = &qt;Form&qt;</S>
+   <S>                    BuildAction = &qt;Compile&qt;</S>
+   <S>                /&gt;</S>
+   <S>                &lt;File</S>
+   <S>                    RelPath = &qt;frmMain.resx&qt;</S>
+   <S>                    DependentUpon = &qt;frmMain.vb&qt;</S>
+   <S>                    BuildAction = &qt;EmbeddedResource&qt;</S>
+   <S>                /&gt;</S>
+   <S>                &lt;File</S>
+   <S>                    RelPath = &qt;licenses.licx&qt;</S>
+   <S>                    BuildAction = &qt;Content&qt;</S>
+   <S>                /&gt;</S>
+   <S>            &lt;/Include&gt;</S>
+   <S>        &lt;/Files&gt;</S>
+   <S>    &lt;/VisualBasic&gt;</S>
+   <S>&lt;/VisualStudioProject&gt;</S>
+   <S></S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Main">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>&lt;VisualStudioProject&gt;</W>
+  <W>&lt;/VisualStudioProject&gt;</W>
+  <W>&lt;VisualBasic</W>
+  <W>&lt;/VisualBasic&gt;</W>
+ </KW>
+ <KW Name="Sections">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>&lt;Build&gt;</W>
+  <W>&lt;Settings</W>
+  <W>&lt;Config</W>
+  <W>&lt;/Settings&gt;</W>
+  <W>&lt;References&gt;</W>
+  <W>&lt;Reference</W>
+  <W>&lt;/References&gt;</W>
+  <W>&lt;Imports&gt;</W>
+  <W>&lt;Import</W>
+  <W>&lt;/Imports&gt;</W>
+  <W>&lt;/Build&gt;</W>
+  <W>&lt;Files&gt;</W>
+  <W>&lt;Include&gt;</W>
+  <W>&lt;File</W>
+  <W>&lt;/Include&gt;</W>
+  <W>&lt;/Files&gt;</W>
+  <W>/&gt;</W>
+  <W>&gt;</W>
+ </KW>
+  <Range Name="Strings">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>True</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

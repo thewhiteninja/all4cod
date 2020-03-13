@@ -1,0 +1,149 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Ultraedit Highlighter syntax rules</Name>
+   <FileTypeName>txt</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37608.5542367708</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>/L20&qt;Java 1.2 with FAME TimeIQ&qt; Line Comment = // Block Comment On = /* Block Comment Off = */ File Extensions = JAVA</S>
+   <S>/Delimiters = ~!@%^&amp;*()-+=|\/{}[]:;&qt;'&lt;&gt; , .?</S>
+   <S>/Function String = &qt;%[  ]+[ps]*(*)*{&qt;</S>
+   <S>/Indent Strings = &qt;{&qt;</S>
+   <S>/Unindent Strings = &qt;}&qt;</S>
+   <S>/C1</S>
+   <S>abstract</S>
+   <S>break byte boolean</S>
+   <S>while</S>
+   <S>/C2</S>
+   <S>AbstractAction AbstractBorder AbstractButton AbstractCollection AbstractDocument AbstractLayoutCache AbstractList AbstractListModel AbstractMap AbstractMethodError</S>
+   <S>AbstractSequentialList AbstractSet AbstractTableModel AbstractUndoableEdit AbstractWriter AccessControlContext AccessControlException AccessController AccessException</S>
+   <S>_BindingIteratorImplBase _NamingContextImplBase</S>
+   <S>/C3 &qt;FAME TimeIQ&qt;</S>
+   <S>Abs AbstractAnyAllFunctor AbstractBinaryElementArithmeticFunctor AbstractBinaryElementCalendarFunctor AbstractBinaryElementCompareFunctor AbstractBinaryElementFunctor AbstractBinaryElementLogicalFunctor AbstractBinaryFunctor AbstractBinarySeriesFunctor</S>
+   <S>Which WildCardMatchesChkException</S>
+   <S>Xor</S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>False</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Sections">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Attri>
+  <W>/Delimiters</W>
+  <W>/Function</W>
+  <W>/Indent</W>
+  <W>/Unindent</W>
+ </KW>
+  <Range Name="Name">
+  <Def>
+   <Back>8454143</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>8454143</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>/L20</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  <KW Name="Params">
+   <Attri>
+    <Back>8454143</Back>
+    <Fore>16711680</Fore>
+    <Style></Style>
+   </Attri>
+   <W>Line Comment</W>
+   <W>Block Comment On</W>
+   <W>Block Comment Off</W>
+   <W>File Extensions</W>
+  </KW>
+  </Range>
+  <Range Name="Section">
+  <Def>
+   <Back>8453888</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>8453888</Back>
+   <Fore>0</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>/C</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+   <Range Name="Section Name">
+   <Def>
+    <Back>8453888</Back>
+    <Fore>16711680</Fore>
+    <Style></Style>
+   </Def>
+   <Num>
+    <Back>8453888</Back>
+    <Fore>16711680</Fore>
+    <Style></Style>
+   </Num>
+   <OpenSymbol>&qt;</OpenSymbol>
+   <CloseSymbol>&qt;</CloseSymbol>
+   <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+   <AnyTerm>True</AnyTerm>
+   <CloseOnTerm>False</CloseOnTerm>
+   <CloseOnEol>False</CloseOnEol>
+   <CaseSensitive>False</CaseSensitive>
+   </Range>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

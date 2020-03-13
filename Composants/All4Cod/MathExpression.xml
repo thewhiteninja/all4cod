@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="MathExpression">
+  <const name="C_NOERROR" type="Integer">
+    <value>
+      $0
+    </value>
+  </const>
+  <const name="C_ERR_BRACKETS" type="Integer">
+    <value>
+      $1
+    </value>
+  </const>
+  <const name="C_ERR_EMPTY_EXPR" type="Integer">
+    <value>
+      $2
+    </value>
+  </const>
+  <const name="C_ERR_UNKNOWN_FUNC" type="Integer">
+    <value>
+      $3
+    </value>
+  </const>
+  <const name="C_ERR_FUNCTION_ERR" type="Integer">
+    <value>
+      $4
+    </value>
+  </const>
+  <const name="C_ERR_DEV_BY_ZERO" type="Integer">
+    <value>
+      $5
+    </value>
+  </const>
+  <const name="C_ERR_CANNOT_SOLVE" type="Integer">
+    <value>
+      $6
+    </value>
+  </const>
+  <const name="C_ERR_BAD_NUMBER" type="Integer">
+    <value>
+      $7
+    </value>
+  </const>
+  <function name="CalcExpression" visibility="private" procflags="virtual">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <parameter name="Res" type="string" paramflags="var" />
+      <retval type="Word" />
+    </parameters>
+  </function>
+  <function name="CalcGraphExpression" visibility="private" procflags="virtual">
+    <parameters>
+      <parameter name="Value" type="string" />
+      <parameter name="X" type="Extended" />
+      <parameter name="Res" type="string" paramflags="var" />
+      <retval type="Word" />
+    </parameters>
+  </function>
+  <function name="CalcErrorToStr" visibility="private" procflags="virtual">
+    <parameters>
+      <parameter name="Error" type="Word" />
+      <retval type="string" />
+    </parameters>
+  </function>
+</namespace>

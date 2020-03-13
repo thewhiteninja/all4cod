@@ -1,0 +1,31 @@
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = My_Dll_private.res
+OBJ  = dllmain.o $(RES)
+LINKOBJ  = dllmain.o $(RES)
+LIBS =  -L"C:/DEV-CPP/lib" -L"C:/Dev-Cpp/lib/gdwin32"  
+INCS =  -I"C:/DEV-CPP/include"  -I"C:/Dev-Cpp/lib/gdwin32" 
+CXXINCS =  -I"C:/DEV-CPP/include/c++/3.3.1"  -I"C:/DEV-CPP/include/c++/3.3.1/mingw32"  -I"C:/DEV-CPP/include/c++/3.3.1/backward"  -I"C:/DEV-CPP/lib/gcc-lib/mingw32/3.3.1/include"  -I"C:/DEV-CPP/include" 
+BIN  = My_Dll.dll
+CXXFLAGS = $(CXXINCS)   
+CFLAGS = $(INCS) -DBUILDING_DLL=1  
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before My_Dll.dll all-after
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+DLLWRAP=dllwrap.exe
+STATICLIB=libMy_Dll.a
+
+$(BIN): $(LINKOBJ)
+	$(DLLWRAP) --implib $(STATICLIB) $(LINKOBJ) $(LIBS) -k -o $(BIN)
+
+dllmain.o: dllmain.c
+	$(CC) -c dllmain.c -o dllmain.o $(CFLAGS)
+
+My_Dll_private.res: My_Dll_private.rc dllres.rc 
+	$(WINDRES) -i My_Dll_private.rc -I rc -o My_Dll_private.res -O coff 

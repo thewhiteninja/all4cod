@@ -1,0 +1,144 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Cron Scripts</Name>
+   <FileTypeName>tab tg</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:cron.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5336544213</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>-{}</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Commands">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>action</W>
+  <W>command</W>
+  <W>name</W>
+  <W>skip</W>
+  <W>start</W>
+  <W>stop</W>
+ </KW>
+ <KW Name="Parameters">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>alert</W>
+  <W>constrain</W>
+  <W>date</W>
+  <W>debug</W>
+  <W>delay</W>
+  <W>detach</W>
+  <W>hide</W>
+  <W>inc</W>
+  <W>kill</W>
+  <W>load</W>
+  <W>logfile</W>
+  <W>path</W>
+  <W>print</W>
+  <W>quit</W>
+  <W>shell</W>
+  <W>show</W>
+  <W>temp</W>
+  <W>time</W>
+  <W>wait</W>
+  <W>week</W>
+  <W>year</W>
+ </KW>
+ <KW Name="Macros">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>%a%</W>
+  <W>%A%</W>
+  <W>%b%</W>
+  <W>%B%</W>
+  <W>%c%</W>
+  <W>%d%</W>
+  <W>%H%</W>
+  <W>%I%</W>
+  <W>%j%</W>
+  <W>%m%</W>
+  <W>%M%</W>
+  <W>%MONTH%</W>
+  <W>%p%</W>
+  <W>%S%</W>
+  <W>%U%</W>
+  <W>%w%</W>
+  <W>%W%</W>
+  <W>%x%</W>
+  <W>%X%</W>
+  <W>%y%</W>
+  <W>%Y%</W>
+  <W>%z%</W>
+  <W>%Z%</W>
+ </KW>
+  <Range Name="Remarks #">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>#</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

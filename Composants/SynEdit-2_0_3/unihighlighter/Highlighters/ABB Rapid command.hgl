@@ -1,0 +1,167 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>ABB Rapid command</Name>
+   <FileTypeName></FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37651.5449471644</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>AccSet</W>
+  <W>DOutput</W>
+  <W>ERROR</W>
+  <W>GInput</W>
+  <W>GripLoad</W>
+  <W>MoveAbsJ</W>
+  <W>MoveC</W>
+  <W>MoveJ</W>
+  <W>MoveJDO</W>
+  <W>MoveL</W>
+  <W>MoveLDO</W>
+  <W>MotionSup</W>
+  <W>OpMode</W>
+  <W>PDispOff PDispOn PulseDO</W>
+  <W>Reset</W>
+  <W>SearchL </W>
+  <W>Set </W>
+  <W>SetGO </W>
+  <W>SpotL </W>
+  <W>SpotL_P1 </W>
+  <W>SpotL_Z1 </W>
+  <W>SpotL_Z2</W>
+  <W>TPErase </W>
+  <W>TPReadFK </W>
+  <W>TPWrite </W>
+  <W>TPWriteP1 </W>
+  <W>TriggIO </W>
+  <W>TriggJ </W>
+  <W>TriggL</W>
+  <W>WaitTime </W>
+  <W>WaitUntil</W>
+ </KW>
+ <KW Name="Types">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>bool</W>
+  <W>Color4</W>
+  <W>errnum</W>
+  <W>extjoint</W>
+  <W>jointtarget</W>
+  <W>loaddata</W>
+  <W>num</W>
+  <W>robjoint </W>
+  <W>robtarget</W>
+  <W>string</W>
+  <W>tooldata </W>
+  <W>triggdata</W>
+ </KW>
+ <KW Name="Statements">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>EXIT</W>
+  <W>GOTO</W>
+  <W>RETURN RETRY</W>
+  <W>Stop</W>
+  <W>TRYNEXT</W>
+  <W>AND</W>
+  <W>CASE </W>
+  <W>CONST</W>
+  <W>DEFAULT </W>
+  <W>DO</W>
+  <W>ELSE </W>
+  <W>ELSEIF </W>
+  <W>ENDFOR </W>
+  <W>ENDIF </W>
+  <W>ENDMODULE </W>
+  <W>ENDPROC </W>
+  <W>ENDTEST</W>
+  <W>ENDWHILE</W>
+  <W>FOR </W>
+  <W>FROM</W>
+  <W>IF</W>
+  <W>MODULE</W>
+  <W>OR</W>
+  <W>PERS </W>
+  <W>PROC</W>
+  <W>TEST </W>
+  <W>THEN </W>
+  <W>TO</W>
+  <W>VAR</W>
+  <W>WHILE</W>
+ </KW>
+  <Range Name="Remark">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>!</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

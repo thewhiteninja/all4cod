@@ -1,0 +1,272 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Unreal Script</Name>
+   <FileTypeName></FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Translated from SynHighlighterUnreal.pas</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5692565741</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>//----Comment-----------------------------------------------------------</S>
+   <S>class TestObject expands Object;</S>
+   <S></S>
+   <S>#exec MESH    IMPORT     MESH=Something ANIVFILE=MODELS\Something.3D DATAFILE=MODELS\Something.3D X=0 Y=0 Z=0 MLOD=0</S>
+   <S></S>
+   <S>var() Sound HitSound;</S>
+   <S></S>
+   <S>state SomeState {</S>
+   <S>function Cast()</S>
+   <S>        {</S>
+   <S>          Super.Cast();</S>
+   <S>          CastTime = 50;</S>
+   <S>          GatherEffect = Spawn( class'SomethingCorona',,, GetStartLoc(), Pawn(Owner).ViewRotation );</S>
+   <S>          GatherEffect.SetFollowPawn( Pawn(Owner) );</S>
+   <S>        }</S>
+   <S>}</S>
+   <S></S>
+   <S>class ex_state3 extends Actor;</S>
+   <S></S>
+   <S>function PostBeginPlay() {</S>
+   <S>  BroadcastMessage(&qt;PostBeginPlay called&qt;);</S>
+   <S>  SetTimer(3.0,True);</S>
+   <S>}</S>
+   <S></S>
+   <S>// Weapon fire that goes through wall</S>
+   <S>var() float Thick;</S>
+   <S></S>
+   <S>function TraceFire( float Accuracy ) {</S>
+   <S>    local vector HitLocation, HitNormal, StartTrace, EndTrace, X,Y,Z;</S>
+   <S>    local actor Other;</S>
+   <S>    local Pawn PawnOwner;</S>
+   <S>    local float Penetration;</S>
+   <S>    PawnOwner = Pawn(Owner);</S>
+   <S>    Owner.MakeNoise(PawnOwner.SoundDampening);</S>
+   <S>    GetAxes(PawnOwner.ViewRotation,X,Y,Z);</S>
+   <S>}</S>
+   <S></S>
+   <S>defaultproperties {</S>
+   <S>    Thick=20.0</S>
+   <S>    PawnThick=36.0</S>
+   <S>}</S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>536870911</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key words">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>IF</W>
+  <W>EACH</W>
+  <W>DO</W>
+  <W>CASE</W>
+  <W>NAME</W>
+  <W>CATCH</W>
+  <W>BREAK</W>
+  <W>EXEC</W>
+  <W>DOT</W>
+  <W>FOR</W>
+  <W>SCALE</W>
+  <W>ELSE</W>
+  <W>VAR</W>
+  <W>GUID</W>
+  <W>FINAL</W>
+  <W>SELF</W>
+  <W>NEW</W>
+  <W>INT</W>
+  <W>LOCAL</W>
+  <W>FALSE</W>
+  <W>BOOL</W>
+  <W>MESH</W>
+  <W>LONG</W>
+  <W>NONE</W>
+  <W>PLANE</W>
+  <W>GLOBAL</W>
+  <W>MODEL</W>
+  <W>COERCE</W>
+  <W>VOID</W>
+  <W>DELETE</W>
+  <W>BYTE</W>
+  <W>ENUM</W>
+  <W>CLASS</W>
+  <W>CONFIG</W>
+  <W>FLOAT</W>
+  <W>SKIP</W>
+  <W>OUT</W>
+  <W>FOREACH</W>
+  <W>THIS</W>
+  <W>AUTO</W>
+  <W>GOTO</W>
+  <W>WHILE</W>
+  <W>COLOR</W>
+  <W>TRUE</W>
+  <W>RELIABLE</W>
+  <W>STATE</W>
+  <W>EVENT</W>
+  <W>DEFAULT</W>
+  <W>CONST</W>
+  <W>NATIVE</W>
+  <W>LATENT</W>
+  <W>STATIC</W>
+  <W>SOUND</W>
+  <W>CROSS</W>
+  <W>MUTABLE</W>
+  <W>COORDS</W>
+  <W>SUPER</W>
+  <W>SWITCH</W>
+  <W>EXPANDS</W>
+  <W>VECTOR</W>
+  <W>ABSTRACT</W>
+  <W>LOCALIZED</W>
+  <W>STRING</W>
+  <W>EXTENDS</W>
+  <W>PRIVATE</W>
+  <W>RETURN</W>
+  <W>EXPLICIT</W>
+  <W>UNRELIABLE</W>
+  <W>HIDEPARENT</W>
+  <W>CONTINUE</W>
+  <W>REGISTER</W>
+  <W>STRUCT</W>
+  <W>SINGULAR</W>
+  <W>FUNCTION</W>
+  <W>OPTIONAL</W>
+  <W>GLOBALCONFIG</W>
+  <W>SIMULATED</W>
+  <W>ITERATOR</W>
+  <W>PROTECTED</W>
+  <W>ROTATOR</W>
+  <W>OPERATOR</W>
+  <W>EDITCONST</W>
+  <W>TEXTURE</W>
+  <W>INTRINSIC</W>
+  <W>TRANSIENT</W>
+  <W>REPLICATION</W>
+  <W>NOEXPORT</W>
+  <W>BOUNDINGBOX</W>
+  <W>PREOPERATOR</W>
+  <W>SCRIPTCONST</W>
+  <W>BOUNDINGVOLUME</W>
+  <W>POSTOPERATOR</W>
+  <W>NATIVEREPLICATION</W>
+  <W>DEFAULTPROPERTIES</W>
+ </KW>
+  <Range Name="Resolution">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>::</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>True</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Strings">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>'</OpenSymbol>
+  <CloseSymbol>'</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Strings">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&qt;</OpenSymbol>
+  <CloseSymbol>&qt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Remark">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>10485760</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>//</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

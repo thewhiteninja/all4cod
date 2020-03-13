@@ -1,0 +1,305 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>AVR assembler</Name>
+   <FileTypeName>ASM</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:asmavr.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5196129167</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>/L20&qt;AVR assembler&qt; Nocase Line Comment = ; File Extensions = ASM </S>
+   <S>/Delimiters = ~!@$%^&amp;*()_=|\/{}	[]:&qt;'&lt;&gt; ,?/</S>
+   <S>/C1&qt;Arithmetic &amp; Logic&qt; </S>
+   <S>add adc adiw and andi</S>
+   <S>cbr clr com cp cpc cpi</S>
+   <S>dec</S>
+   <S>eor</S>
+   <S>fmul fmuls fmulsu</S>
+   <S>inc</S>
+   <S>mul muls mulsu</S>
+   <S>neg</S>
+   <S>or ori</S>
+   <S>sub subi sbc sbci sbiw sbr ser</S>
+   <S>tst</S>
+   <S></S>
+   <S>/C2&qt;Branches&qt;</S>
+   <S>brbs brbc breq brne brcs brcc brsh brlo brmi brpl brge brlt brhs brhc brts brtc brvs brvc brie brid</S>
+   <S>call cpse </S>
+   <S>eicall eijmp</S>
+   <S>ijmp icall</S>
+   <S>jmp  </S>
+   <S>rjmp rcall ret reti</S>
+   <S>sbrc sbrs sbic sbis </S>
+   <S></S>
+   <S>/C3&qt;Data Transfer&qt;</S>
+   <S>elpm espm</S>
+   <S>in</S>
+   <S>ldi lds ld ldd lpm</S>
+   <S>mov movw</S>
+   <S>out</S>
+   <S>push pop</S>
+   <S>st sts std spm</S>
+   <S>x x+ </S>
+   <S>y y+ y+q </S>
+   <S>z z+ z+q</S>
+   <S>-x -y -z </S>
+   <S></S>
+   <S>/C4&qt;Bit &amp; Bit-Test&qt;</S>
+   <S>asr </S>
+   <S>cbi clc cln clz cli cls clv clt clh</S>
+   <S>lsl lsr</S>
+   <S>nop </S>
+   <S>ror rol </S>
+   <S>sbi sec sen sez sei ses sev set seh swap sleep</S>
+   <S>bst bld bset bclr</S>
+   <S>wdr</S>
+   <S></S>
+   <S>/C5&qt;Directives&qt;</S>
+   <S>.org .equ .include .macro .endmacro .set .byte .cseg .db .def .device .dseg .dw .eseg .exit .list .nolist .listmac </S>
+   <S></S>
+   <S></S>
+   <S></S>
+   <S></S>
+   <S></S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	!&qt;$%&amp;'()*,/:&lt;=&gt;?@[\]^_{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Arithmetic &amp; Logic">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>adc</W>
+  <W>add</W>
+  <W>adiw</W>
+  <W>and</W>
+  <W>andi</W>
+  <W>cbr</W>
+  <W>clr</W>
+  <W>com</W>
+  <W>cp</W>
+  <W>cpc</W>
+  <W>cpi</W>
+  <W>dec</W>
+  <W>eor</W>
+  <W>fmul</W>
+  <W>fmuls</W>
+  <W>fmulsu</W>
+  <W>inc</W>
+  <W>mul</W>
+  <W>muls</W>
+  <W>mulsu</W>
+  <W>neg</W>
+  <W>or</W>
+  <W>ori</W>
+  <W>sbc</W>
+  <W>sbci</W>
+  <W>sbiw</W>
+  <W>sbr</W>
+  <W>ser</W>
+  <W>sub</W>
+  <W>subi</W>
+  <W>tst</W>
+ </KW>
+ <KW Name="Branches">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>brbc</W>
+  <W>brbs</W>
+  <W>brcc</W>
+  <W>brcs</W>
+  <W>breq</W>
+  <W>brge</W>
+  <W>brhc</W>
+  <W>brhs</W>
+  <W>brid</W>
+  <W>brie</W>
+  <W>brlo</W>
+  <W>brlt</W>
+  <W>brmi</W>
+  <W>brne</W>
+  <W>brpl</W>
+  <W>brsh</W>
+  <W>brtc</W>
+  <W>brts</W>
+  <W>brvc</W>
+  <W>brvs</W>
+  <W>call</W>
+  <W>cpse</W>
+  <W>eicall</W>
+  <W>eijmp</W>
+  <W>icall</W>
+  <W>ijmp</W>
+  <W>jmp</W>
+  <W>rcall</W>
+  <W>ret</W>
+  <W>reti</W>
+  <W>rjmp</W>
+  <W>sbic</W>
+  <W>sbis</W>
+  <W>sbrc</W>
+  <W>sbrs</W>
+ </KW>
+ <KW Name="Data Transfer">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Attri>
+  <W>elpm</W>
+  <W>espm</W>
+  <W>in</W>
+  <W>ld</W>
+  <W>ldd</W>
+  <W>ldi</W>
+  <W>lds</W>
+  <W>lpm</W>
+  <W>mov</W>
+  <W>movw</W>
+  <W>out</W>
+  <W>pop</W>
+  <W>push</W>
+  <W>spm</W>
+  <W>st</W>
+  <W>std</W>
+  <W>sts</W>
+  <W>x</W>
+  <W>-x</W>
+  <W>x+</W>
+  <W>y</W>
+  <W>-y</W>
+  <W>y+</W>
+  <W>y+q</W>
+  <W>z</W>
+  <W>-z</W>
+  <W>z+</W>
+  <W>z+q</W>
+ </KW>
+ <KW Name="Bit &amp; Bit-Test">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>33023</Fore>
+   <Style></Style>
+  </Attri>
+  <W>asr</W>
+  <W>bclr</W>
+  <W>bld</W>
+  <W>bset</W>
+  <W>bst</W>
+  <W>cbi</W>
+  <W>clc</W>
+  <W>clh</W>
+  <W>cli</W>
+  <W>cln</W>
+  <W>cls</W>
+  <W>clt</W>
+  <W>clv</W>
+  <W>clz</W>
+  <W>lsl</W>
+  <W>lsr</W>
+  <W>nop</W>
+  <W>rol</W>
+  <W>ror</W>
+  <W>sbi</W>
+  <W>sec</W>
+  <W>seh</W>
+  <W>sei</W>
+  <W>sen</W>
+  <W>ses</W>
+  <W>set</W>
+  <W>sev</W>
+  <W>sez</W>
+  <W>sleep</W>
+  <W>swap</W>
+  <W>wdr</W>
+ </KW>
+ <KW Name="Directives">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>8388736</Fore>
+   <Style></Style>
+  </Attri>
+  <W>.byte</W>
+  <W>.cseg</W>
+  <W>.db</W>
+  <W>.def</W>
+  <W>.device</W>
+  <W>.dseg</W>
+  <W>.dw</W>
+  <W>.endmacro</W>
+  <W>.equ</W>
+  <W>.eseg</W>
+  <W>.exit</W>
+  <W>.include</W>
+  <W>.list</W>
+  <W>.listmac</W>
+  <W>.macro</W>
+  <W>.nolist</W>
+  <W>.org</W>
+  <W>.set</W>
+ </KW>
+  <Range Name="Remarks ;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>;</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

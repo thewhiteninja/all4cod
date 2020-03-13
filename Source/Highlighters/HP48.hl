@@ -1,0 +1,49 @@
+[Null]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Asm Key]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Asm]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Asm Comment]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[SASM Key]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[SASM]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[SASM Comment]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Rpl Key]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Rpl]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Rpl Comment]
+Background=536870911
+Foreground=536870911
+Style=0

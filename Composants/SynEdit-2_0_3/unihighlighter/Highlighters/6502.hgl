@@ -1,0 +1,154 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>6502</Name>
+   <FileTypeName> S ASM</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5153723958</Date>
+   <Type>Internal Test</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key Words 1">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>adc</W>
+  <W>and</W>
+  <W>asl</W>
+  <W>bcc</W>
+  <W>bcs</W>
+  <W>beq</W>
+  <W>bit</W>
+  <W>bmi</W>
+  <W>bne</W>
+  <W>bpl</W>
+  <W>brk</W>
+  <W>bvc</W>
+  <W>bvs</W>
+  <W>clc</W>
+  <W>cld</W>
+  <W>cli</W>
+  <W>clv</W>
+  <W>cmp</W>
+  <W>cpx</W>
+  <W>cpy</W>
+  <W>dec</W>
+  <W>dex</W>
+  <W>dey</W>
+  <W>eor</W>
+  <W>inc</W>
+  <W>inx</W>
+  <W>iny</W>
+  <W>jmp</W>
+  <W>jsr</W>
+  <W>lda</W>
+  <W>ldx</W>
+  <W>ldy</W>
+  <W>lsr</W>
+  <W>nop</W>
+  <W>ora</W>
+  <W>pha</W>
+  <W>php</W>
+  <W>pla</W>
+  <W>plp</W>
+  <W>rol</W>
+  <W>ror</W>
+  <W>rti</W>
+  <W>rts</W>
+  <W>sbc</W>
+  <W>sec</W>
+  <W>sed</W>
+  <W>sei</W>
+  <W>sta</W>
+  <W>stx</W>
+  <W>sty</W>
+  <W>tax</W>
+  <W>tay</W>
+  <W>tsx</W>
+  <W>txa</W>
+  <W>txs</W>
+  <W>tya</W>
+ </KW>
+  <Range Name="Remarks ;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>;</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name=".">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>.</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>True</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="HTTPGet">
+  <class name="THTTPGetThread">
+    <ancestor name="TThread" namespace="Classes">
+      <methodref name="CallOnTerminate" visibility="private" />
+      <methodref name="Synchronize" visibility="private" />
+      <methodref name="GetPriority" visibility="private" />
+      <methodref name="SetPriority" visibility="private" />
+      <methodref name="SetSuspended" visibility="private" />
+      <methodref name="CheckThreadError" visibility="protected" />
+      <methodref name="CheckThreadError" visibility="protected" />
+      <methodref name="DoTerminate" visibility="protected" />
+      <methodref name="Execute" visibility="protected" />
+      <methodref name="Queue" visibility="protected" />
+      <methodref name="Synchronize" visibility="protected" />
+      <propertyref name="ReturnValue" visibility="protected" />
+      <propertyref name="Terminated" visibility="protected" />
+      <methodref name="Create" visibility="public" />
+      <methodref name="Destroy" visibility="public" />
+      <methodref name="AfterConstruction" visibility="public" />
+      <methodref name="Resume" visibility="public" />
+      <methodref name="Suspend" visibility="public" />
+      <methodref name="Terminate" visibility="public" />
+      <methodref name="WaitFor" visibility="public" />
+      <methodref name="Queue" visibility="public" />
+      <methodref name="RemoveQueuedEvents" visibility="public" />
+      <methodref name="StaticQueue" visibility="public" />
+      <methodref name="Synchronize" visibility="public" />
+      <methodref name="StaticSynchronize" visibility="public" />
+      <propertyref name="FatalException" visibility="public" />
+      <propertyref name="FreeOnTerminate" visibility="public" />
+      <propertyref name="Handle" visibility="public" />
+      <propertyref name="Priority" visibility="public" />
+      <propertyref name="Suspended" visibility="public" />
+      <propertyref name="ThreadID" visibility="public" />
+      <eventref name="OnTerminate" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" />
+        <methodref name="Free" visibility="public" />
+        <methodref name="InitInstance" visibility="public" />
+        <methodref name="CleanupInstance" visibility="public" />
+        <methodref name="ClassType" visibility="public" />
+        <methodref name="ClassName" visibility="public" />
+        <methodref name="ClassNameIs" visibility="public" />
+        <methodref name="ClassParent" visibility="public" />
+        <methodref name="ClassInfo" visibility="public" />
+        <methodref name="InstanceSize" visibility="public" />
+        <methodref name="InheritsFrom" visibility="public" />
+        <methodref name="MethodAddress" visibility="public" />
+        <methodref name="MethodName" visibility="public" />
+        <methodref name="FieldAddress" visibility="public" />
+        <methodref name="GetInterface" visibility="public" />
+        <methodref name="GetInterfaceEntry" visibility="public" />
+        <methodref name="GetInterfaceTable" visibility="public" />
+        <methodref name="SafeCallException" visibility="public" />
+        <methodref name="AfterConstruction" visibility="public" />
+        <methodref name="BeforeDestruction" visibility="public" />
+        <methodref name="Dispatch" visibility="public" />
+        <methodref name="DefaultHandler" visibility="public" />
+        <methodref name="NewInstance" visibility="public" />
+        <methodref name="FreeInstance" visibility="public" />
+        <methodref name="Destroy" visibility="public" />
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="FTAcceptTypes" type="string" visibility="private" />
+      <field name="FTAgent" type="string" visibility="private" />
+      <field name="FTURL" type="string" visibility="private" />
+      <field name="FTFileName" type="string" visibility="private" />
+      <field name="FTStringResult" type="string" visibility="private" />
+      <field name="FTUserName" type="string" visibility="private" />
+      <field name="FTPassword" type="string" visibility="private" />
+      <field name="FTPostQuery" type="string" visibility="private" />
+      <field name="FTReferer" type="string" visibility="private" />
+      <field name="FTBinaryData" type="Boolean" visibility="private" />
+      <field name="FTUseCache" type="Boolean" visibility="private" />
+      <field name="FTResult" type="Boolean" visibility="private" />
+      <field name="FTFileSize" type="Integer" visibility="private" />
+      <field name="FTToFile" type="Boolean" visibility="private" />
+      <field name="BytesToRead" type="Cardinal" visibility="private" />
+      <field name="BytesReaded" type="Cardinal" visibility="private" />
+      <field name="FTProgress" type="TOnProgressEvent" visibility="private" />
+      <procedure name="UpdateProgress" visibility="private">
+      </procedure>
+      <procedure name="Execute" visibility="protected" procflags="override">
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="aAcceptTypes" type="string" />
+          <parameter name="aAgent" type="string" />
+          <parameter name="aURL" type="string" />
+          <parameter name="aFileName" type="string" />
+          <parameter name="aUserName" type="string" />
+          <parameter name="aPassword" type="string" />
+          <parameter name="aPostQuery" type="string" />
+          <parameter name="aReferer" type="string" />
+          <parameter name="aBinaryData" type="Boolean" />
+          <parameter name="aUseCache" type="Boolean" />
+          <parameter name="aProgress" type="TOnProgressEvent" />
+          <parameter name="aToFile" type="Boolean" />
+        </parameters>
+      </constructor>
+    </members>
+  </class>
+  <class name="THTTPGet">
+    <ancestor name="TComponent" namespace="Classes">
+      <methodref name="GetComObject" visibility="private" />
+      <methodref name="GetComponent" visibility="private" />
+      <methodref name="GetComponentCount" visibility="private" />
+      <methodref name="GetComponentIndex" visibility="private" />
+      <methodref name="Insert" visibility="private" />
+      <methodref name="ReadLeft" visibility="private" />
+      <methodref name="ReadTop" visibility="private" />
+      <methodref name="Remove" visibility="private" />
+      <methodref name="RemoveNotification" visibility="private" />
+      <methodref name="SetComponentIndex" visibility="private" />
+      <methodref name="SetReference" visibility="private" />
+      <methodref name="WriteLeft" visibility="private" />
+      <methodref name="WriteTop" visibility="private" />
+      <methodref name="IntfGetComponent" visibility="private" />
+      <methodref name="ChangeName" visibility="protected" />
+      <methodref name="DefineProperties" visibility="protected" />
+      <methodref name="GetChildren" visibility="protected" />
+      <methodref name="GetChildOwner" visibility="protected" />
+      <methodref name="GetChildParent" visibility="protected" />
+      <methodref name="GetOwner" visibility="protected" />
+      <methodref name="Loaded" visibility="protected" />
+      <methodref name="Notification" visibility="protected" />
+      <methodref name="PaletteCreated" visibility="protected" />
+      <methodref name="ReadState" visibility="protected" />
+      <methodref name="SetAncestor" visibility="protected" />
+      <methodref name="SetDesigning" visibility="protected" />
+      <methodref name="SetInline" visibility="protected" />
+      <methodref name="SetDesignInstance" visibility="protected" />
+      <methodref name="SetName" visibility="protected" />
+      <methodref name="SetChildOrder" visibility="protected" />
+      <methodref name="SetParentComponent" visibility="protected" />
+      <methodref name="Updating" visibility="protected" />
+      <methodref name="Updated" visibility="protected" />
+      <methodref name="UpdateRegistry" visibility="protected" />
+      <methodref name="ValidateRename" visibility="protected" />
+      <methodref name="ValidateContainer" visibility="protected" />
+      <methodref name="ValidateInsert" visibility="protected" />
+      <methodref name="WriteState" visibility="protected" />
+      <methodref name="QueryInterface" visibility="protected" />
+      <methodref name="_AddRef" visibility="protected" />
+      <methodref name="_Release" visibility="protected" />
+      <methodref name="GetTypeInfoCount" visibility="protected" />
+      <methodref name="GetTypeInfo" visibility="protected" />
+      <methodref name="GetIDsOfNames" visibility="protected" />
+      <methodref name="Invoke" visibility="protected" />
+      <methodref name="Create" visibility="public" />
+      <methodref name="Destroy" visibility="public" />
+      <methodref name="BeforeDestruction" visibility="public" />
+      <methodref name="DestroyComponents" visibility="public" />
+      <methodref name="Destroying" visibility="public" />
+      <methodref name="ExecuteAction" visibility="public" />
+      <methodref name="FindComponent" visibility="public" />
+      <methodref name="FreeNotification" visibility="public" />
+      <methodref name="RemoveFreeNotification" visibility="public" />
+      <methodref name="FreeOnRelease" visibility="public" />
+      <methodref name="GetEnumerator" visibility="public" />
+      <methodref name="GetParentComponent" visibility="public" />
+      <methodref name="GetNamePath" visibility="public" />
+      <methodref name="HasParent" visibility="public" />
+      <methodref name="InsertComponent" visibility="public" />
+      <methodref name="RemoveComponent" visibility="public" />
+      <methodref name="SetSubComponent" visibility="public" />
+      <methodref name="SafeCallException" visibility="public" />
+      <methodref name="UpdateAction" visibility="public" />
+      <methodref name="IsImplementorOf" visibility="public" />
+      <methodref name="ReferenceInterface" visibility="public" />
+      <propertyref name="ComObject" visibility="public" />
+      <propertyref name="Components" visibility="public" />
+      <propertyref name="ComponentCount" visibility="public" />
+      <propertyref name="ComponentIndex" visibility="public" />
+      <propertyref name="ComponentState" visibility="public" />
+      <propertyref name="ComponentStyle" visibility="public" />
+      <propertyref name="DesignInfo" visibility="public" />
+      <propertyref name="Owner" visibility="public" />
+      <propertyref name="VCLComObject" visibility="public" />
+      <propertyref name="Name" visibility="published" />
+      <propertyref name="Tag" visibility="published" />
+      <ancestor name="TPersistent" namespace="Classes">
+        <methodref name="AssignError" visibility="private" />
+        <methodref name="AssignTo" visibility="protected" />
+        <methodref name="DefineProperties" visibility="protected" />
+        <methodref name="GetOwner" visibility="protected" />
+        <methodref name="Destroy" visibility="public" />
+        <methodref name="Assign" visibility="public" />
+        <methodref name="GetNamePath" visibility="public" />
+        <ancestor name="TObject" namespace="System">
+          <methodref name="Create" visibility="public" />
+          <methodref name="Free" visibility="public" />
+          <methodref name="InitInstance" visibility="public" />
+          <methodref name="CleanupInstance" visibility="public" />
+          <methodref name="ClassType" visibility="public" />
+          <methodref name="ClassName" visibility="public" />
+          <methodref name="ClassNameIs" visibility="public" />
+          <methodref name="ClassParent" visibility="public" />
+          <methodref name="ClassInfo" visibility="public" />
+          <methodref name="InstanceSize" visibility="public" />
+          <methodref name="InheritsFrom" visibility="public" />
+          <methodref name="MethodAddress" visibility="public" />
+          <methodref name="MethodName" visibility="public" />
+          <methodref name="FieldAddress" visibility="public" />
+          <methodref name="GetInterface" visibility="public" />
+          <methodref name="GetInterfaceEntry" visibility="public" />
+          <methodref name="GetInterfaceTable" visibility="public" />
+          <methodref name="SafeCallException" visibility="public" />
+          <methodref name="AfterConstruction" visibility="public" />
+          <methodref name="BeforeDestruction" visibility="public" />
+          <methodref name="Dispatch" visibility="public" />
+          <methodref name="DefaultHandler" visibility="public" />
+          <methodref name="NewInstance" visibility="public" />
+          <methodref name="FreeInstance" visibility="public" />
+          <methodref name="Destroy" visibility="public" />
+        </ancestor>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="FAcceptTypes" type="string" visibility="private" />
+      <field name="FAgent" type="string" visibility="private" />
+      <field name="FBinaryData" type="Boolean" visibility="private" />
+      <field name="FURL" type="string" visibility="private" />
+      <field name="FUseCache" type="Boolean" visibility="private" />
+      <field name="FFileName" type="string" visibility="private" />
+      <field name="FUserName" type="string" visibility="private" />
+      <field name="FPassword" type="string" visibility="private" />
+      <field name="FPostQuery" type="string" visibility="private" />
+      <field name="FReferer" type="string" visibility="private" />
+      <field name="FWaitThread" type="Boolean" visibility="private" />
+      <field name="FThread" type="THTTPGetThread" visibility="private" />
+      <field name="FError" type="TNotifyEvent" visibility="private" />
+      <field name="FResult" type="Boolean" visibility="private" />
+      <field name="FProgress" type="TOnProgressEvent" visibility="private" />
+      <field name="FDoneFile" type="TOnDoneFileEvent" visibility="private" />
+      <field name="FDoneString" type="TOnDoneStringEvent" visibility="private" />
+      <procedure name="ThreadDone" visibility="private">
+        <parameters>
+          <parameter name="Sender" type="TObject" />
+        </parameters>
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="aOwner" type="TComponent" />
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <procedure name="GetFile" visibility="public">
+      </procedure>
+      <procedure name="GetString" visibility="public">
+      </procedure>
+      <procedure name="Abort" visibility="public">
+      </procedure>
+      <property name="AcceptTypes" visibility="published" read="FAcceptTypes" write="FAcceptTypes" type="string" />
+      <property name="Agent" visibility="published" read="FAgent" write="FAgent" type="string" />
+      <property name="BinaryData" visibility="published" read="FBinaryData" write="FBinaryData" type="Boolean" />
+      <property name="URL" visibility="published" read="FURL" write="FURL" type="string" />
+      <property name="UseCache" visibility="published" read="FUseCache" write="FUseCache" type="Boolean" />
+      <property name="FileName" visibility="published" read="FFileName" write="FFileName" type="string" />
+      <property name="UserName" visibility="published" read="FUserName" write="FUserName" type="string" />
+      <property name="Password" visibility="published" read="FPassword" write="FPassword" type="string" />
+      <property name="PostQuery" visibility="published" read="FPostQuery" write="FPostQuery" type="string" />
+      <property name="Referer" visibility="published" read="FReferer" write="FReferer" type="string" />
+      <property name="WaitThread" visibility="published" read="FWaitThread" write="FWaitThread" type="Boolean" />
+      <event name="OnProgress" visibility="published" read="FProgress" write="FProgress" type="TOnProgressEvent" />
+      <event name="OnDoneFile" visibility="published" read="FDoneFile" write="FDoneFile" type="TOnDoneFileEvent" />
+      <event name="OnDoneString" visibility="published" read="FDoneString" write="FDoneString" type="TOnDoneStringEvent" />
+      <event name="OnError" visibility="published" read="FError" write="FError" type="TNotifyEvent" />
+    </members>
+  </class>
+  <procedure name="Register" visibility="private" procflags="virtual">
+  </procedure>
+</namespace>

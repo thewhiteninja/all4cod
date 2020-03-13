@@ -1,0 +1,84 @@
+[Comment]
+Background=536870911
+Foreground=536870911
+Style=2
+
+[Conditional Comment]
+Background=536870911
+Foreground=536870911
+Style=2
+
+[Data Type]
+Background=536870911
+Foreground=536870911
+Style=1
+
+[Default Packages]
+Background=536870911
+Foreground=536870911
+Style=1
+
+[Delimited Identifier]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Exception]
+Background=536870911
+Foreground=536870911
+Style=2
+
+[Function]
+Background=536870911
+Foreground=536870911
+Style=1
+
+[Identifier]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Number]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[PL/SQL Reserved Word]
+Background=536870911
+Foreground=536870911
+Style=1
+
+[Reserved Word]
+Background=536870911
+Foreground=536870911
+Style=1
+
+[Space]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[SQL*Plus Command]
+Background=536870911
+Foreground=536870911
+Style=1
+
+[String]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Symbol]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Table Name]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Variable]
+Background=536870911
+Foreground=536870911
+Style=0

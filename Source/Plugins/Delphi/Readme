@@ -1,0 +1,9 @@
+Icone du plugins :
+	Taille 16x16
+	Format Bmp
+	Couleurs : 256 (recommandé)
+	Couleur transparente : clFushia (255, 0, 255)
+
+Ressource :
+	Nom de l'icone IMAGE
+	Compilation brcc32 My_Dll.rc

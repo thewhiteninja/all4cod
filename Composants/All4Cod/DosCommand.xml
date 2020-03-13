@@ -1,0 +1,790 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="DosCommand">
+  <class name="TCreatePipeError">
+    <ancestor name="Exception" namespace="SysUtils">
+      <methodref name="Create" visibility="public" />
+      <methodref name="CreateFmt" visibility="public" />
+      <methodref name="CreateRes" visibility="public" />
+      <methodref name="CreateRes" visibility="public" />
+      <methodref name="CreateResFmt" visibility="public" />
+      <methodref name="CreateResFmt" visibility="public" />
+      <methodref name="CreateHelp" visibility="public" />
+      <methodref name="CreateFmtHelp" visibility="public" />
+      <methodref name="CreateResHelp" visibility="public" />
+      <methodref name="CreateResHelp" visibility="public" />
+      <methodref name="CreateResFmtHelp" visibility="public" />
+      <methodref name="CreateResFmtHelp" visibility="public" />
+      <propertyref name="HelpContext" visibility="public" />
+      <propertyref name="Message" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" />
+        <methodref name="Free" visibility="public" />
+        <methodref name="InitInstance" visibility="public" />
+        <methodref name="CleanupInstance" visibility="public" />
+        <methodref name="ClassType" visibility="public" />
+        <methodref name="ClassName" visibility="public" />
+        <methodref name="ClassNameIs" visibility="public" />
+        <methodref name="ClassParent" visibility="public" />
+        <methodref name="ClassInfo" visibility="public" />
+        <methodref name="InstanceSize" visibility="public" />
+        <methodref name="InheritsFrom" visibility="public" />
+        <methodref name="MethodAddress" visibility="public" />
+        <methodref name="MethodName" visibility="public" />
+        <methodref name="FieldAddress" visibility="public" />
+        <methodref name="GetInterface" visibility="public" />
+        <methodref name="GetInterfaceEntry" visibility="public" />
+        <methodref name="GetInterfaceTable" visibility="public" />
+        <methodref name="SafeCallException" visibility="public" />
+        <methodref name="AfterConstruction" visibility="public" />
+        <methodref name="BeforeDestruction" visibility="public" />
+        <methodref name="Dispatch" visibility="public" />
+        <methodref name="DefaultHandler" visibility="public" />
+        <methodref name="NewInstance" visibility="public" />
+        <methodref name="FreeInstance" visibility="public" />
+        <methodref name="Destroy" visibility="public" />
+      </ancestor>
+    </ancestor>
+  </class>
+  <class name="TCreateProcessError">
+    <ancestor name="Exception" namespace="SysUtils">
+      <methodref name="Create" visibility="public" />
+      <methodref name="CreateFmt" visibility="public" />
+      <methodref name="CreateRes" visibility="public" />
+      <methodref name="CreateRes" visibility="public" />
+      <methodref name="CreateResFmt" visibility="public" />
+      <methodref name="CreateResFmt" visibility="public" />
+      <methodref name="CreateHelp" visibility="public" />
+      <methodref name="CreateFmtHelp" visibility="public" />
+      <methodref name="CreateResHelp" visibility="public" />
+      <methodref name="CreateResHelp" visibility="public" />
+      <methodref name="CreateResFmtHelp" visibility="public" />
+      <methodref name="CreateResFmtHelp" visibility="public" />
+      <propertyref name="HelpContext" visibility="public" />
+      <propertyref name="Message" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" />
+        <methodref name="Free" visibility="public" />
+        <methodref name="InitInstance" visibility="public" />
+        <methodref name="CleanupInstance" visibility="public" />
+        <methodref name="ClassType" visibility="public" />
+        <methodref name="ClassName" visibility="public" />
+        <methodref name="ClassNameIs" visibility="public" />
+        <methodref name="ClassParent" visibility="public" />
+        <methodref name="ClassInfo" visibility="public" />
+        <methodref name="InstanceSize" visibility="public" />
+        <methodref name="InheritsFrom" visibility="public" />
+        <methodref name="MethodAddress" visibility="public" />
+        <methodref name="MethodName" visibility="public" />
+        <methodref name="FieldAddress" visibility="public" />
+        <methodref name="GetInterface" visibility="public" />
+        <methodref name="GetInterfaceEntry" visibility="public" />
+        <methodref name="GetInterfaceTable" visibility="public" />
+        <methodref name="SafeCallException" visibility="public" />
+        <methodref name="AfterConstruction" visibility="public" />
+        <methodref name="BeforeDestruction" visibility="public" />
+        <methodref name="Dispatch" visibility="public" />
+        <methodref name="DefaultHandler" visibility="public" />
+        <methodref name="NewInstance" visibility="public" />
+        <methodref name="FreeInstance" visibility="public" />
+        <methodref name="Destroy" visibility="public" />
+      </ancestor>
+    </ancestor>
+  </class>
+  <const name="otEntireLine" type="TOutputType">
+    <value>
+      otEntireLine
+    </value>
+  </const>
+  <const name="otBeginningOfLine" type="TOutputType">
+    <value>
+      otBeginningOfLine
+    </value>
+  </const>
+  <enum name="TOutputType">
+    <element name="otEntireLine" />
+    <element name="otBeginningOfLine" />
+  </enum>
+  <const name="rcCRLF" type="TReturnCode">
+    <value>
+      rcCRLF
+    </value>
+  </const>
+  <const name="rcLF" type="TReturnCode">
+    <value>
+      rcLF
+    </value>
+  </const>
+  <enum name="TReturnCode">
+    <element name="rcCRLF" />
+    <element name="rcLF" />
+  </enum>
+  <class name="TProcessTimer">
+    <ancestor name="TTimer" namespace="ExtCtrls">
+      <methodref name="UpdateTimer" visibility="private" />
+      <methodref name="SetEnabled" visibility="private" />
+      <methodref name="SetInterval" visibility="private" />
+      <methodref name="SetOnTimer" visibility="private" />
+      <methodref name="WndProc" visibility="private" />
+      <methodref name="Timer" visibility="protected" />
+      <methodref name="Create" visibility="public" />
+      <methodref name="Destroy" visibility="public" />
+      <propertyref name="Enabled" visibility="published" />
+      <propertyref name="Interval" visibility="published" />
+      <eventref name="OnTimer" visibility="published" />
+      <ancestor name="TComponent" namespace="Classes">
+        <methodref name="GetComObject" visibility="private" />
+        <methodref name="GetComponent" visibility="private" />
+        <methodref name="GetComponentCount" visibility="private" />
+        <methodref name="GetComponentIndex" visibility="private" />
+        <methodref name="Insert" visibility="private" />
+        <methodref name="ReadLeft" visibility="private" />
+        <methodref name="ReadTop" visibility="private" />
+        <methodref name="Remove" visibility="private" />
+        <methodref name="RemoveNotification" visibility="private" />
+        <methodref name="SetComponentIndex" visibility="private" />
+        <methodref name="SetReference" visibility="private" />
+        <methodref name="WriteLeft" visibility="private" />
+        <methodref name="WriteTop" visibility="private" />
+        <methodref name="IntfGetComponent" visibility="private" />
+        <methodref name="ChangeName" visibility="protected" />
+        <methodref name="DefineProperties" visibility="protected" />
+        <methodref name="GetChildren" visibility="protected" />
+        <methodref name="GetChildOwner" visibility="protected" />
+        <methodref name="GetChildParent" visibility="protected" />
+        <methodref name="GetOwner" visibility="protected" />
+        <methodref name="Loaded" visibility="protected" />
+        <methodref name="Notification" visibility="protected" />
+        <methodref name="PaletteCreated" visibility="protected" />
+        <methodref name="ReadState" visibility="protected" />
+        <methodref name="SetAncestor" visibility="protected" />
+        <methodref name="SetDesigning" visibility="protected" />
+        <methodref name="SetInline" visibility="protected" />
+        <methodref name="SetDesignInstance" visibility="protected" />
+        <methodref name="SetName" visibility="protected" />
+        <methodref name="SetChildOrder" visibility="protected" />
+        <methodref name="SetParentComponent" visibility="protected" />
+        <methodref name="Updating" visibility="protected" />
+        <methodref name="Updated" visibility="protected" />
+        <methodref name="UpdateRegistry" visibility="protected" />
+        <methodref name="ValidateRename" visibility="protected" />
+        <methodref name="ValidateContainer" visibility="protected" />
+        <methodref name="ValidateInsert" visibility="protected" />
+        <methodref name="WriteState" visibility="protected" />
+        <methodref name="QueryInterface" visibility="protected" />
+        <methodref name="_AddRef" visibility="protected" />
+        <methodref name="_Release" visibility="protected" />
+        <methodref name="GetTypeInfoCount" visibility="protected" />
+        <methodref name="GetTypeInfo" visibility="protected" />
+        <methodref name="GetIDsOfNames" visibility="protected" />
+        <methodref name="Invoke" visibility="protected" />
+        <methodref name="Create" visibility="public" />
+        <methodref name="Destroy" visibility="public" />
+        <methodref name="BeforeDestruction" visibility="public" />
+        <methodref name="DestroyComponents" visibility="public" />
+        <methodref name="Destroying" visibility="public" />
+        <methodref name="ExecuteAction" visibility="public" />
+        <methodref name="FindComponent" visibility="public" />
+        <methodref name="FreeNotification" visibility="public" />
+        <methodref name="RemoveFreeNotification" visibility="public" />
+        <methodref name="FreeOnRelease" visibility="public" />
+        <methodref name="GetEnumerator" visibility="public" />
+        <methodref name="GetParentComponent" visibility="public" />
+        <methodref name="GetNamePath" visibility="public" />
+        <methodref name="HasParent" visibility="public" />
+        <methodref name="InsertComponent" visibility="public" />
+        <methodref name="RemoveComponent" visibility="public" />
+        <methodref name="SetSubComponent" visibility="public" />
+        <methodref name="SafeCallException" visibility="public" />
+        <methodref name="UpdateAction" visibility="public" />
+        <methodref name="IsImplementorOf" visibility="public" />
+        <methodref name="ReferenceInterface" visibility="public" />
+        <propertyref name="ComObject" visibility="public" />
+        <propertyref name="Components" visibility="public" />
+        <propertyref name="ComponentCount" visibility="public" />
+        <propertyref name="ComponentIndex" visibility="public" />
+        <propertyref name="ComponentState" visibility="public" />
+        <propertyref name="ComponentStyle" visibility="public" />
+        <propertyref name="DesignInfo" visibility="public" />
+        <propertyref name="Owner" visibility="public" />
+        <propertyref name="VCLComObject" visibility="public" />
+        <propertyref name="Name" visibility="published" />
+        <propertyref name="Tag" visibility="published" />
+        <ancestor name="TPersistent" namespace="Classes">
+          <methodref name="AssignError" visibility="private" />
+          <methodref name="AssignTo" visibility="protected" />
+          <methodref name="DefineProperties" visibility="protected" />
+          <methodref name="GetOwner" visibility="protected" />
+          <methodref name="Destroy" visibility="public" />
+          <methodref name="Assign" visibility="public" />
+          <methodref name="GetNamePath" visibility="public" />
+          <ancestor name="TObject" namespace="System">
+            <methodref name="Create" visibility="public" />
+            <methodref name="Free" visibility="public" />
+            <methodref name="InitInstance" visibility="public" />
+            <methodref name="CleanupInstance" visibility="public" />
+            <methodref name="ClassType" visibility="public" />
+            <methodref name="ClassName" visibility="public" />
+            <methodref name="ClassNameIs" visibility="public" />
+            <methodref name="ClassParent" visibility="public" />
+            <methodref name="ClassInfo" visibility="public" />
+            <methodref name="InstanceSize" visibility="public" />
+            <methodref name="InheritsFrom" visibility="public" />
+            <methodref name="MethodAddress" visibility="public" />
+            <methodref name="MethodName" visibility="public" />
+            <methodref name="FieldAddress" visibility="public" />
+            <methodref name="GetInterface" visibility="public" />
+            <methodref name="GetInterfaceEntry" visibility="public" />
+            <methodref name="GetInterfaceTable" visibility="public" />
+            <methodref name="SafeCallException" visibility="public" />
+            <methodref name="AfterConstruction" visibility="public" />
+            <methodref name="BeforeDestruction" visibility="public" />
+            <methodref name="Dispatch" visibility="public" />
+            <methodref name="DefaultHandler" visibility="public" />
+            <methodref name="NewInstance" visibility="public" />
+            <methodref name="FreeInstance" visibility="public" />
+            <methodref name="Destroy" visibility="public" />
+          </ancestor>
+        </ancestor>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="FSinceBeginning" type="Integer" visibility="private" />
+      <field name="FSinceLastOutput" type="Integer" visibility="private" />
+      <procedure name="MyTimer" visibility="private">
+        <parameters>
+          <parameter name="Sender" type="TObject" />
+        </parameters>
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="AOwner" type="TComponent" />
+        </parameters>
+      </constructor>
+      <procedure name="Beginning" visibility="public">
+      </procedure>
+      <procedure name="NewOutput" visibility="public">
+      </procedure>
+      <procedure name="Ending" visibility="public">
+      </procedure>
+      <property name="SinceBeginning" visibility="public" read="FSinceBeginning" type="Integer" />
+      <property name="SinceLastOutput" visibility="public" read="FSinceLastOutput" type="Integer" />
+    </members>
+  </class>
+  <const name="swHIDE" type="TShowWindow">
+    <value>
+      swHIDE
+    </value>
+  </const>
+  <const name="swMAXIMIZE" type="TShowWindow">
+    <value>
+      swMAXIMIZE
+    </value>
+  </const>
+  <const name="swMINIMIZE" type="TShowWindow">
+    <value>
+      swMINIMIZE
+    </value>
+  </const>
+  <const name="swRESTORE" type="TShowWindow">
+    <value>
+      swRESTORE
+    </value>
+  </const>
+  <const name="swSHOW" type="TShowWindow">
+    <value>
+      swSHOW
+    </value>
+  </const>
+  <const name="swSHOWDEFAULT" type="TShowWindow">
+    <value>
+      swSHOWDEFAULT
+    </value>
+  </const>
+  <const name="swSHOWMAXIMIZED" type="TShowWindow">
+    <value>
+      swSHOWMAXIMIZED
+    </value>
+  </const>
+  <const name="swSHOWMINIMIZED" type="TShowWindow">
+    <value>
+      swSHOWMINIMIZED
+    </value>
+  </const>
+  <const name="swSHOWMINNOACTIVE" type="TShowWindow">
+    <value>
+      swSHOWMINNOACTIVE
+    </value>
+  </const>
+  <const name="swSHOWNA" type="TShowWindow">
+    <value>
+      swSHOWNA
+    </value>
+  </const>
+  <const name="swSHOWNOACTIVATE" type="TShowWindow">
+    <value>
+      swSHOWNOACTIVATE
+    </value>
+  </const>
+  <const name="swSHOWNORMAL" type="TShowWindow">
+    <value>
+      swSHOWNORMAL
+    </value>
+  </const>
+  <enum name="TShowWindow">
+    <element name="swHIDE" />
+    <element name="swMAXIMIZE" />
+    <element name="swMINIMIZE" />
+    <element name="swRESTORE" />
+    <element name="swSHOW" />
+    <element name="swSHOWDEFAULT" />
+    <element name="swSHOWMAXIMIZED" />
+    <element name="swSHOWMINIMIZED" />
+    <element name="swSHOWMINNOACTIVE" />
+    <element name="swSHOWNA" />
+    <element name="swSHOWNOACTIVATE" />
+    <element name="swSHOWNORMAL" />
+  </enum>
+  <const name="fCREATE_DEFAULT_ERROR_MODE" type="TCreationFlag">
+    <value>
+      fCREATE_DEFAULT_ERROR_MODE
+    </value>
+  </const>
+  <const name="fCREATE_NEW_CONSOLE" type="TCreationFlag">
+    <value>
+      fCREATE_NEW_CONSOLE
+    </value>
+  </const>
+  <const name="fCREATE_NEW_PROCESS_GROUP" type="TCreationFlag">
+    <value>
+      fCREATE_NEW_PROCESS_GROUP
+    </value>
+  </const>
+  <const name="fCREATE_SEPARATE_WOW_VDM" type="TCreationFlag">
+    <value>
+      fCREATE_SEPARATE_WOW_VDM
+    </value>
+  </const>
+  <const name="fCREATE_SHARED_WOW_VDM" type="TCreationFlag">
+    <value>
+      fCREATE_SHARED_WOW_VDM
+    </value>
+  </const>
+  <const name="fCREATE_SUSPENDED" type="TCreationFlag">
+    <value>
+      fCREATE_SUSPENDED
+    </value>
+  </const>
+  <const name="fCREATE_UNICODE_ENVIRONMENT" type="TCreationFlag">
+    <value>
+      fCREATE_UNICODE_ENVIRONMENT
+    </value>
+  </const>
+  <const name="fDEBUG_PROCESS" type="TCreationFlag">
+    <value>
+      fDEBUG_PROCESS
+    </value>
+  </const>
+  <const name="fDEBUG_ONLY_THIS_PROCESS" type="TCreationFlag">
+    <value>
+      fDEBUG_ONLY_THIS_PROCESS
+    </value>
+  </const>
+  <const name="fDETACHED_PROCESS" type="TCreationFlag">
+    <value>
+      fDETACHED_PROCESS
+    </value>
+  </const>
+  <enum name="TCreationFlag">
+    <element name="fCREATE_DEFAULT_ERROR_MODE" />
+    <element name="fCREATE_NEW_CONSOLE" />
+    <element name="fCREATE_NEW_PROCESS_GROUP" />
+    <element name="fCREATE_SEPARATE_WOW_VDM" />
+    <element name="fCREATE_SHARED_WOW_VDM" />
+    <element name="fCREATE_SUSPENDED" />
+    <element name="fCREATE_UNICODE_ENVIRONMENT" />
+    <element name="fDEBUG_PROCESS" />
+    <element name="fDEBUG_ONLY_THIS_PROCESS" />
+    <element name="fDETACHED_PROCESS" />
+  </enum>
+  <const name="dtsAllocatingMemory" type="TDosThreadStatus">
+    <value>
+      dtsAllocatingMemory
+    </value>
+  </const>
+  <const name="dtsAllocateMemoryFail" type="TDosThreadStatus">
+    <value>
+      dtsAllocateMemoryFail
+    </value>
+  </const>
+  <const name="dtsCreatingPipes" type="TDosThreadStatus">
+    <value>
+      dtsCreatingPipes
+    </value>
+  </const>
+  <const name="dtsCreatePipesFail" type="TDosThreadStatus">
+    <value>
+      dtsCreatePipesFail
+    </value>
+  </const>
+  <const name="dtsCreatingProcess" type="TDosThreadStatus">
+    <value>
+      dtsCreatingProcess
+    </value>
+  </const>
+  <const name="dtsCreateProcessFail" type="TDosThreadStatus">
+    <value>
+      dtsCreateProcessFail
+    </value>
+  </const>
+  <const name="dtsRunning" type="TDosThreadStatus">
+    <value>
+      dtsRunning
+    </value>
+  </const>
+  <const name="dtsRunningError" type="TDosThreadStatus">
+    <value>
+      dtsRunningError
+    </value>
+  </const>
+  <const name="dtsSuccess" type="TDosThreadStatus">
+    <value>
+      dtsSuccess
+    </value>
+  </const>
+  <const name="dtsUserAborted" type="TDosThreadStatus">
+    <value>
+      dtsUserAborted
+    </value>
+  </const>
+  <const name="dtsTimeOut" type="TDosThreadStatus">
+    <value>
+      dtsTimeOut
+    </value>
+  </const>
+  <enum name="TDosThreadStatus">
+    <element name="dtsAllocatingMemory" />
+    <element name="dtsAllocateMemoryFail" />
+    <element name="dtsCreatingPipes" />
+    <element name="dtsCreatePipesFail" />
+    <element name="dtsCreatingProcess" />
+    <element name="dtsCreateProcessFail" />
+    <element name="dtsRunning" />
+    <element name="dtsRunningError" />
+    <element name="dtsSuccess" />
+    <element name="dtsUserAborted" />
+    <element name="dtsTimeOut" />
+  </enum>
+  <class name="TDosThread">
+    <ancestor name="TThread" namespace="Classes">
+      <methodref name="CallOnTerminate" visibility="private" />
+      <methodref name="Synchronize" visibility="private" />
+      <methodref name="GetPriority" visibility="private" />
+      <methodref name="SetPriority" visibility="private" />
+      <methodref name="SetSuspended" visibility="private" />
+      <methodref name="CheckThreadError" visibility="protected" />
+      <methodref name="CheckThreadError" visibility="protected" />
+      <methodref name="DoTerminate" visibility="protected" />
+      <methodref name="Execute" visibility="protected" />
+      <methodref name="Queue" visibility="protected" />
+      <methodref name="Synchronize" visibility="protected" />
+      <propertyref name="ReturnValue" visibility="protected" />
+      <propertyref name="Terminated" visibility="protected" />
+      <methodref name="Create" visibility="public" />
+      <methodref name="Destroy" visibility="public" />
+      <methodref name="AfterConstruction" visibility="public" />
+      <methodref name="Resume" visibility="public" />
+      <methodref name="Suspend" visibility="public" />
+      <methodref name="Terminate" visibility="public" />
+      <methodref name="WaitFor" visibility="public" />
+      <methodref name="Queue" visibility="public" />
+      <methodref name="RemoveQueuedEvents" visibility="public" />
+      <methodref name="StaticQueue" visibility="public" />
+      <methodref name="Synchronize" visibility="public" />
+      <methodref name="StaticSynchronize" visibility="public" />
+      <propertyref name="FatalException" visibility="public" />
+      <propertyref name="FreeOnTerminate" visibility="public" />
+      <propertyref name="Handle" visibility="public" />
+      <propertyref name="Priority" visibility="public" />
+      <propertyref name="Suspended" visibility="public" />
+      <propertyref name="ThreadID" visibility="public" />
+      <eventref name="OnTerminate" visibility="public" />
+      <ancestor name="TObject" namespace="System">
+        <methodref name="Create" visibility="public" />
+        <methodref name="Free" visibility="public" />
+        <methodref name="InitInstance" visibility="public" />
+        <methodref name="CleanupInstance" visibility="public" />
+        <methodref name="ClassType" visibility="public" />
+        <methodref name="ClassName" visibility="public" />
+        <methodref name="ClassNameIs" visibility="public" />
+        <methodref name="ClassParent" visibility="public" />
+        <methodref name="ClassInfo" visibility="public" />
+        <methodref name="InstanceSize" visibility="public" />
+        <methodref name="InheritsFrom" visibility="public" />
+        <methodref name="MethodAddress" visibility="public" />
+        <methodref name="MethodName" visibility="public" />
+        <methodref name="FieldAddress" visibility="public" />
+        <methodref name="GetInterface" visibility="public" />
+        <methodref name="GetInterfaceEntry" visibility="public" />
+        <methodref name="GetInterfaceTable" visibility="public" />
+        <methodref name="SafeCallException" visibility="public" />
+        <methodref name="AfterConstruction" visibility="public" />
+        <methodref name="BeforeDestruction" visibility="public" />
+        <methodref name="Dispatch" visibility="public" />
+        <methodref name="DefaultHandler" visibility="public" />
+        <methodref name="NewInstance" visibility="public" />
+        <methodref name="FreeInstance" visibility="public" />
+        <methodref name="Destroy" visibility="public" />
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="FOwner" type="TDosCommand" visibility="private" />
+      <field name="FCommandLine" type="string" visibility="private" />
+      <field name="FTimer" type="TProcessTimer" visibility="private" />
+      <field name="FMaxTimeAfterBeginning" type="Integer" visibility="private" />
+      <field name="FMaxTimeAfterLastOutput" type="Integer" visibility="private" />
+      <field name="FOnNewLine" type="TNewLineEvent" visibility="private" />
+      <field name="FOnTerminated" type="TTerminateEvent" visibility="private" />
+      <field name="FCreatePipeError" type="TCreatePipeError" visibility="private" />
+      <field name="FCreateProcessError" type="TCreateProcessError" visibility="private" />
+      <field name="FPriority" type="Integer" visibility="private" />
+      <field name="FShowWindow" type="TShowWindow" visibility="private" />
+      <field name="FCreationFlag" type="TCreationFlag" visibility="private" />
+      <field name="FProcessInfo_SHARED" visibility="private">
+        <pointer name="FProcessInfo_SHARED" type="_PROCESS_INFORMATION" indircnt="1" />
+      </field>
+      <field name="FOutputStr" type="string" visibility="private" />
+      <field name="FOutputType" type="TOutputType" visibility="private" />
+      <procedure name="FExecute" visibility="private">
+      </procedure>
+      <procedure name="Execute" visibility="protected" procflags="override">
+      </procedure>
+      <procedure name="AddString" visibility="protected">
+      </procedure>
+      <procedure name="AddString_SHARED" visibility="protected">
+        <parameters>
+          <parameter name="Str" type="string" />
+          <parameter name="OutType" type="TOutputType" />
+        </parameters>
+      </procedure>
+      <field name="InputLines_SHARED" type="TStringList" visibility="public" />
+      <field name="FLineBeginned" type="Boolean" visibility="public" />
+      <field name="FActive" type="Boolean" visibility="public" />
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="AOwner" type="TDosCommand" />
+        </parameters>
+      </constructor>
+    </members>
+  </class>
+  <class name="TDosCommand">
+    <ancestor name="TComponent" namespace="Classes">
+      <methodref name="GetComObject" visibility="private" />
+      <methodref name="GetComponent" visibility="private" />
+      <methodref name="GetComponentCount" visibility="private" />
+      <methodref name="GetComponentIndex" visibility="private" />
+      <methodref name="Insert" visibility="private" />
+      <methodref name="ReadLeft" visibility="private" />
+      <methodref name="ReadTop" visibility="private" />
+      <methodref name="Remove" visibility="private" />
+      <methodref name="RemoveNotification" visibility="private" />
+      <methodref name="SetComponentIndex" visibility="private" />
+      <methodref name="SetReference" visibility="private" />
+      <methodref name="WriteLeft" visibility="private" />
+      <methodref name="WriteTop" visibility="private" />
+      <methodref name="IntfGetComponent" visibility="private" />
+      <methodref name="ChangeName" visibility="protected" />
+      <methodref name="DefineProperties" visibility="protected" />
+      <methodref name="GetChildren" visibility="protected" />
+      <methodref name="GetChildOwner" visibility="protected" />
+      <methodref name="GetChildParent" visibility="protected" />
+      <methodref name="GetOwner" visibility="protected" />
+      <methodref name="Loaded" visibility="protected" />
+      <methodref name="Notification" visibility="protected" />
+      <methodref name="PaletteCreated" visibility="protected" />
+      <methodref name="ReadState" visibility="protected" />
+      <methodref name="SetAncestor" visibility="protected" />
+      <methodref name="SetDesigning" visibility="protected" />
+      <methodref name="SetInline" visibility="protected" />
+      <methodref name="SetDesignInstance" visibility="protected" />
+      <methodref name="SetName" visibility="protected" />
+      <methodref name="SetChildOrder" visibility="protected" />
+      <methodref name="SetParentComponent" visibility="protected" />
+      <methodref name="Updating" visibility="protected" />
+      <methodref name="Updated" visibility="protected" />
+      <methodref name="UpdateRegistry" visibility="protected" />
+      <methodref name="ValidateRename" visibility="protected" />
+      <methodref name="ValidateContainer" visibility="protected" />
+      <methodref name="ValidateInsert" visibility="protected" />
+      <methodref name="WriteState" visibility="protected" />
+      <methodref name="QueryInterface" visibility="protected" />
+      <methodref name="_AddRef" visibility="protected" />
+      <methodref name="_Release" visibility="protected" />
+      <methodref name="GetTypeInfoCount" visibility="protected" />
+      <methodref name="GetTypeInfo" visibility="protected" />
+      <methodref name="GetIDsOfNames" visibility="protected" />
+      <methodref name="Invoke" visibility="protected" />
+      <methodref name="Create" visibility="public" />
+      <methodref name="Destroy" visibility="public" />
+      <methodref name="BeforeDestruction" visibility="public" />
+      <methodref name="DestroyComponents" visibility="public" />
+      <methodref name="Destroying" visibility="public" />
+      <methodref name="ExecuteAction" visibility="public" />
+      <methodref name="FindComponent" visibility="public" />
+      <methodref name="FreeNotification" visibility="public" />
+      <methodref name="RemoveFreeNotification" visibility="public" />
+      <methodref name="FreeOnRelease" visibility="public" />
+      <methodref name="GetEnumerator" visibility="public" />
+      <methodref name="GetParentComponent" visibility="public" />
+      <methodref name="GetNamePath" visibility="public" />
+      <methodref name="HasParent" visibility="public" />
+      <methodref name="InsertComponent" visibility="public" />
+      <methodref name="RemoveComponent" visibility="public" />
+      <methodref name="SetSubComponent" visibility="public" />
+      <methodref name="SafeCallException" visibility="public" />
+      <methodref name="UpdateAction" visibility="public" />
+      <methodref name="IsImplementorOf" visibility="public" />
+      <methodref name="ReferenceInterface" visibility="public" />
+      <propertyref name="ComObject" visibility="public" />
+      <propertyref name="Components" visibility="public" />
+      <propertyref name="ComponentCount" visibility="public" />
+      <propertyref name="ComponentIndex" visibility="public" />
+      <propertyref name="ComponentState" visibility="public" />
+      <propertyref name="ComponentStyle" visibility="public" />
+      <propertyref name="DesignInfo" visibility="public" />
+      <propertyref name="Owner" visibility="public" />
+      <propertyref name="VCLComObject" visibility="public" />
+      <propertyref name="Name" visibility="published" />
+      <propertyref name="Tag" visibility="published" />
+      <ancestor name="TPersistent" namespace="Classes">
+        <methodref name="AssignError" visibility="private" />
+        <methodref name="AssignTo" visibility="protected" />
+        <methodref name="DefineProperties" visibility="protected" />
+        <methodref name="GetOwner" visibility="protected" />
+        <methodref name="Destroy" visibility="public" />
+        <methodref name="Assign" visibility="public" />
+        <methodref name="GetNamePath" visibility="public" />
+        <ancestor name="TObject" namespace="System">
+          <methodref name="Create" visibility="public" />
+          <methodref name="Free" visibility="public" />
+          <methodref name="InitInstance" visibility="public" />
+          <methodref name="CleanupInstance" visibility="public" />
+          <methodref name="ClassType" visibility="public" />
+          <methodref name="ClassName" visibility="public" />
+          <methodref name="ClassNameIs" visibility="public" />
+          <methodref name="ClassParent" visibility="public" />
+          <methodref name="ClassInfo" visibility="public" />
+          <methodref name="InstanceSize" visibility="public" />
+          <methodref name="InheritsFrom" visibility="public" />
+          <methodref name="MethodAddress" visibility="public" />
+          <methodref name="MethodName" visibility="public" />
+          <methodref name="FieldAddress" visibility="public" />
+          <methodref name="GetInterface" visibility="public" />
+          <methodref name="GetInterfaceEntry" visibility="public" />
+          <methodref name="GetInterfaceTable" visibility="public" />
+          <methodref name="SafeCallException" visibility="public" />
+          <methodref name="AfterConstruction" visibility="public" />
+          <methodref name="BeforeDestruction" visibility="public" />
+          <methodref name="Dispatch" visibility="public" />
+          <methodref name="DefaultHandler" visibility="public" />
+          <methodref name="NewInstance" visibility="public" />
+          <methodref name="FreeInstance" visibility="public" />
+          <methodref name="Destroy" visibility="public" />
+        </ancestor>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="FTimer" type="TProcessTimer" visibility="private" />
+      <field name="FThread" type="TDosThread" visibility="private" />
+      <field name="FThreadStatus" type="TDosThreadStatus" visibility="private" />
+      <field name="FCommandLine" type="string" visibility="private" />
+      <field name="FLines_SHARED" type="TStringList" visibility="private" />
+      <field name="FInputLines_SHARED" type="TStringList" visibility="private" />
+      <field name="FOutputLines_SHARED" type="TStrings" visibility="private" />
+      <field name="FInputToOutput" type="Boolean" visibility="private" />
+      <field name="FOnNewLine" type="TNewLineEvent" visibility="private" />
+      <field name="FOnTerminated" type="TTerminateEvent" visibility="private" />
+      <field name="FMaxTimeAfterBeginning" type="Integer" visibility="private" />
+      <field name="FMaxTimeAfterLastOutput" type="Integer" visibility="private" />
+      <field name="FPriority" type="Integer" visibility="private" />
+      <field name="FShowWindow" type="TShowWindow" visibility="private" />
+      <field name="FCreationFlag" type="TCreationFlag" visibility="private" />
+      <field name="FExitCode" type="Integer" visibility="private" />
+      <field name="FProcessInfo_SHARED" type="_PROCESS_INFORMATION" visibility="private" />
+      <field name="FReturnCode" type="TReturnCode" visibility="private" />
+      <field name="FOutputReturnCode" type="TReturnCode" visibility="private" />
+      <field name="FSync" type="TMultiReadExclusiveWriteSynchronizer" visibility="private" />
+      <function name="GetPrompting" visibility="private">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetActive" visibility="private">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetSinceBeginning" visibility="private">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <function name="GetSinceLastOutput" visibility="private">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <procedure name="SetOutputLines_SHARED" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TStrings" />
+        </parameters>
+      </procedure>
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="AOwner" type="TComponent" />
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <procedure name="Execute" visibility="public">
+      </procedure>
+      <function name="Execute2" visibility="public">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <procedure name="Stop" visibility="public">
+      </procedure>
+      <procedure name="SendLine" visibility="public">
+        <parameters>
+          <parameter name="Value" type="string" />
+          <parameter name="Eol" type="Boolean" />
+        </parameters>
+      </procedure>
+      <property name="OutputLines" visibility="public" read="FOutputLines_SHARED" write="SetOutputLines_SHARED" type="TStrings" />
+      <property name="Lines" visibility="public" read="FLines_SHARED" type="TStringList" />
+      <property name="Priority" visibility="public" read="FPriority" write="FPriority" type="Integer" />
+      <property name="Active" visibility="public" read="GetActive" type="Boolean" />
+      <property name="Prompting" visibility="public" read="GetPrompting" type="Boolean" />
+      <property name="SinceBeginning" visibility="public" read="GetSinceBeginning" type="Integer" />
+      <property name="SinceLastOutput" visibility="public" read="GetSinceLastOutput" type="Integer" />
+      <property name="ExitCode" visibility="public" read="FExitCode" write="FExitCode" type="Integer" />
+      <property name="ProcessInfo" visibility="public" read="FProcessInfo_SHARED" type="_PROCESS_INFORMATION" />
+      <property name="ThreadStatus" visibility="public" read="FThreadStatus" write="FThreadStatus" type="TDosThreadStatus" />
+      <property name="Sync" visibility="public" read="FSync" type="TMultiReadExclusiveWriteSynchronizer" />
+      <property name="CommandLine" visibility="published" read="FCommandLine" write="FCommandLine" type="string" />
+      <event name="OnNewLine" visibility="published" read="FOnNewLine" write="FOnNewLine" type="TNewLineEvent" />
+      <event name="OnTerminated" visibility="published" read="FOnTerminated" write="FOnTerminated" type="TTerminateEvent" />
+      <property name="InputToOutput" visibility="published" read="FInputToOutput" write="FInputToOutput" type="Boolean" />
+      <property name="MaxTimeAfterBeginning" visibility="published" read="FMaxTimeAfterBeginning" write="FMaxTimeAfterBeginning" type="Integer" />
+      <property name="MaxTimeAfterLastOutput" visibility="published" read="FMaxTimeAfterLastOutput" write="FMaxTimeAfterLastOutput" type="Integer" />
+      <property name="ShowWindow" visibility="published" read="FShowWindow" write="FShowWindow" type="TShowWindow" />
+      <property name="CreationFlag" visibility="published" read="FCreationFlag" write="FCreationFlag" type="TCreationFlag" />
+      <property name="ReturnCode" visibility="published" read="FReturnCode" write="FReturnCode" type="TReturnCode" />
+      <property name="OutputReturnCode" visibility="published" read="FOutputReturnCode" type="TReturnCode" />
+    </members>
+  </class>
+  <procedure name="Register" visibility="private" procflags="virtual">
+  </procedure>
+</namespace>

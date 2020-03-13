@@ -1,0 +1,162 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>Cascading Style Sheets</Name>
+   <FileTypeName>css</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark></Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5344831713</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S>BODY</S>
+   <S>{</S>
+   <S>   FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;</S>
+   <S>   FONT-SIZE: 10pt</S>
+   <S>}</S>
+   <S>.TABLE</S>
+   <S>{</S>
+   <S>   FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;</S>
+   <S>   FONT-SIZE: 10pt</S>
+   <S>}</S>
+   <S>.feedbackbutton</S>
+   <S>{</S>
+   <S>   FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;</S>
+   <S>   COLOR: white;</S>
+   <S>   CURSOR: hand;</S>
+   <S>   FONT-SIZE: 8pt;</S>
+   <S>   PADDING-LEFT:12px;</S>
+   <S>   PADDING-RIGHT:12px;</S>
+   <S>   vertical-align: middle;</S>
+   <S>}</S>
+   <S>.labelText</S>
+   <S>{</S>
+   <S>   FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;</S>
+   <S>   FONT-SIZE: 10t;</S>
+   <S>   FONT-WEIGHT: bold;</S>
+   <S>   COLOR: black</S>
+   <S>}</S>
+   <S>.regularText</S>
+   <S>{</S>
+   <S>   FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;</S>
+   <S>   FONT-SIZE: 10pt;</S>
+   <S>   COLOR: black</S>
+   <S>}</S>
+   <S>.banner</S>
+   <S>{</S>
+   <S>   FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;</S>
+   <S>   font-weight: normal;</S>
+   <S>   font-size: 10pt;</S>
+   <S>   letter-spacing: 2px;</S>
+   <S>   background-color: white;</S>
+   <S>   border-color:black;</S>
+   <S>   border-style: solid;</S>
+   <S>   border-width: 1px;</S>
+   <S>   width: 200</S>
+   <S>}</S>
+   <S>.subtitle</S>
+   <S>{</S>
+   <S>   FONT-FAMILY: Verdana, Tahoma, Arial, Helvetica;</S>
+   <S>   FONT-SIZE: 14pt;</S>
+   <S>   FONT-WEIGHT: bold;</S>
+   <S>}</S>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+  <Range Name="Body">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>16711808</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>BODY</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>False</AnyTerm>
+  <CloseOnTerm>True</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Value">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>:</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>True</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+  <Range Name="Param">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>255</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>.</OpenSymbol>
+  <CloseSymbol></CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>True</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

@@ -1,0 +1,24 @@
+[Comment]
+Background=536870911
+Foreground=8388608
+Style=2
+
+[Identifier]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[Reserved Word]
+Background=536870911
+Foreground=536870911
+Style=1
+
+[Space]
+Background=536870911
+Foreground=536870911
+Style=0
+
+[String]
+Background=536870911
+Foreground=255
+Style=0

@@ -1,0 +1,854 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="SynHighlighterAny">
+  <const name="tkComment" type="TtkTokenKind">
+    <value>
+      tkComment
+    </value>
+  </const>
+  <const name="tkIdentifier" type="TtkTokenKind">
+    <value>
+      tkIdentifier
+    </value>
+  </const>
+  <const name="tkKey" type="TtkTokenKind">
+    <value>
+      tkKey
+    </value>
+  </const>
+  <const name="tkNull" type="TtkTokenKind">
+    <value>
+      tkNull
+    </value>
+  </const>
+  <const name="tkNumber" type="TtkTokenKind">
+    <value>
+      tkNumber
+    </value>
+  </const>
+  <const name="tkPreprocessor" type="TtkTokenKind">
+    <value>
+      tkPreprocessor
+    </value>
+  </const>
+  <const name="tkSpace" type="TtkTokenKind">
+    <value>
+      tkSpace
+    </value>
+  </const>
+  <const name="tkString" type="TtkTokenKind">
+    <value>
+      tkString
+    </value>
+  </const>
+  <const name="tkSymbol" type="TtkTokenKind">
+    <value>
+      tkSymbol
+    </value>
+  </const>
+  <const name="tkUnknown" type="TtkTokenKind">
+    <value>
+      tkUnknown
+    </value>
+  </const>
+  <const name="tkConstant" type="TtkTokenKind">
+    <value>
+      tkConstant
+    </value>
+  </const>
+  <const name="tkObject" type="TtkTokenKind">
+    <value>
+      tkObject
+    </value>
+  </const>
+  <const name="tkEntity" type="TtkTokenKind">
+    <value>
+      tkEntity
+    </value>
+  </const>
+  <const name="tkDollarVariable" type="TtkTokenKind">
+    <value>
+      tkDollarVariable
+    </value>
+  </const>
+  <const name="tkDot" type="TtkTokenKind">
+    <value>
+      tkDot
+    </value>
+  </const>
+  <enum name="TtkTokenKind">
+    <element name="tkComment" />
+    <element name="tkIdentifier" />
+    <element name="tkKey" />
+    <element name="tkNull" />
+    <element name="tkNumber" />
+    <element name="tkPreprocessor" />
+    <element name="tkSpace" />
+    <element name="tkString" />
+    <element name="tkSymbol" />
+    <element name="tkUnknown" />
+    <element name="tkConstant" />
+    <element name="tkObject" />
+    <element name="tkEntity" />
+    <element name="tkDollarVariable" />
+    <element name="tkDot" />
+  </enum>
+  <const name="csAnsiStyle" type="TCommentStyle">
+    <value>
+      csAnsiStyle
+    </value>
+  </const>
+  <const name="csPasStyle" type="TCommentStyle">
+    <value>
+      csPasStyle
+    </value>
+  </const>
+  <const name="csCStyle" type="TCommentStyle">
+    <value>
+      csCStyle
+    </value>
+  </const>
+  <const name="csAsmStyle" type="TCommentStyle">
+    <value>
+      csAsmStyle
+    </value>
+  </const>
+  <const name="csBasStyle" type="TCommentStyle">
+    <value>
+      csBasStyle
+    </value>
+  </const>
+  <const name="csVBStyle" type="TCommentStyle">
+    <value>
+      csVBStyle
+    </value>
+  </const>
+  <const name="csPerlStyle" type="TCommentStyle">
+    <value>
+      csPerlStyle
+    </value>
+  </const>
+  <enum name="TCommentStyle">
+    <element name="csAnsiStyle" />
+    <element name="csPasStyle" />
+    <element name="csCStyle" />
+    <element name="csAsmStyle" />
+    <element name="csBasStyle" />
+    <element name="csVBStyle" />
+    <element name="csPerlStyle" />
+  </enum>
+  <set name="CommentStyles" type="TCommentStyle">
+    <element name="csAnsiStyle" />
+    <element name="csPasStyle" />
+    <element name="csCStyle" />
+    <element name="csAsmStyle" />
+    <element name="csBasStyle" />
+    <element name="csVBStyle" />
+    <element name="csPerlStyle" />
+  </set>
+  <const name="rsANil" type="TRangeState">
+    <value>
+      rsANil
+    </value>
+  </const>
+  <const name="rsAnsi" type="TRangeState">
+    <value>
+      rsAnsi
+    </value>
+  </const>
+  <const name="rsPasStyle" type="TRangeState">
+    <value>
+      rsPasStyle
+    </value>
+  </const>
+  <const name="rsCStyle" type="TRangeState">
+    <value>
+      rsCStyle
+    </value>
+  </const>
+  <const name="rsUnKnown" type="TRangeState">
+    <value>
+      rsUnKnown
+    </value>
+  </const>
+  <enum name="TRangeState">
+    <element name="rsANil" />
+    <element name="rsAnsi" />
+    <element name="rsPasStyle" />
+    <element name="rsCStyle" />
+    <element name="rsUnKnown" />
+  </enum>
+  <const name="sdSingleQuote">
+    <value>
+      sdSingleQuote
+    </value>
+  </const>
+  <const name="sdDoubleQuote">
+    <value>
+      sdDoubleQuote
+    </value>
+  </const>
+  <set name="TStringDelims">
+    <element name="sdSingleQuote" />
+    <element name="sdDoubleQuote" />
+  </set>
+  <class name="TIniList">
+    <ancestor name="TStringList" namespace="Classes">
+      <methodref name="ExchangeItems" visibility="private" />
+      <methodref name="Grow" visibility="private" />
+      <methodref name="QuickSort" visibility="private" />
+      <methodref name="SetSorted" visibility="private" />
+      <methodref name="SetCaseSensitive" visibility="private" />
+      <methodref name="Changed" visibility="protected" />
+      <methodref name="Changing" visibility="protected" />
+      <methodref name="Get" visibility="protected" />
+      <methodref name="GetCapacity" visibility="protected" />
+      <methodref name="GetCount" visibility="protected" />
+      <methodref name="GetObject" visibility="protected" />
+      <methodref name="Put" visibility="protected" />
+      <methodref name="PutObject" visibility="protected" />
+      <methodref name="SetCapacity" visibility="protected" />
+      <methodref name="SetUpdateState" visibility="protected" />
+      <methodref name="CompareStrings" visibility="protected" />
+      <methodref name="InsertItem" visibility="protected" />
+      <methodref name="Destroy" visibility="public" />
+      <methodref name="Add" visibility="public" />
+      <methodref name="AddObject" visibility="public" />
+      <methodref name="Clear" visibility="public" />
+      <methodref name="Delete" visibility="public" />
+      <methodref name="Exchange" visibility="public" />
+      <methodref name="Find" visibility="public" />
+      <methodref name="IndexOf" visibility="public" />
+      <methodref name="Insert" visibility="public" />
+      <methodref name="InsertObject" visibility="public" />
+      <methodref name="Sort" visibility="public" />
+      <methodref name="CustomSort" visibility="public" />
+      <propertyref name="Duplicates" visibility="public" />
+      <propertyref name="Sorted" visibility="public" />
+      <propertyref name="CaseSensitive" visibility="public" />
+      <eventref name="OnChange" visibility="public" />
+      <eventref name="OnChanging" visibility="public" />
+      <ancestor name="TStrings" namespace="Classes">
+        <methodref name="GetCommaText" visibility="private" />
+        <methodref name="GetDelimitedText" visibility="private" />
+        <methodref name="GetName" visibility="private" />
+        <methodref name="GetValue" visibility="private" />
+        <methodref name="ReadData" visibility="private" />
+        <methodref name="SetCommaText" visibility="private" />
+        <methodref name="SetDelimitedText" visibility="private" />
+        <methodref name="SetStringsAdapter" visibility="private" />
+        <methodref name="SetValue" visibility="private" />
+        <methodref name="WriteData" visibility="private" />
+        <methodref name="GetDelimiter" visibility="private" />
+        <methodref name="SetDelimiter" visibility="private" />
+        <methodref name="GetLineBreak" visibility="private" />
+        <methodref name="SetLineBreak" visibility="private" />
+        <methodref name="GetQuoteChar" visibility="private" />
+        <methodref name="SetQuoteChar" visibility="private" />
+        <methodref name="GetNameValueSeparator" visibility="private" />
+        <methodref name="SetNameValueSeparator" visibility="private" />
+        <methodref name="GetValueFromIndex" visibility="private" />
+        <methodref name="SetValueFromIndex" visibility="private" />
+        <methodref name="DefineProperties" visibility="protected" />
+        <methodref name="Error" visibility="protected" />
+        <methodref name="Error" visibility="protected" />
+        <methodref name="ExtractName" visibility="protected" />
+        <methodref name="Get" visibility="protected" />
+        <methodref name="GetCapacity" visibility="protected" />
+        <methodref name="GetCount" visibility="protected" />
+        <methodref name="GetObject" visibility="protected" />
+        <methodref name="GetTextStr" visibility="protected" />
+        <methodref name="Put" visibility="protected" />
+        <methodref name="PutObject" visibility="protected" />
+        <methodref name="SetCapacity" visibility="protected" />
+        <methodref name="SetTextStr" visibility="protected" />
+        <methodref name="SetUpdateState" visibility="protected" />
+        <propertyref name="UpdateCount" visibility="protected" />
+        <methodref name="CompareStrings" visibility="protected" />
+        <methodref name="Destroy" visibility="public" />
+        <methodref name="Add" visibility="public" />
+        <methodref name="AddObject" visibility="public" />
+        <methodref name="Append" visibility="public" />
+        <methodref name="AddStrings" visibility="public" />
+        <methodref name="Assign" visibility="public" />
+        <methodref name="BeginUpdate" visibility="public" />
+        <methodref name="Clear" visibility="public" />
+        <methodref name="Delete" visibility="public" />
+        <methodref name="EndUpdate" visibility="public" />
+        <methodref name="Equals" visibility="public" />
+        <methodref name="Exchange" visibility="public" />
+        <methodref name="GetEnumerator" visibility="public" />
+        <methodref name="GetText" visibility="public" />
+        <methodref name="IndexOf" visibility="public" />
+        <methodref name="IndexOfName" visibility="public" />
+        <methodref name="IndexOfObject" visibility="public" />
+        <methodref name="Insert" visibility="public" />
+        <methodref name="InsertObject" visibility="public" />
+        <methodref name="LoadFromFile" visibility="public" />
+        <methodref name="LoadFromStream" visibility="public" />
+        <methodref name="Move" visibility="public" />
+        <methodref name="SaveToFile" visibility="public" />
+        <methodref name="SaveToStream" visibility="public" />
+        <methodref name="SetText" visibility="public" />
+        <propertyref name="Capacity" visibility="public" />
+        <propertyref name="CommaText" visibility="public" />
+        <propertyref name="Count" visibility="public" />
+        <propertyref name="Delimiter" visibility="public" />
+        <propertyref name="DelimitedText" visibility="public" />
+        <propertyref name="LineBreak" visibility="public" />
+        <propertyref name="Names" visibility="public" />
+        <propertyref name="Objects" visibility="public" />
+        <propertyref name="QuoteChar" visibility="public" />
+        <propertyref name="Values" visibility="public" />
+        <propertyref name="ValueFromIndex" visibility="public" />
+        <propertyref name="NameValueSeparator" visibility="public" />
+        <propertyref name="Strings" visibility="public" />
+        <propertyref name="Text" visibility="public" />
+        <propertyref name="StringsAdapter" visibility="public" />
+        <ancestor name="TPersistent" namespace="Classes">
+          <methodref name="AssignError" visibility="private" />
+          <methodref name="AssignTo" visibility="protected" />
+          <methodref name="DefineProperties" visibility="protected" />
+          <methodref name="GetOwner" visibility="protected" />
+          <methodref name="Destroy" visibility="public" />
+          <methodref name="Assign" visibility="public" />
+          <methodref name="GetNamePath" visibility="public" />
+          <ancestor name="TObject" namespace="System">
+            <methodref name="Create" visibility="public" />
+            <methodref name="Free" visibility="public" />
+            <methodref name="InitInstance" visibility="public" />
+            <methodref name="CleanupInstance" visibility="public" />
+            <methodref name="ClassType" visibility="public" />
+            <methodref name="ClassName" visibility="public" />
+            <methodref name="ClassNameIs" visibility="public" />
+            <methodref name="ClassParent" visibility="public" />
+            <methodref name="ClassInfo" visibility="public" />
+            <methodref name="InstanceSize" visibility="public" />
+            <methodref name="InheritsFrom" visibility="public" />
+            <methodref name="MethodAddress" visibility="public" />
+            <methodref name="MethodName" visibility="public" />
+            <methodref name="FieldAddress" visibility="public" />
+            <methodref name="GetInterface" visibility="public" />
+            <methodref name="GetInterfaceEntry" visibility="public" />
+            <methodref name="GetInterfaceTable" visibility="public" />
+            <methodref name="SafeCallException" visibility="public" />
+            <methodref name="AfterConstruction" visibility="public" />
+            <methodref name="BeforeDestruction" visibility="public" />
+            <methodref name="Dispatch" visibility="public" />
+            <methodref name="DefaultHandler" visibility="public" />
+            <methodref name="NewInstance" visibility="public" />
+            <methodref name="FreeInstance" visibility="public" />
+            <methodref name="Destroy" visibility="public" />
+          </ancestor>
+        </ancestor>
+      </ancestor>
+    </ancestor>
+    <members>
+      <function name="GetKeyIndex" visibility="private">
+        <parameters>
+          <parameter name="asection" type="string" />
+          <parameter name="akey" type="string" />
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <function name="GetKeyValue" visibility="private">
+        <parameters>
+          <parameter name="asection" type="string" />
+          <parameter name="akey" type="string" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="ReadString" visibility="public">
+        <parameters>
+          <parameter name="asection" type="string" />
+          <parameter name="akey" type="string" />
+          <parameter name="adefault" type="string" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="ReadInteger" visibility="public">
+        <parameters>
+          <parameter name="asection" type="string" />
+          <parameter name="akey" type="string" />
+          <parameter name="adefault" type="Integer" />
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <function name="ReadBool" visibility="public">
+        <parameters>
+          <parameter name="asection" type="string" />
+          <parameter name="akey" type="string" />
+          <parameter name="adefault" type="Boolean" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="ReadSectionNames" visibility="public">
+        <parameters>
+          <parameter name="asection" type="string" />
+          <parameter name="alist" type="TStrings" />
+        </parameters>
+      </procedure>
+    </members>
+  </class>
+  <class name="TSynAnySyn">
+    <ancestor name="TSynCustomHighlighter" namespace="SynEditHighlighter">
+      <methodref name="SetEnabled" visibility="private" />
+      <methodref name="Loaded" visibility="protected" />
+      <methodref name="AddAttribute" visibility="protected" />
+      <methodref name="DefHighlightChange" visibility="protected" />
+      <methodref name="FreeHighlighterAttributes" visibility="protected" />
+      <methodref name="GetAttribCount" visibility="protected" />
+      <methodref name="GetAttribute" visibility="protected" />
+      <methodref name="GetDefaultAttribute" visibility="protected" />
+      <methodref name="GetDefaultFilter" visibility="protected" />
+      <methodref name="GetIdentChars" visibility="protected" />
+      <methodref name="GetSampleSource" visibility="protected" />
+      <methodref name="IsFilterStored" visibility="protected" />
+      <methodref name="SetAttributesOnChange" visibility="protected" />
+      <methodref name="SetDefaultFilter" visibility="protected" />
+      <methodref name="SetSampleSource" visibility="protected" />
+      <methodref name="SetWordBreakChars" visibility="protected" />
+      <methodref name="GetCapabilitiesProp" visibility="protected" />
+      <methodref name="GetLanguageNameProp" visibility="protected" />
+      <methodref name="GetCapabilities" visibility="public" />
+      <methodref name="GetLanguageName" visibility="public" />
+      <methodref name="Create" visibility="public" />
+      <methodref name="Destroy" visibility="public" />
+      <methodref name="Assign" visibility="public" />
+      <methodref name="BeginUpdate" visibility="public" />
+      <methodref name="EndUpdate" visibility="public" />
+      <methodref name="GetEol" visibility="public" />
+      <methodref name="GetRange" visibility="public" />
+      <methodref name="GetToken" visibility="public" />
+      <methodref name="GetTokenAttribute" visibility="public" />
+      <methodref name="GetTokenKind" visibility="public" />
+      <methodref name="GetTokenPos" visibility="public" />
+      <methodref name="IsKeyword" visibility="public" />
+      <methodref name="Next" visibility="public" />
+      <methodref name="NextToEol" visibility="public" />
+      <methodref name="SetLine" visibility="public" />
+      <methodref name="SetRange" visibility="public" />
+      <methodref name="ResetRange" visibility="public" />
+      <methodref name="UseUserSettings" visibility="public" />
+      <methodref name="EnumUserSettings" visibility="public" />
+      <methodref name="LoadFromRegistry" visibility="public" />
+      <methodref name="SaveToRegistry" visibility="public" />
+      <methodref name="LoadFromFile" visibility="public" />
+      <methodref name="SaveToFile" visibility="public" />
+      <methodref name="HookAttrChangeEvent" visibility="public" />
+      <methodref name="UnhookAttrChangeEvent" visibility="public" />
+      <propertyref name="IdentChars" visibility="public" />
+      <propertyref name="WordBreakChars" visibility="public" />
+      <propertyref name="LanguageName" visibility="public" />
+      <propertyref name="AttrCount" visibility="public" />
+      <propertyref name="Attribute" visibility="public" />
+      <propertyref name="Capabilities" visibility="public" />
+      <propertyref name="SampleSource" visibility="public" />
+      <propertyref name="CommentAttribute" visibility="public" />
+      <propertyref name="IdentifierAttribute" visibility="public" />
+      <propertyref name="KeywordAttribute" visibility="public" />
+      <propertyref name="StringAttribute" visibility="public" />
+      <propertyref name="SymbolAttribute" visibility="public" />
+      <propertyref name="WhitespaceAttribute" visibility="public" />
+      <propertyref name="DefaultFilter" visibility="published" />
+      <propertyref name="Enabled" visibility="published" />
+      <ancestor name="TComponent" namespace="Classes">
+        <methodref name="GetComObject" visibility="private" />
+        <methodref name="GetComponent" visibility="private" />
+        <methodref name="GetComponentCount" visibility="private" />
+        <methodref name="GetComponentIndex" visibility="private" />
+        <methodref name="Insert" visibility="private" />
+        <methodref name="ReadLeft" visibility="private" />
+        <methodref name="ReadTop" visibility="private" />
+        <methodref name="Remove" visibility="private" />
+        <methodref name="RemoveNotification" visibility="private" />
+        <methodref name="SetComponentIndex" visibility="private" />
+        <methodref name="SetReference" visibility="private" />
+        <methodref name="WriteLeft" visibility="private" />
+        <methodref name="WriteTop" visibility="private" />
+        <methodref name="IntfGetComponent" visibility="private" />
+        <methodref name="ChangeName" visibility="protected" />
+        <methodref name="DefineProperties" visibility="protected" />
+        <methodref name="GetChildren" visibility="protected" />
+        <methodref name="GetChildOwner" visibility="protected" />
+        <methodref name="GetChildParent" visibility="protected" />
+        <methodref name="GetOwner" visibility="protected" />
+        <methodref name="Loaded" visibility="protected" />
+        <methodref name="Notification" visibility="protected" />
+        <methodref name="PaletteCreated" visibility="protected" />
+        <methodref name="ReadState" visibility="protected" />
+        <methodref name="SetAncestor" visibility="protected" />
+        <methodref name="SetDesigning" visibility="protected" />
+        <methodref name="SetInline" visibility="protected" />
+        <methodref name="SetDesignInstance" visibility="protected" />
+        <methodref name="SetName" visibility="protected" />
+        <methodref name="SetChildOrder" visibility="protected" />
+        <methodref name="SetParentComponent" visibility="protected" />
+        <methodref name="Updating" visibility="protected" />
+        <methodref name="Updated" visibility="protected" />
+        <methodref name="UpdateRegistry" visibility="protected" />
+        <methodref name="ValidateRename" visibility="protected" />
+        <methodref name="ValidateContainer" visibility="protected" />
+        <methodref name="ValidateInsert" visibility="protected" />
+        <methodref name="WriteState" visibility="protected" />
+        <methodref name="QueryInterface" visibility="protected" />
+        <methodref name="_AddRef" visibility="protected" />
+        <methodref name="_Release" visibility="protected" />
+        <methodref name="GetTypeInfoCount" visibility="protected" />
+        <methodref name="GetTypeInfo" visibility="protected" />
+        <methodref name="GetIDsOfNames" visibility="protected" />
+        <methodref name="Invoke" visibility="protected" />
+        <methodref name="Create" visibility="public" />
+        <methodref name="Destroy" visibility="public" />
+        <methodref name="BeforeDestruction" visibility="public" />
+        <methodref name="DestroyComponents" visibility="public" />
+        <methodref name="Destroying" visibility="public" />
+        <methodref name="ExecuteAction" visibility="public" />
+        <methodref name="FindComponent" visibility="public" />
+        <methodref name="FreeNotification" visibility="public" />
+        <methodref name="RemoveFreeNotification" visibility="public" />
+        <methodref name="FreeOnRelease" visibility="public" />
+        <methodref name="GetEnumerator" visibility="public" />
+        <methodref name="GetParentComponent" visibility="public" />
+        <methodref name="GetNamePath" visibility="public" />
+        <methodref name="HasParent" visibility="public" />
+        <methodref name="InsertComponent" visibility="public" />
+        <methodref name="RemoveComponent" visibility="public" />
+        <methodref name="SetSubComponent" visibility="public" />
+        <methodref name="SafeCallException" visibility="public" />
+        <methodref name="UpdateAction" visibility="public" />
+        <methodref name="IsImplementorOf" visibility="public" />
+        <methodref name="ReferenceInterface" visibility="public" />
+        <propertyref name="ComObject" visibility="public" />
+        <propertyref name="Components" visibility="public" />
+        <propertyref name="ComponentCount" visibility="public" />
+        <propertyref name="ComponentIndex" visibility="public" />
+        <propertyref name="ComponentState" visibility="public" />
+        <propertyref name="ComponentStyle" visibility="public" />
+        <propertyref name="DesignInfo" visibility="public" />
+        <propertyref name="Owner" visibility="public" />
+        <propertyref name="VCLComObject" visibility="public" />
+        <propertyref name="Name" visibility="published" />
+        <propertyref name="Tag" visibility="published" />
+        <ancestor name="TPersistent" namespace="Classes">
+          <methodref name="AssignError" visibility="private" />
+          <methodref name="AssignTo" visibility="protected" />
+          <methodref name="DefineProperties" visibility="protected" />
+          <methodref name="GetOwner" visibility="protected" />
+          <methodref name="Destroy" visibility="public" />
+          <methodref name="Assign" visibility="public" />
+          <methodref name="GetNamePath" visibility="public" />
+          <ancestor name="TObject" namespace="System">
+            <methodref name="Create" visibility="public" />
+            <methodref name="Free" visibility="public" />
+            <methodref name="InitInstance" visibility="public" />
+            <methodref name="CleanupInstance" visibility="public" />
+            <methodref name="ClassType" visibility="public" />
+            <methodref name="ClassName" visibility="public" />
+            <methodref name="ClassNameIs" visibility="public" />
+            <methodref name="ClassParent" visibility="public" />
+            <methodref name="ClassInfo" visibility="public" />
+            <methodref name="InstanceSize" visibility="public" />
+            <methodref name="InheritsFrom" visibility="public" />
+            <methodref name="MethodAddress" visibility="public" />
+            <methodref name="MethodName" visibility="public" />
+            <methodref name="FieldAddress" visibility="public" />
+            <methodref name="GetInterface" visibility="public" />
+            <methodref name="GetInterfaceEntry" visibility="public" />
+            <methodref name="GetInterfaceTable" visibility="public" />
+            <methodref name="SafeCallException" visibility="public" />
+            <methodref name="AfterConstruction" visibility="public" />
+            <methodref name="BeforeDestruction" visibility="public" />
+            <methodref name="Dispatch" visibility="public" />
+            <methodref name="DefaultHandler" visibility="public" />
+            <methodref name="NewInstance" visibility="public" />
+            <methodref name="FreeInstance" visibility="public" />
+            <methodref name="Destroy" visibility="public" />
+          </ancestor>
+        </ancestor>
+      </ancestor>
+    </ancestor>
+    <members>
+      <field name="fUserData" type="TIniList" visibility="private" />
+      <field name="fMarkupOn" type="Boolean" visibility="private" />
+      <field name="fRange" type="TRangeState" visibility="private" />
+      <field name="fLine" type="PAnsiChar" visibility="private" />
+      <field name="fProcTable" visibility="private">
+        <array name="fProcTable">
+          <element type="TProcTableProc" />
+        </array>
+      </field>
+      <field name="Run" type="Integer" visibility="private" />
+      <field name="fTokenPos" type="Integer" visibility="private" />
+      <field name="fTokenID" type="TtkTokenKind" visibility="private" />
+      <field name="fLineNumber" type="Integer" visibility="private" />
+      <field name="fCommentAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fIdentifierAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fKeyAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fConstantAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fObjectAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fNumberAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fPreprocessorAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fSpaceAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fStringAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fSymbolAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fKeyWords" type="TStrings" visibility="private" />
+      <field name="fConstants" type="TStrings" visibility="private" />
+      <field name="fObjects" type="TStrings" visibility="private" />
+      <field name="fComments" type="CommentStyles" visibility="private" />
+      <field name="fStringDelim" type="TStringDelims" visibility="private" />
+      <field name="fIdentChars" type="TSynIdentChars" visibility="private" />
+      <field name="fDetectPreprocessor" type="Boolean" visibility="private" />
+      <field name="FMarkup" type="Boolean" visibility="private" />
+      <field name="FEntity" type="Boolean" visibility="private" />
+      <field name="fEntityAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="FDollarVariables" type="Boolean" visibility="private" />
+      <field name="fVariableAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="FActiveDot" type="Boolean" visibility="private" />
+      <field name="FDotAttri" type="TSynHighlighterAttributes" visibility="private" />
+      <field name="fDefaultName" type="string" visibility="private" />
+      <procedure name="ApostropheProc" visibility="private">
+      </procedure>
+      <procedure name="AmpersandProc" visibility="private">
+      </procedure>
+      <procedure name="AsciiCharProc" visibility="private">
+      </procedure>
+      <procedure name="BraceOpenProc" visibility="private">
+      </procedure>
+      <procedure name="PointCommaProc" visibility="private">
+      </procedure>
+      <procedure name="CRProc" visibility="private">
+      </procedure>
+      <procedure name="DotProc" visibility="private">
+      </procedure>
+      <procedure name="IdentProc" visibility="private">
+      </procedure>
+      <procedure name="IntegerProc" visibility="private">
+      </procedure>
+      <procedure name="DollarProc" visibility="private">
+      </procedure>
+      <procedure name="LFProc" visibility="private">
+      </procedure>
+      <procedure name="NullProc" visibility="private">
+      </procedure>
+      <procedure name="NumberProc" visibility="private">
+      </procedure>
+      <procedure name="RoundOpenProc" visibility="private">
+      </procedure>
+      <procedure name="SlashProc" visibility="private">
+      </procedure>
+      <procedure name="SpaceProc" visibility="private">
+      </procedure>
+      <procedure name="StringProc" visibility="private">
+      </procedure>
+      <procedure name="UnknownProc" visibility="private">
+      </procedure>
+      <procedure name="GreaterThan" visibility="private">
+      </procedure>
+      <procedure name="SmallerThan" visibility="private">
+      </procedure>
+      <procedure name="MakeMethodTables" visibility="private">
+      </procedure>
+      <procedure name="AnsiProc" visibility="private">
+      </procedure>
+      <procedure name="PasStyleProc" visibility="private">
+      </procedure>
+      <procedure name="CStyleProc" visibility="private">
+      </procedure>
+      <procedure name="SetKeyWords" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TStrings" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetComments" visibility="private">
+        <parameters>
+          <parameter name="Value" type="CommentStyles" />
+        </parameters>
+      </procedure>
+      <function name="GetStringDelim" visibility="private">
+        <parameters>
+          <retval type="TStringDelims" />
+        </parameters>
+      </function>
+      <procedure name="SetStringDelim" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TStringDelims" paramflags="const" />
+        </parameters>
+      </procedure>
+      <function name="GetIdentifierChars" visibility="private">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="SetIdentifierChars" visibility="private">
+        <parameters>
+          <parameter name="Value" type="string" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetDetectPreprocessor" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Boolean" />
+        </parameters>
+      </procedure>
+      <procedure name="SetConstants" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TStrings" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetObjects" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TStrings" paramflags="const" />
+        </parameters>
+      </procedure>
+      <function name="IsObject" visibility="private">
+        <parameters>
+          <parameter name="AObject" type="string" paramflags="const" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="SetMarkup" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetEntity" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetDollarVariables" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetActiveDot" visibility="private">
+        <parameters>
+          <parameter name="Value" type="Boolean" paramflags="const" />
+        </parameters>
+      </procedure>
+      <procedure name="SetDotAttri" visibility="private">
+        <parameters>
+          <parameter name="Value" type="TSynHighlighterAttributes" paramflags="const" />
+        </parameters>
+      </procedure>
+      <function name="GetIdentChars" visibility="protected" procflags="override">
+        <parameters>
+          <retval type="TSynIdentChars" />
+        </parameters>
+      </function>
+      <function name="GetLanguageName" visibility="public" procflags="class override">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="AOwner" type="TComponent" />
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <function name="GetDefaultAttribute" visibility="public" procflags="override">
+        <parameters>
+          <parameter name="Index" type="Integer" />
+          <retval type="TSynHighlighterAttributes" />
+        </parameters>
+      </function>
+      <function name="GetEol" visibility="public" procflags="override">
+        <parameters>
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="GetRange" visibility="public" procflags="override">
+        <parameters>
+          <retval type="Pointer" />
+        </parameters>
+      </function>
+      <function name="GetTokenID" visibility="public">
+        <parameters>
+          <retval type="TtkTokenKind" />
+        </parameters>
+      </function>
+      <function name="GetToken" visibility="public" procflags="override">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <function name="GetTokenAttribute" visibility="public" procflags="override">
+        <parameters>
+          <retval type="TSynHighlighterAttributes" />
+        </parameters>
+      </function>
+      <function name="GetTokenKind" visibility="public" procflags="override">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <function name="GetTokenPos" visibility="public" procflags="override">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <function name="IsKeyword" visibility="public" procflags="override">
+        <parameters>
+          <parameter name="AKeyword" type="string" paramflags="const" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <function name="IsConstant" visibility="public">
+        <parameters>
+          <parameter name="AConstant" type="string" paramflags="const" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+      <procedure name="Next" visibility="public" procflags="override">
+      </procedure>
+      <procedure name="ResetRange" visibility="public" procflags="override">
+      </procedure>
+      <procedure name="SetRange" visibility="public" procflags="override">
+        <parameters>
+          <parameter name="Value" type="Pointer" />
+        </parameters>
+      </procedure>
+      <procedure name="SetLine" visibility="public" procflags="override">
+        <parameters>
+          <parameter name="NewValue" type="string" />
+          <parameter name="LineNumber" type="Integer" />
+        </parameters>
+      </procedure>
+      <procedure name="LoadHighLighter" visibility="public">
+        <parameters>
+          <parameter name="aFile" type="string" />
+        </parameters>
+      </procedure>
+      <property name="CommentAttri" visibility="published" read="fCommentAttri" write="fCommentAttri" type="TSynHighlighterAttributes" />
+      <property name="Comments" visibility="published" read="fComments" write="SetComments" type="CommentStyles" />
+      <property name="DetectPreprocessor" visibility="published" read="fDetectPreprocessor" write="SetDetectPreprocessor" type="Boolean" />
+      <property name="IdentifierAttri" visibility="published" read="fIdentifierAttri" write="fIdentifierAttri" type="TSynHighlighterAttributes" />
+      <property name="IdentifierChars" visibility="published" read="GetIdentifierChars" write="SetIdentifierChars" type="string" />
+      <property name="KeyAttri" visibility="published" read="fKeyAttri" write="fKeyAttri" type="TSynHighlighterAttributes" />
+      <property name="ConstantAttri" visibility="published" read="fConstantAttri" write="fConstantAttri" type="TSynHighlighterAttributes" />
+      <property name="ObjectAttri" visibility="published" read="fObjectAttri" write="fObjectAttri" type="TSynHighlighterAttributes" />
+      <property name="EntityAttri" visibility="published" read="fEntityAttri" write="fEntityAttri" type="TSynHighlighterAttributes" />
+      <property name="VariableAttri" visibility="published" read="fVariableAttri" write="fVariableAttri" type="TSynHighlighterAttributes" />
+      <property name="DotAttri" visibility="published" read="FDotAttri" write="SetDotAttri" type="TSynHighlighterAttributes" />
+      <property name="KeyWords" visibility="published" read="fKeyWords" write="SetKeyWords" type="TStrings" />
+      <property name="Constants" visibility="published" read="fConstants" write="SetConstants" type="TStrings" />
+      <property name="Objects" visibility="published" read="fObjects" write="SetObjects" type="TStrings" />
+      <property name="NumberAttri" visibility="published" read="fNumberAttri" write="fNumberAttri" type="TSynHighlighterAttributes" />
+      <property name="PreprocessorAttri" visibility="published" read="fPreprocessorAttri" write="fPreprocessorAttri" type="TSynHighlighterAttributes" />
+      <property name="SpaceAttri" visibility="published" read="fSpaceAttri" write="fSpaceAttri" type="TSynHighlighterAttributes" />
+      <property name="StringAttri" visibility="published" read="fStringAttri" write="fStringAttri" type="TSynHighlighterAttributes" />
+      <property name="SymbolAttri" visibility="published" read="fSymbolAttri" write="fSymbolAttri" type="TSynHighlighterAttributes" />
+      <property name="StringDelim" visibility="published" read="GetStringDelim" write="SetStringDelim" type="TStringDelims" default="0" />
+      <property name="Markup" visibility="published" read="FMarkup" write="SetMarkup" type="Boolean" />
+      <property name="Entity" visibility="published" read="FEntity" write="SetEntity" type="Boolean" />
+      <property name="DollarVariables" visibility="published" read="FDollarVariables" write="SetDollarVariables" type="Boolean" />
+      <property name="ActiveDot" visibility="published" read="FActiveDot" write="SetActiveDot" type="Boolean" />
+      <property name="DefaultLanguageName" visibility="published" read="fDefaultName" write="fDefaultName" type="string" />
+    </members>
+  </class>
+  <procedure name="Register" visibility="private" procflags="virtual">
+  </procedure>
+</namespace>

@@ -1,0 +1,147 @@
+<UniHighlighter>
+ <ImportantInfo>
+  ******* Please read carefully *************************
+  * Please, make any changes in this file very carefuly!*
+  * It is much more convinient to use native designer!  *
+  *******************************************************
+ </ImportantInfo>
+ <Info>
+  <General>
+   <Name>RealText</Name>
+   <FileTypeName>RT</FileTypeName>
+   <Layout>Standard</Layout>
+  </General>
+  <Author>
+   <Name>Vitaly Nevzorov</Name>
+   <Email>nevzorov@yahoo.com</Email>
+   <Web>www.delphist.com</Web>
+   <Copyright>Copyright (c) Vitaly Nevzorov, 2002</Copyright>
+   <Company>N/A</Company>
+   <Remark>Created based on UltraEdit:realtext.txt</Remark>
+  </Author>
+  <Version>
+   <Version>1</Version>
+   <Revision>0</Revision>
+   <Date>37612.5589510069</Date>
+   <Type>Beta</Type>
+  </Version>
+  <History>
+  </History>
+  <Sample>
+   <S></S>
+  </Sample>
+ </Info>
+ <Range Name="Root">
+ <Def>
+  <Back>16777215</Back>
+  <Fore>0</Fore>
+  <Style></Style>
+ </Def>
+ <Num>
+  <Back>16777215</Back>
+  <Fore>128</Fore>
+  <Style></Style>
+ </Num>
+ <OpenSymbol></OpenSymbol>
+ <CloseSymbol></CloseSymbol>
+ <DelimiterChars>	!&qt;$%&amp;'()*+,-.:;&lt;=&gt;?@[\]^{|}~</DelimiterChars>
+ <AnyTerm>True</AnyTerm>
+ <CloseOnTerm>False</CloseOnTerm>
+ <CloseOnEol>False</CloseOnEol>
+ <CaseSensitive>False</CaseSensitive>
+ <KW Name="Key Words 1">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>32768</Fore>
+   <Style></Style>
+  </Attri>
+  <W>&lt;a</W>
+  <W>&lt;/a&gt;</W>
+  <W>&lt;a&gt;</W>
+  <W>&lt;/a&gt;</W>
+  <W>&lt;b&gt;</W>
+  <W>&lt;/b&gt;</W>
+  <W>&lt;br/&gt;</W>
+  <W>&lt;center&gt;</W>
+  <W>&lt;/center&gt;</W>
+  <W>&lt;clear/&gt;</W>
+  <W>&lt;font&gt;</W>
+  <W>&lt;font</W>
+  <W>&lt;/font&gt;</W>
+  <W>&lt;hr/&gt;</W>
+  <W>&lt;i&gt;</W>
+  <W>&lt;/i&gt;</W>
+  <W>&lt;li&gt;</W>
+  <W>&lt;/li&gt;</W>
+  <W>&lt;ol&gt;</W>
+  <W>&lt;/ol&gt;</W>
+  <W>&lt;p&gt;</W>
+  <W>&lt;/p&gt;</W>
+  <W>&lt;pos/&gt;</W>
+  <W>&lt;pos/&gt;</W>
+  <W>&lt;pre&gt;</W>
+  <W>&lt;/pre&gt;</W>
+  <W>&lt;required&gt;</W>
+  <W>&lt;/required&gt;</W>
+  <W>&lt;time</W>
+  <W>&lt;tl&gt;</W>
+  <W>&lt;/tl&gt;</W>
+  <W>&lt;tu&gt;</W>
+  <W>&lt;/tu&gt;</W>
+  <W>&lt;u&gt;</W>
+  <W>&lt;/u&gt;</W>
+  <W>&lt;ul&gt;</W>
+  <W>&lt;/ul&gt;</W>
+  <W>&lt;window&gt;</W>
+  <W>&lt;window</W>
+  <W>&lt;/window&gt;</W>
+  <W>//</W>
+  <W>/&gt;</W>
+ </KW>
+ <KW Name="Key Words 2">
+  <Attri>
+   <Back>16777215</Back>
+   <Fore>16711680</Fore>
+   <Style></Style>
+  </Attri>
+  <W>attribute=</W>
+  <W>begin=</W>
+  <W>bgcolor=</W>
+  <W>color=</W>
+  <W>crawlrate=</W>
+  <W>duration=</W>
+  <W>end=</W>
+  <W>height=</W>
+  <W>href=</W>
+  <W>scrollrate=</W>
+  <W>size=</W>
+  <W>target=</W>
+  <W>type=</W>
+  <W>width=</W>
+  <W>wordwrap=</W>
+  <W>x=</W>
+  <W>y=</W>
+  <W>=</W>
+ </KW>
+  <Range Name="Remarks &lt;!--../--&gt;">
+  <Def>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Def>
+  <Num>
+   <Back>16777215</Back>
+   <Fore>8388608</Fore>
+   <Style></Style>
+  </Num>
+  <OpenSymbol>&lt;!--</OpenSymbol>
+  <CloseSymbol>/--&gt;</CloseSymbol>
+  <DelimiterChars>!&qt;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~</DelimiterChars>
+  <AnyTerm>True</AnyTerm>
+  <CloseOnTerm>False</CloseOnTerm>
+  <CloseOnEol>False</CloseOnEol>
+  <CaseSensitive>False</CaseSensitive>
+  </Range>
+ </Range>
+ <CopyRight>Rule file for UniHighlighter Delphi component (Copyright(C) Fantasist(walking_in_the_sky@yahoo.com), Vit(nevzorov@yahoo.com), 2002)</CopyRight>
+</UniHighlighter>

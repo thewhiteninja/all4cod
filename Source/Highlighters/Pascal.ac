@@ -1,0 +1,204 @@
+[array |n array declaration (var)]
+array[%From%..%To%] of %Of%;
+|
+
+[classf |n class declaration (all parts)]
+%Name% = class(%TName%)
+private
+|
+protected
+
+public
+
+published
+
+end;
+;
+[classd |n class declaration (no parts)]
+%Name% = class(%TName%)
+|
+end;
+;
+[classc |n class declaration (with Create/Destroy overrides)]
+%Name% = class(%TName%)
+private
+|
+protected
+
+public
+  constructor Create; override;
+  destructor Destroy; override;
+published
+
+end;
+;
+
+[function |n function declaration]
+function %Name%(%Params%): %Result%;
+begin
+|
+end;
+;
+
+[procedure |n procedure declaration]
+procedure %Name%(%Params%);
+begin
+  |
+end;
+;
+
+[record |n record declaration]
+§ = record
+    | 
+    end;
+
+[recordv |n record declaration with variant part]
+§ = record
+    case (|) of
+            
+    end;
+    
+[unit |n unit definition template]
+unit §;
+
+interface
+uses 
+    { List of units goes here }
+    { Interface section goes here }
+
+implementation
+uses 
+    { List of units goes here }
+    { Implementation section goes here }
+
+initialization
+    { Initialization section goes here }
+
+finalization
+    { Finalization section goes here }
+end.
+
+[program |n program definition template]
+program §;
+uses
+    { List of used units goes here }
+const
+    { List of constants goes here }
+type
+    { List of types goes here }
+var
+    { List of variables goes here }
+begin
+    |
+end.
+
+[operator |n operator definition]
+operator | (arg1 : type1; arg2 : type2) result : type3;
+begin
+    §
+end;
+
+[var |n variables declaration section]
+var
+    §|;
+[type |n types declaration section]
+type
+    §|;
+[const |n constant declaration section]
+const
+    §|;
+[uses |n declare used units]
+uses
+    §|;
+
+[case | case statement (with else)]
+case | of
+  |d ;
+  |d ;
+else ;
+end;
+
+[fors | for (no begin/end)]
+for %Cunter% := %From% to %To% do
+  §|
+
+[forb | for statement]
+§
+for %Cunter% := %From% to %To% do
+begin
+  §|
+end;
+§
+
+[ifs | if (no begin/end)]
+if | then
+  §
+[ifb | if statement]
+if | then begin
+  §
+end;
+;
+[ife | if then (no begin/end) else (no begin/end)]
+if | then
+  §
+else
+;
+[ifeb | if then else]
+if |
+then begin
+  §
+end
+else begin
+
+end;
+;
+ 
+[trye | try except]
+try
+  §|
+except
+
+end;
+;
+[tryf | try finally]
+try
+  §|
+finally
+
+end;
+;
+[trycf | try finally (with Create/Free)]
+%Name% := %TName%.Create;
+try
+  |
+finally
+  %Name%.Free;
+end;
+;
+[whileb | while statement]
+while | do begin
+  §
+end;
+;
+[whiles | while (no begin)]
+while (|) do
+;
+[withb | with statement]
+with (|) do begin
+  §
+end;
+;
+[withs | with (no begin)]
+with | do
+  §
+;
+
+[begin | begin ... end compound statement]
+begin
+    §|
+end;
+
+[repeat | repeat ... until loop statement]
+repeat
+    §
+until (|);
