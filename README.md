@@ -40,5 +40,5 @@ Written with Delphi for Windows XP but still run on Windows 10 !
 ## Screenshots
 
 <p align="center">
-  <img alt="screenshot0" src="screenshot0.png" width="400"></td>
+  <img alt="screenshot0" src="images/cap_principale.jpg" ></td>
 </p>
